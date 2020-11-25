@@ -22,16 +22,17 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <MDXProvider components={mdxComponentMap}>
-      <Deck>
-        {Array.isArray(slidesRaw) &&
-          slidesRaw.map((MDXSlide, i) => (
+    Array.isArray(slidesRaw) && (
+      <MDXProvider components={mdxComponentMap}>
+        <Deck>
+          {slidesRaw.map((MDXSlide, i) => (
             <Slide key={`slide-${i}`}>
               <MDXSlide />
             </Slide>
           ))}
-      </Deck>
-    </MDXProvider>
+        </Deck>
+      </MDXProvider>
+    )
   );
 };
 
