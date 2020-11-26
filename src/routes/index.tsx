@@ -3,6 +3,7 @@ import { createBrowserHistory } from 'history';
 import { Switch, Route, Router } from 'react-router-dom';
 import Home from '../pages/home';
 import { lessonRoutes } from './config';
+import ErrorPage from '../pages/error';
 
 export const history = createBrowserHistory();
 
@@ -19,6 +20,7 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       {LessonsRouteComponents}
+      <Route path="/*" component={ErrorPage} />
     </Switch>
   </CustomBrowserRouter>
 );
