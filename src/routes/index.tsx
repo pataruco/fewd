@@ -2,8 +2,7 @@ import React from 'react';
 import { createBrowserHistory } from 'history';
 import { Switch, Route, Router } from 'react-router-dom';
 import Home from '../pages/home';
-import { lessonRoutes, WeekRoute } from './config';
-import SlidesDeck from '../components/slides-deck';
+import { lessonRoutes } from './config';
 
 export const history = createBrowserHistory();
 

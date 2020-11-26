@@ -1,24 +1,6 @@
 import React from 'react';
 import SlidesDeck from '../components/slides-deck';
 
-export interface WeekRoute {
-  week: number;
-  lessons: string[];
-  'useful-resources'?: string;
-  'bonus-materials'?: string;
-}
-
-const routes: WeekRoute[] = [
-  {
-    week: 1,
-    lessons: ['01-intro-to-html', '02'],
-  },
-  {
-    week: 2,
-    lessons: ['03', '04'],
-  },
-];
-
 export const lessonRoutes = [
   {
     path: '/week-1/lesson-1',
