@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const StyledHeader = styled.header`
   padding: 1.25rem;
@@ -9,6 +10,20 @@ const StyledHeader = styled.header`
   }
 `;
 
+const weeksIterator = new Array(10).fill('week');
+
+const Weeks: React.FC = () => (
+  <ul>
+    {weeksIterator.map((week, i) => (
+      <li key={i}>
+        <Link to={`${week}-${i + 1}`}>
+          {week} {i + 1}
+        </Link>
+      </li>
+    ))}
+  </ul>
+);
+
 const Header: React.FC = () => (
   <StyledHeader>
     <picture>
@@ -17,6 +32,17 @@ const Header: React.FC = () => (
         alt="General Assembly Logo"
       />
     </picture>
+    <nav>
+      <ul>
+        <li>
+          <button>weeks</button>
+          <Weeks />
+        </li>
+        <li>
+          <Link to="/">home</Link>
+        </li>
+      </ul>
+    </nav>
   </StyledHeader>
 );
 
