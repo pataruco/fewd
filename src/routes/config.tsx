@@ -26,7 +26,7 @@ export const weekRoutes = [
   {
     path: '/week-1',
     component: () => {
-      const Content = lazy(() => importMDX('../weeks/01.mdx'));
+      const Content = lazy(() => importMDX('../weeks/1.mdx'));
       return (
         <Week>
           <Suspense fallback={<div>Loading...</div>}>
@@ -39,7 +39,7 @@ export const weekRoutes = [
   {
     path: '/week-2',
     component: () => {
-      const Content = lazy(() => importMDX('../weeks/02.mdx'));
+      const Content = lazy(() => importMDX('../weeks/2.mdx'));
       return (
         <Week>
           <Suspense fallback={<div>Loading...</div>}>
