@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import SlidesDeck from '../components/slides-deck';
 import { importMDX } from 'mdx.macro';
+import Week from '../pages/week';
 
 export const lessonRoutes = [
   {
@@ -27,9 +28,11 @@ export const weekRoutes = [
     component: () => {
       const Content = lazy(() => importMDX('../weeks/01.mdx'));
       return (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Content />
-        </Suspense>
+        <Week>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </Week>
       );
     },
   },
@@ -38,9 +41,11 @@ export const weekRoutes = [
     component: () => {
       const Content = lazy(() => importMDX('../weeks/02.mdx'));
       return (
-        <Suspense fallback={<div>Loading...</div>}>
-          <Content />
-        </Suspense>
+        <Week>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </Week>
       );
     },
   },
