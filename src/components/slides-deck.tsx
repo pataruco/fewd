@@ -1,26 +1,20 @@
 // @ts-nocheck
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Deck, Slide, mdxComponentMap } from 'spectacle';
 import { MDXProvider } from '@mdx-js/react';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectSlidesRaw, fetchSlides } from '../redux/slides-fetcher/slice';
 
 interface SlidesDeckProps {
   slidesDeckName: string;
 }
 
 const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
-  const [slidesRaw, setSlidesRaw] = useState(undefined);
-
-  const fetchSlides = async () => {
-    const { default: rawData } = await import(
-      `../slides/${slidesDeckName}.mdx`
-    );
-    setSlidesRaw(rawData);
-  };
-
+  const dispatch = useDispatch();
+  const { slidesRaw } = useSelector(selectSlidesRaw);
   useEffect(() => {
-    fetchSlides();
-  });
-
+    dispatch(fetchSlides(slidesDeckName));
+  }, [dispatch, slidesDeckName]);
   return (
     Array.isArray(slidesRaw) && (
       <MDXProvider components={mdxComponentMap}>
