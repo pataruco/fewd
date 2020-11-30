@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
+import './styles/normalize.css';
 import * as serviceWorker from './serviceWorker';
 import Routes from './routes';
 
