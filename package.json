@@ -83,7 +83,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -107,6 +108,7 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.5.2",
     "prettier": "^2.2.0",
+    "react-snap": "^1.23.0",
     "spectacle-mdx-loader": "^0.1.1"
   },
   "lint-staged": {
