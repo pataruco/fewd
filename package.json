@@ -110,10 +110,10 @@
     "spectacle-mdx-loader": "^0.1.1"
   },
   "lint-staged": {
-    "*.{js,json,yml,md}": [
+    "*.{js,json,yml,md,mdx}": [
       "yarn prettier --write"
     ],
-    "*.ts": [
+    "*.{ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ]
