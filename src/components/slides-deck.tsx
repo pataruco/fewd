@@ -11,10 +11,13 @@ interface SlidesDeckProps {
 
 const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
   const dispatch = useDispatch();
+
   const { slidesRaw } = useSelector(selectSlidesRaw);
+
   useEffect(() => {
     dispatch(fetchSlides(slidesDeckName));
   }, [dispatch, slidesDeckName]);
+
   return (
     Array.isArray(slidesRaw) && (
       <MDXProvider components={mdxComponentMap}>
