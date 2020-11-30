@@ -7,6 +7,11 @@ const StyledFooter = styled.footer`
   p {
     color: white;
     text-align: center;
+
+    span {
+      color: red;
+    }
+
     a {
       color: white;
       text-decoration: none;
@@ -20,7 +25,11 @@ const StyledFooter = styled.footer`
 const Footer: React.FC = () => (
   <StyledFooter>
     <p>
-      Made with ❤️ by <a href="https://github.com/pataruco">@pataruco</a>{' '}
+      Made with{' '}
+      <span role="img" aria-labelledby="heart">
+        ❤️
+      </span>{' '}
+      by <a href="https://github.com/pataruco">@pataruco</a>{' '}
       {new Date().getFullYear()}
     </p>
   </StyledFooter>
