@@ -6,7 +6,7 @@ import Week from '../pages/week';
 export const lessonRoutes = [
   {
     path: '/week-1/lesson-1',
-    component: () => <SlidesDeck slidesDeckName="01-intro-to-html" />,
+    component: () => <SlidesDeck slidesDeckName="01-html-basics" />,
   },
   {
     path: '/week-1/lesson-2',
