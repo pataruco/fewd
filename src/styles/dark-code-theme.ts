@@ -1,6 +1,9 @@
-import { PrismTheme } from 'prism-react-renderer';
+export interface Theme {
+  plain: Record<string, string>;
+  styles: Array<{ types: Array<string>; style: Record<string, string> }>;
+}
 
-const theme: PrismTheme = {
+const theme: Theme = {
   plain: {
     color: '#abb2bf',
     backgroundColor: '#282c34',
