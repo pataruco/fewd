@@ -1,3 +1,6 @@
+import { CodePane } from 'spectacle';
+import DarkTheme from '../styles/dark-code-theme.ts';
+
 # Orientation and introduction to HTML
 
 ---
@@ -332,8 +335,8 @@ Are self closing elements
 
 ## Implementing structural hierarchy
 
-```html
-<h1>Star Wars</h1>
+<CodePane language="html" theme={DarkTheme} indentSize={4} autoFillHeight={true}>
+{`<h1>Star Wars</h1>
 <p>By George Lucas</p>
 
 <h2>Episode IV: A New Hope</h2>
@@ -345,9 +348,8 @@ Are self closing elements
 <p>
   A Star Destroyer moves through space, releasing Imperial probe robots from its
   underside.
-</p>
-<p></p>
-```
+</p>`}
+</CodePane>
 
 ---
 
@@ -355,12 +357,12 @@ Are self closing elements
 
 ## Why do we need semantics?
 
-```html
-<h1>This is a top level heading</h1>
-<span style="font-size: 32px; margin: 21px 0;"
-  >Is this a top level heading?</span
->
-```
+<CodePane language="html" theme={DarkTheme} indentSize={4}>
+  {`<h1>This is a top level heading</h1>
+<span style="font-size: 32px; margin: 21px 0;">
+  Is this a top level heading?
+</span>`}
+</CodePane>
 
 ---
 
@@ -370,14 +372,14 @@ Are self closing elements
 
 ### Unordered
 
-```html
-<ul>
+<CodePane language="html" theme={DarkTheme} indentSize={4}>
+  {`<ul>
   <li>milk</li>
   <li>eggs</li>
   <li>bread</li>
   <li>hummus</li>
-</ul>
-```
+</ul>`}
+</CodePane>
 
 ---
 
@@ -387,7 +389,8 @@ Are self closing elements
 
 ### Ordered
 
-```html
+<CodePane language="html" theme={DarkTheme} indentSize={4}>
+  {`
 <ol>
   <li>Drive to the end of the road</li>
   <li>Turn right</li>
@@ -395,12 +398,11 @@ Are self closing elements
   <li>Turn left at the third roundabout</li>
   <li>The school is on your right, 300 meters up the road</li>
 </ol>
-```
+`}
+</CodePane>
 
 ---
 
 # Code along
 
 ## [Press release exercise](https://raw.githubusercontent.com/pataruco/ga-fewd-assets/master/press-release/starter/press-release.txt)
-
----

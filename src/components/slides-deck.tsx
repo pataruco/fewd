@@ -35,9 +35,34 @@ const theme = {
 };
 
 const SlideStyles = styled.div`
-  color: green;
-  background-color: red;
-  /* min-height: calc(100vh - 24px); */
+  [font-size='h1'],
+  [font-size='h2'],
+  [font-size='h3'] {
+    color: black;
+    text-align: left;
+  }
+
+  li > a {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid red;
+    transition: 0.2s ease-in all;
+
+    &:focus,
+    &:active,
+    &:visited {
+      border-bottom-color: black;
+    }
+  }
+
+  pre {
+    max-height: none !important;
+  }
 `;
 
 const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
