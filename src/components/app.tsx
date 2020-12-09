@@ -12,7 +12,8 @@ const StyledDiv = styled.div`
     display: block;
   }
 
-  img {
+  img,
+  svg {
     display: block;
     height: auto;
     max-width: 100%;
