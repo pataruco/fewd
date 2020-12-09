@@ -84,8 +84,6 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
     dispatch(checkPrintMode());
   }, [dispatch]);
 
-  console.log({ isPrintMode });
-
   return (
     Array.isArray(slidesRaw) && (
       <MDXProvider components={mdxComponentMap}>
@@ -95,7 +93,7 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
               <SlideStyles>
                 <MDXSlide />
               </SlideStyles>
-              {!isPrintMode && <Progress color="#000" size="8" />}
+              {!isPrintMode && <Progress color="#000" size={8} />}
             </Slide>
           ))}
         </Deck>
