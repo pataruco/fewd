@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import { Deck, Slide, mdxComponentMap } from 'spectacle';
+import { Deck, Slide, mdxComponentMap, Progress } from 'spectacle';
 import { MDXProvider } from '@mdx-js/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectSlidesRaw, fetchSlides } from '../redux/slides-fetcher/slice';
@@ -85,6 +85,7 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
               <SlideStyles>
                 <MDXSlide />
               </SlideStyles>
+              <Progress color="#000" size="8" />
             </Slide>
           ))}
         </Deck>

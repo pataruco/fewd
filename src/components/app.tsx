@@ -22,6 +22,10 @@ const StyledDiv = styled.div`
   main {
     flex: 1 auto;
   }
+
+  .spectacle-progress-indicator {
+    text-align: center;
+  }
 `;
 
 const App: React.FC = ({ children }) => <StyledDiv>{children}</StyledDiv>;

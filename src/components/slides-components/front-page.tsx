@@ -5,7 +5,6 @@ import GALogo from '../logo';
 
 interface FrontPageProps {
   title: string;
-  children?: React.ReactNode;
 }
 
 const FrontPageWrapper = styled.section`
