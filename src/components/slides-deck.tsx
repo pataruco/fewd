@@ -3,7 +3,11 @@ import React, { useEffect } from 'react';
 import { Deck, Slide, mdxComponentMap, Progress } from 'spectacle';
 import { MDXProvider } from '@mdx-js/react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectSlidesRaw, fetchSlides } from '../redux/slides-fetcher/slice';
+import {
+  checkPrintMode,
+  fetchSlides,
+  selectSlidesRaw,
+} from '../redux/slides-fetcher/slice';
 import styled from 'styled-components';
 
 interface SlidesDeckProps {
@@ -70,11 +74,17 @@ const SlideStyles = styled.div`
 const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
   const dispatch = useDispatch();
 
-  const { slidesRaw } = useSelector(selectSlidesRaw);
+  const { slidesRaw, isPrintMode } = useSelector(selectSlidesRaw);
 
   useEffect(() => {
     dispatch(fetchSlides(slidesDeckName));
   }, [dispatch, slidesDeckName]);
+
+  useEffect(() => {
+    dispatch(checkPrintMode());
+  }, [dispatch]);
+
+  console.log({ isPrintMode });
 
   return (
     Array.isArray(slidesRaw) && (
@@ -85,7 +95,7 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
               <SlideStyles>
                 <MDXSlide />
               </SlideStyles>
-              <Progress color="#000" size="8" />
+              {!isPrintMode && <Progress color="#000" size="8" />}
             </Slide>
           ))}
         </Deck>
