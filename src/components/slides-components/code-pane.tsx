@@ -16,18 +16,15 @@ const StyledCodePane: React.FC<StyledCodePaneProps> = ({
   indentSize = 4,
   autoFillHeight = true,
   children,
-}) => {
-  console.log(children);
-  return (
-    <CodePane
-      language={language}
-      autoFillHeight={autoFillHeight}
-      indentSize={indentSize}
-      theme={theme}
-    >
-      {children}
-    </CodePane>
-  );
-};
+}) => (
+  <CodePane
+    language={language}
+    autoFillHeight={autoFillHeight}
+    indentSize={indentSize}
+    theme={theme}
+  >
+    {children}
+  </CodePane>
+);
 
 export default StyledCodePane;

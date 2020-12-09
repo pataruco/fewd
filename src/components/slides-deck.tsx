@@ -42,6 +42,8 @@ const SlideStyles = styled.div`
     text-align: left;
   }
 
+  min-height: 100%;
+
   li > a {
     margin: 0;
     padding: 0;

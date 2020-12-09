@@ -1,7 +1,11 @@
-import { CodePane } from 'spectacle';
-import StyledCodePane from '../components/slides-components/code-pane';
+import CodePane from '../components/slides-components/code-pane';
+import FrontPage from '../components/slides-components/front-page';
 
 # Orientation and introduction to HTML
+
+---
+
+<FrontPage title="Orientation and introduction to HTML">Hola</FrontPage>
 
 ---
 
@@ -225,9 +229,11 @@ Please, tell us the difference between:
 
 `My cat is very grumpy`
 
-```html
+<CodePane>
+  {`
 <p>My cat is very grumpy</p>
-```
+`}
+</CodePane>
 
 ---
 
@@ -241,21 +247,20 @@ Please, tell us the difference between:
 
 ## What is the difference?
 
-<StyledCodePane>
-{`<p>
-    My cat is <strong>very</strong> grumpy.
-</p>
+<CodePane>
+  {`
+<p>My cat is <strong>very</strong> grumpy.</p>
+`}
+</CodePane>
+
+### between
+
+<CodePane>
+{`
+<p>My cat is <strong>very grumpy.</p></strong>
 `}
 
-</StyledCodePane>
-
-```html
-<p>My cat is <strong>very</strong> grumpy.</p>
-```
-
-```html
-<p>My cat is <strong>very grumpy.</p></strong>
-```
+</CodePane>
 
 ---
 
@@ -263,16 +268,19 @@ Please, tell us the difference between:
 
 ## Good:
 
-```html
+<CodePane>
+  {`
 <p>My cat is <strong>very</strong> grumpy.</p>
-```
+`}
+</CodePane>
 
 ## ~~Bad~~:
 
-```html
+<CodePane>
+  {`
 <p>My cat is <strong>very grumpy.</p></strong>
-```
-
+`}
+</CodePane>
 ---
 
 # Block versus inline elements
@@ -287,14 +295,16 @@ There are two important categories of elements in HTML which you should know abo
 - Tend to be structural elements on the page that represent, for example, paragraphs, lists, navigation menus, footers, etc.
 - A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.
 
-```html
+<CodePane>
+  {`
 <p>Paragraph</p>
 <nav>
   <ul>
     <li>list item</li>
   </ul>
 </nav>
-```
+`}
+</CodePane>
 
 ---
 
@@ -304,12 +314,14 @@ There are two important categories of elements in HTML which you should know abo
 - Will not cause a new line to appear in the document; they would normally appear inside a paragraph of text.
 - For example an `<a>` element (hyperlink) or emphasis elements such as `<em>` or `<strong>`.
 
-```html
+<CodePane>
+  {`
 <p>
   Here is a link to <a href="www.ga.co">General Assembly</a>. Here is an
   <em>emphasis</em>. and here is a <span>common wrapper</span>
 </p>
-```
+`}
+</CodePane>
 
 ---
 
@@ -317,14 +329,16 @@ There are two important categories of elements in HTML which you should know abo
 
 Are self closing elements
 
-```html
+<CodePane>
+  {`
 <img
   src="https://api.peteroftheday.com/random"
   alt="A random Picture of Peter Martin"
 />
 <hr />
 <input type="color" id="color" />
-```
+`}
+</CodePane>
 
 ---
 
@@ -332,10 +346,12 @@ Are self closing elements
 
 ## Headings and Paragraphs
 
-```html
+<CodePane>
+  {`
 <p>I am a paragraph, oh yes I am.</p>
 <h1>I am the title of the story.</h1>
-```
+`}
+</CodePane>
 
 ---
 
@@ -343,7 +359,7 @@ Are self closing elements
 
 ## Implementing structural hierarchy
 
-<CodePane language="html" theme={DarkTheme} indentSize={4} autoFillHeight={true}>
+<CodePane>
 {`<h1>Star Wars</h1>
 <p>By George Lucas</p>
 
@@ -365,7 +381,7 @@ Are self closing elements
 
 ## Why do we need semantics?
 
-<CodePane language="html" theme={DarkTheme} indentSize={4}>
+<CodePane>
   {`<h1>This is a top level heading</h1>
 <span style="font-size: 32px; margin: 21px 0;">
   Is this a top level heading?
@@ -380,7 +396,7 @@ Are self closing elements
 
 ### Unordered
 
-<CodePane language="html" theme={DarkTheme} indentSize={4}>
+<CodePane>
   {`<ul>
   <li>milk</li>
   <li>eggs</li>
@@ -397,7 +413,7 @@ Are self closing elements
 
 ### Ordered
 
-<CodePane language="html" theme={DarkTheme} indentSize={4}>
+<CodePane>
   {`
 <ol>
   <li>Drive to the end of the road</li>
