@@ -3,12 +3,10 @@ import React, { useEffect } from 'react';
 import { Deck, Slide, mdxComponentMap, Progress } from 'spectacle';
 import { MDXProvider } from '@mdx-js/react';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  checkPrintMode,
-  fetchSlides,
-  selectSlidesRaw,
-} from '../redux/slides-fetcher/slice';
+import { checkPrintMode, fetchSlides } from '../../redux/slides/actions';
+import { selectSlides } from '../../redux/slides/slice';
 import styled from 'styled-components';
+import colors from '../../styles/colors';
 
 interface SlidesDeckProps {
   slidesDeckName: string;
@@ -39,14 +37,15 @@ const theme = {
 };
 
 const SlideStyles = styled.div`
+  min-height: 100%;
+  color: green;
+
   [font-size='h1'],
   [font-size='h2'],
   [font-size='h3'] {
     color: black;
     text-align: left;
   }
-
-  min-height: 100%;
 
   li > a {
     margin: 0;
@@ -56,7 +55,7 @@ const SlideStyles = styled.div`
   a {
     color: black;
     text-decoration: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid ${colors.gaRed};
     transition: 0.2s ease-in all;
 
     &:focus,
@@ -74,7 +73,7 @@ const SlideStyles = styled.div`
 const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
   const dispatch = useDispatch();
 
-  const { slidesRaw, isPrintMode } = useSelector(selectSlidesRaw);
+  const { slidesRaw, isPrintMode } = useSelector(selectSlides);
 
   useEffect(() => {
     dispatch(fetchSlides(slidesDeckName));
@@ -89,11 +88,11 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
       <MDXProvider components={mdxComponentMap}>
         <Deck theme={theme}>
           {slidesRaw.map((MDXSlide, i) => (
-            <Slide key={`slide-${i}`}>
+            <Slide key={`slide-${i}`} backgroundColor={colors.gaRed}>
               <SlideStyles>
                 <MDXSlide />
               </SlideStyles>
-              {!isPrintMode && <Progress color="#000" size={8} />}
+              {!isPrintMode && <Progress color="#000" size={theme.space[0]} />}
             </Slide>
           ))}
         </Deck>

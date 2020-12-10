@@ -1,42 +1,8 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { AppThunk, RootState } from '../store';
+import { AppThunk } from '../store';
 import { history } from '../../routes/index';
-
-interface SlidesFetcherState {
-  slidesRaw?: [];
-  isPrintMode: boolean;
-  weekNumber: number;
-}
-
-const initialState: SlidesFetcherState = {
-  slidesRaw: undefined,
-  isPrintMode: false,
-  weekNumber: 1,
-};
+import { setIsPrintMode, setSlidesRaw, setWeekNumber } from './slice';
 
 const printModeString = 'exportMode=true&printMode=true';
-
-export const slidesFetcherSlice = createSlice({
-  name: 'slides-fetcher',
-  initialState,
-  reducers: {
-    setSlidesRaw: (state, { payload }) => {
-      state.slidesRaw = payload;
-    },
-    setIsPrintMode: (state, { payload }) => {
-      state.isPrintMode = payload;
-    },
-    setWeekNumber: (state, { payload }) => {
-      state.weekNumber = payload;
-    },
-  },
-});
-
-export const {
-  setSlidesRaw,
-  setIsPrintMode,
-  setWeekNumber,
-} = slidesFetcherSlice.actions;
 
 export const fetchSlides = (slidesDeckName: string): AppThunk => async (
   dispatch,
@@ -79,7 +45,3 @@ export const goToWeek = (weekNumber: number): AppThunk => async (dispatch) => {
   // eslint-disable-next-line no-restricted-globals
   location.reload();
 };
-
-export const selectSlidesRaw = (state: RootState) => state['slides-fetcher'];
-
-export default slidesFetcherSlice.reducer;

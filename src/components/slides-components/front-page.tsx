@@ -3,12 +3,9 @@ import { Heading } from 'spectacle';
 import styled from 'styled-components';
 import GALogo from '../icons/logo';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  getWeek,
-  goToWeek,
-  printSlides,
-  selectSlidesRaw,
-} from '../../redux/slides-fetcher/slice';
+import { getWeek, goToWeek, printSlides } from '../../redux/slides/actions';
+import { selectSlides } from '../../redux/slides/slice';
+import colors from '../../styles/colors';
 
 interface FrontPageProps {
   title: string;
@@ -21,6 +18,7 @@ const FrontPageWrapper = styled.section`
   align-items: center;
   flex-direction: column;
   position: relative;
+  background-color: ${colors.gaRed};
 
   button {
     appearance: none;
@@ -59,7 +57,7 @@ const FrontPageWrapper = styled.section`
 const FrontPage: React.FC<FrontPageProps> = ({ title }) => {
   const dispatch = useDispatch();
 
-  const { isPrintMode, weekNumber } = useSelector(selectSlidesRaw);
+  const { isPrintMode, weekNumber } = useSelector(selectSlides);
 
   useEffect(() => {
     dispatch(getWeek());

@@ -1,10 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import slidesFetcherReducer from './slides-fetcher/slice';
+import slidesFetcherReducer from './slides/slice';
 import navigationMenuReducer from './navigation-menu';
 
 export const store = configureStore({
   reducer: {
-    'slides-fetcher': slidesFetcherReducer,
+    slides: slidesFetcherReducer,
     'navigation-menu': navigationMenuReducer,
   },
 });
