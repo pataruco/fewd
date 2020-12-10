@@ -12,7 +12,8 @@ const StyledDiv = styled.div`
     display: block;
   }
 
-  img {
+  img,
+  svg {
     display: block;
     height: auto;
     max-width: 100%;
@@ -20,6 +21,10 @@ const StyledDiv = styled.div`
 
   main {
     flex: 1 auto;
+  }
+
+  .spectacle-progress-indicator {
+    text-align: center;
   }
 `;
 
