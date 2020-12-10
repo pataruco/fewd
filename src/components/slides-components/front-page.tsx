@@ -4,8 +4,10 @@ import styled from 'styled-components';
 import GALogo from '../icons/logo';
 import { useDispatch, useSelector } from 'react-redux';
 import { getWeek, goToWeek, printSlides } from '../../redux/slides/actions';
-import { selectSlides } from '../../redux/slides/slice';
+import { selectSlides, setThemeColor } from '../../redux/slides/slice';
 import colors from '../../styles/colors';
+
+const { gaRed } = colors;
 
 interface FrontPageProps {
   title: string;
@@ -18,7 +20,7 @@ const FrontPageWrapper = styled.section`
   align-items: center;
   flex-direction: column;
   position: relative;
-  background-color: ${colors.gaRed};
+  background-color: ${gaRed};
 
   button {
     appearance: none;
@@ -26,7 +28,7 @@ const FrontPageWrapper = styled.section`
     top: 0;
     border: none;
     background-color: transparent;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid ${gaRed};
     padding-left: 0;
     padding-right: 0;
     transition: 0.1s ease-in all;
@@ -61,6 +63,7 @@ const FrontPage: React.FC<FrontPageProps> = ({ title }) => {
 
   useEffect(() => {
     dispatch(getWeek());
+    dispatch(setThemeColor(gaRed));
   }, [dispatch]);
 
   const handlePrintSlides = (event: React.MouseEvent) => {

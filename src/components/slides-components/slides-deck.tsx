@@ -4,9 +4,11 @@ import { Deck, Slide, mdxComponentMap, Progress } from 'spectacle';
 import { MDXProvider } from '@mdx-js/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { checkPrintMode, fetchSlides } from '../../redux/slides/actions';
-import { selectSlides } from '../../redux/slides/slice';
+import { selectSlides, setThemeColor } from '../../redux/slides/slice';
 import styled from 'styled-components';
-import colors from '../../styles/colors';
+import colours from '../../styles/colors';
+
+const { white, black, gaRed } = colours;
 
 interface SlidesDeckProps {
   slidesDeckName: string;
@@ -15,9 +17,9 @@ interface SlidesDeckProps {
 const theme = {
   size: { width: 1366, height: 768, maxCodePaneHeight: 200 },
   colors: {
-    primary: '#000',
+    primary: black,
     secondary: '#fc6986',
-    tertiary: ' #fff',
+    tertiary: white,
     quaternary: '#ffc951',
     quinary: '#8bddfd',
   },
@@ -38,12 +40,11 @@ const theme = {
 
 const SlideStyles = styled.div`
   min-height: 100%;
-  color: green;
 
   [font-size='h1'],
   [font-size='h2'],
   [font-size='h3'] {
-    color: black;
+    color: ${black};
     text-align: left;
   }
 
@@ -53,15 +54,15 @@ const SlideStyles = styled.div`
   }
 
   a {
-    color: black;
+    color: ${black};
     text-decoration: none;
-    border-bottom: 2px solid ${colors.gaRed};
+    border-bottom: 2px solid ${gaRed};
     transition: 0.2s ease-in all;
 
     &:focus,
     &:active,
     &:visited {
-      border-bottom-color: black;
+      border-bottom-color: ${black};
     }
   }
 
@@ -73,7 +74,7 @@ const SlideStyles = styled.div`
 const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
   const dispatch = useDispatch();
 
-  const { slidesRaw, isPrintMode } = useSelector(selectSlides);
+  const { slidesRaw, isPrintMode, themeColor } = useSelector(selectSlides);
 
   useEffect(() => {
     dispatch(fetchSlides(slidesDeckName));
@@ -81,6 +82,7 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
 
   useEffect(() => {
     dispatch(checkPrintMode());
+    dispatch(setThemeColor(white));
   }, [dispatch]);
 
   return (
@@ -88,7 +90,7 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
       <MDXProvider components={mdxComponentMap}>
         <Deck theme={theme}>
           {slidesRaw.map((MDXSlide, i) => (
-            <Slide key={`slide-${i}`} backgroundColor={colors.gaRed}>
+            <Slide key={`slide-${i}`} backgroundColor={themeColor}>
               <SlideStyles>
                 <MDXSlide />
               </SlideStyles>
