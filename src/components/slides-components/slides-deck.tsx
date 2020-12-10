@@ -1,14 +1,14 @@
 // @ts-nocheck
 import React, { useEffect } from 'react';
-import { Deck, Slide, mdxComponentMap, Progress } from 'spectacle';
+import { Deck, Slide, mdxComponentMap } from 'spectacle';
 import { MDXProvider } from '@mdx-js/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { checkPrintMode, fetchSlides } from '../../redux/slides/actions';
 import { selectSlides, setThemeColor } from '../../redux/slides/slice';
 import styled from 'styled-components';
-import colours from '../../styles/colors';
+import color from '../../styles/colors';
 
-const { white, black, gaRed } = colours;
+const { white, black, gaRed } = color;
 
 interface SlidesDeckProps {
   slidesDeckName: string;
@@ -74,7 +74,7 @@ const SlideStyles = styled.div`
 const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
   const dispatch = useDispatch();
 
-  const { slidesRaw, isPrintMode, themeColor } = useSelector(selectSlides);
+  const { slidesRaw, themeColor } = useSelector(selectSlides);
 
   useEffect(() => {
     dispatch(fetchSlides(slidesDeckName));
@@ -88,13 +88,12 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
   return (
     Array.isArray(slidesRaw) && (
       <MDXProvider components={mdxComponentMap}>
-        <Deck theme={theme}>
+        <Deck theme={theme} transitionEffect="none">
           {slidesRaw.map((MDXSlide, i) => (
             <Slide key={`slide-${i}`} backgroundColor={themeColor}>
               <SlideStyles>
                 <MDXSlide />
               </SlideStyles>
-              {!isPrintMode && <Progress color="#000" size={theme.space[0]} />}
             </Slide>
           ))}
         </Deck>
