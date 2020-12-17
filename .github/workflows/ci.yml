@@ -34,5 +34,5 @@ jobs:
           BASE_BRANCH: master
           BRANCH: gh-pages
           CLEAN: true
-          FOLDER: .
+          FOLDER: ./build
           SSH: true
