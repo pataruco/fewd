@@ -88,7 +88,7 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
   return (
     Array.isArray(slidesRaw) && (
       <MDXProvider components={mdxComponentMap}>
-        <Deck theme={theme} transitionEffect="none">
+        <Deck theme={theme} transitionEffect="fade">
           {slidesRaw.map((MDXSlide, i) => (
             <Slide key={`slide-${i}`} backgroundColor={themeColor}>
               <SlideStyles>

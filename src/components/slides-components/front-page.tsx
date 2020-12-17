@@ -11,6 +11,7 @@ const { gaRed, white, black } = colors;
 
 interface FrontPageProps {
   title: string;
+  color: string;
 }
 
 const FrontPageWrapper = styled.section`
@@ -74,15 +75,15 @@ const FrontPageWrapper = styled.section`
   }
 `;
 
-const FrontPage: React.FC<FrontPageProps> = ({ title }) => {
+const FrontPage: React.FC<FrontPageProps> = ({ title, color = gaRed }) => {
   const dispatch = useDispatch();
 
   const { isPrintMode, weekNumber } = useSelector(selectSlides);
 
   useEffect(() => {
     dispatch(getWeek());
-    dispatch(setThemeColor(gaRed));
-  }, [dispatch]);
+    dispatch(setThemeColor(color));
+  }, [dispatch, color]);
 
   const handlePrintSlides = (event: React.MouseEvent) => {
     event.preventDefault();

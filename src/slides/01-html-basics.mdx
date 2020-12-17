@@ -2,6 +2,7 @@ import CodePane from '../components/slides-components/code-pane';
 import FrontPage from '../components/slides-components/front-page';
 import BackgroundChange from '../components/slides-components/background-change';
 import colors from '../styles/colors';
+import { Row, Column } from '../components/slides-components/layout';
 
 <FrontPage title="Orientation and introduction to HTML" />
 
@@ -81,43 +82,38 @@ In this lesson, you will:
 
 ## Course Outline
 
-1. Intro to HTML
-2. Intro to CSS
-3. Intro to Layout
-4. Flexbox
-5. Flexbox and lab
-6. Fonts, Layout Lab
-7. Responsive Design
-8. Positioning
-9. Intro to Programming
-10. Intro to JS
+<ol>
+  <Row>
+    <Column>
+      <li>Intro to HTML</li>
+      <li>Intro to CSS</li>
+      <li>Intro to Layout</li>
+      <li>Flexbox</li>
+      <li>Flexbox and lab</li>
+      <li>Fonts, Layout Lab</li>
+      <li>Responsive Design</li>
+      <li>Positioning</li>
+      <li>Intro to Programming</li>
+      <li>Intro to JS</li>
+    </Column>
+    <Column>
+      <li>JS Practical</li>
+      <li>JS and CSS Animations</li>
+      <li>JS Logic</li>
+      <li>JS Arrays and Loops</li>
+      <li>Forms and Data</li>
+      <li>Working with APIs</li>
+      <li>Front-end Frameworks</li>
+      <li>Github and other Dev Tools</li>
+      <li>Final Project Lab</li>
+      <li>Final Project Presentation</li>
+    </Column>
+  </Row>
+</ol>
 
-> Homework
-> weeks 1-6
+> Homework weeks 1-6
 
-> Project work
-> weeks 7-10
-
----
-
-## Course Outline
-
-11. JS Practical
-12. JS and CSS Animations
-13. JS Logic
-14. JS Arrays and Loops
-15. Forms and Data
-16. Working with APIs
-17. Front-end Frameworks
-18. Github and other Dev Tools
-19. Final Project Lab
-20. Final Project Presentation
-
-> Homework
-> weeks 1-6
-
-> Project work
-> weeks 7-10
+> Project work weeks 7-10
 
 ---
 
@@ -152,16 +148,32 @@ In this lesson, you will:
 
 ## How the Web Works?
 
----
-
-![](https://mdn.mozillademos.org/files/13839/Web%20Application%20with%20HTML%20and%20Steps.png)
-
-1. Browser send a HTTP request to the server
-2. Requests for dynamic resources are forwarded to server-side code (application)
-3. Application interprets the request, reads required information from the database
-4. Combines the retrieved data with HTML templates
-5. Sends back a response containing the generated HTML
-6. Browser read response and re render
+<Row>
+  <Column>
+    <picture>
+      <img
+        src="https://mdn.mozillademos.org/files/13839/Web%20Application%20with%20HTML%20and%20Steps.png"
+        alt="Request and response cycle"
+      />
+    </picture>
+  </Column>
+  <Column>
+    <ol>
+      <li>Browser send a HTTP request to the server</li>
+      <li>
+        Requests for dynamic resources are forwarded to server-side code
+        (application)
+      </li>
+      <li>
+        Application interprets the request, reads required information from the
+        database
+      </li>
+      <li>Combines the retrieved data with HTML templates</li>
+      <li>Sends back a response containing the generated HTML</li>
+      <li>Browser read response and re render</li>
+    </ol>
+  </Column>
+</Row>
 
 ---
 
