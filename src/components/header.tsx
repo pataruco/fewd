@@ -7,6 +7,7 @@ import {
   openMenu,
   selectNavigationMenu,
 } from '../redux/navigation-menu';
+import GALogoTextWhite from './icons/ga-text-white';
 
 const StyledHeader = styled.header`
   padding: 1.25rem;
@@ -101,10 +102,7 @@ const Header: React.FC = () => {
   return (
     <StyledHeader>
       <picture>
-        <img
-          src="https://pataruco.github.io/ga-assets/assets/logos/ga-text-white.svg"
-          alt="General Assembly Logo"
-        />
+        <GALogoTextWhite />
       </picture>
       <nav>
         <ul>

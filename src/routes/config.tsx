@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import SlidesDeck from '../components/slides-deck';
+import SlidesDeck from '../components/slides-components/slides-deck';
 import { importMDX } from 'mdx.macro';
 import Week from '../pages/week';
 

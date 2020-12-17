@@ -4,7 +4,18 @@ import Footer from '../components/footer';
 import Header from '../components/header';
 import styled from 'styled-components';
 
-const Weeks = [' HTML & CSS Basics', 'Box Model & Positioning'];
+const Weeks = [
+  'HTML & CSS Basics',
+  'Box Model & Positioning',
+  ' ',
+  ' ',
+  ' ',
+  ' ',
+  ' ',
+  ' ',
+  ' ',
+  ' ',
+];
 
 const StyledMain = styled.main`
   padding: 1.25rem;
