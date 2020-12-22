@@ -184,6 +184,5 @@
   },
   "resolutions": {
     "styled-components": "^5"
-  },
-  "homepage": "https://pataruco.github.io/fewd"
+  }
 }
