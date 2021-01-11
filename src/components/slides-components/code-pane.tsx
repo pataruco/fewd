@@ -8,6 +8,8 @@ interface StyledCodePaneProps {
   indentSize: number;
   autoFillHeight: boolean;
   children: React.ReactNode;
+  highlightStart?: number;
+  highlightEnd?: number;
 }
 
 const StyledCodePane: React.FC<StyledCodePaneProps> = ({
@@ -16,12 +18,16 @@ const StyledCodePane: React.FC<StyledCodePaneProps> = ({
   indentSize = 4,
   autoFillHeight = true,
   children,
+  highlightStart,
+  highlightEnd,
 }) => (
   <CodePane
     language={language}
     autoFillHeight={autoFillHeight}
     indentSize={indentSize}
     theme={theme}
+    highlightEnd={highlightEnd}
+    highlightStart={highlightStart}
   >
     {children}
   </CodePane>

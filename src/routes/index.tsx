@@ -3,7 +3,7 @@ import { createBrowserHistory } from 'history';
 import { Switch, Route, Router } from 'react-router-dom';
 import Home from '../pages/home';
 import { lessonRoutes, weekRoutes } from './config';
-import ErrorPage from '../pages/error';
+import ErrorPage from '../pages/404';
 import App from '../components/app';
 
 export const history = createBrowserHistory();

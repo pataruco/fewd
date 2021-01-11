@@ -10,7 +10,9 @@ export const lessonRoutes = [
   },
   {
     path: '/week-1/lesson-2',
-    component: () => <SlidesDeck slidesDeckName="02" />,
+    component: () => (
+      <SlidesDeck slidesDeckName="02-advanced-html-intro-to-css" />
+    ),
   },
   {
     path: '/week-2/lesson-3',

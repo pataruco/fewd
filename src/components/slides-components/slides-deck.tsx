@@ -8,7 +8,7 @@ import { selectSlides, setThemeColor } from '../../redux/slides/slice';
 import styled from 'styled-components';
 import color from '../../styles/colors';
 
-const { white, black, gaRed } = color;
+const { white, black, gaRed, markdownCodeBg } = color;
 
 interface SlidesDeckProps {
   slidesDeckName: string;
@@ -43,7 +43,8 @@ const SlideStyles = styled.div`
 
   [font-size='h1'],
   [font-size='h2'],
-  [font-size='h3'] {
+  [font-size='h3'],
+  [font-size='h4'] {
     color: ${black};
     text-align: left;
   }
@@ -68,6 +69,16 @@ const SlideStyles = styled.div`
 
   pre {
     max-height: none !important;
+    color: rgb(171, 178, 191) !important;
+    background-color: rgb(40, 44, 52) !important;
+  }
+
+  code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: ${markdownCodeBg};
+    border-radius: 6px;
   }
 `;
 
