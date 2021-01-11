@@ -377,9 +377,9 @@ Using a `link` tag with a reference to a CSS file
 
 ---
 
-# How to apply your CSS to your HTML
+## How to apply your CSS to your HTML
 
-Using a `style` tag
+Using a `link` tag on the `head`
 
 <CodePane>
   {`
@@ -391,15 +391,20 @@ Using a `style` tag
 `}
 </CodePane>
 
-```html
-<head>
+---
+
+## How to apply your CSS to your HTML
+
+Using a `style` tag on the `head`
+
+<CodePane>
+  {`<head>
   <style>
     h1 {
       color: blue;
       background-color: yellow;
       border: 1px solid black;
     }
-
     p {
       color: red;
     }
@@ -409,83 +414,58 @@ Using a `style` tag
 <body>
   <h1>Hello World!</h1>
   <p>This is my first CSS example</p>
-</body>
-```
-
+</body>`}
+</CodePane>
 ---
 
-# How to apply your CSS to your HTML
+## How to apply your CSS to your HTML
 
 Using inline styles
 
-```html
-<body>
+<CodePane>
+  {`<body>
   <h1 style="color: blue;background-color: yellow;border: 1px solid black;">
     Hello World!
   </h1>
   <p style="color:red;">This is my first CSS example</p>
-</body>
-```
+</body>`}
+</CodePane>
 
 ---
 
-# CSS Building blocks
+## CSS Building blocks
 
-## Declarations
+### Declaration
 
-.image-half[![](https://mdn.mozillademos.org/files/3665/css%20syntax%20-%20declaration.png)]
-
----
-
-# CSS Building blocks
-
-## Declaration blocks
-
-.image-half[![](https://mdn.mozillademos.org/files/3667/css%20syntax%20-%20declarations%20block.png)]
+![](https://mdn.mozillademos.org/files/3665/css%20syntax%20-%20declaration.png)
 
 ---
 
-# CSS Building blocks
+## CSS Building blocks
 
-## Selectors and rules
+### Declarations block
 
-.image-half[![](https://mdn.mozillademos.org/files/3668/css%20syntax%20-%20ruleset.png)]
+![](https://mdn.mozillademos.org/files/3667/css%20syntax%20-%20declarations%20block.png)
 
 ---
 
-# CSS values and units
+## CSS Building blocks
+
+### Rule
+
+![](https://mdn.mozillademos.org/files/3668/css%20syntax%20-%20ruleset.png)
+
+---
+
+## CSS values and units
 
 Absolute vs relative
-
-<iframe
-  height="265"
-  scrolling="no"
-  title="CSS values and units"
-  src="//codepen.io/pataruco/embed/vzEKOO/?height=265&theme-id=dark&default-tab=css,result&embed-version=2"
-  frameborder="no"
-  allowtransparency="true"
-  allowfullscreen="true"
-  style="width: 100%;"
->
-  See the Pen{' '}
-  <a href="https://codepen.io/pataruco/pen/vzEKOO/">CSS values and units</a> by
-  Pedro Martin (<a href="https://codepen.io/pataruco">@pataruco</a>) on{' '}
-  <a href="https://codepen.io">CodePen</a>.
-</iframe>
 
 [CodePen](https://codepen.io/pataruco/pen/vzEKOO)
 
 ---
 
-class: center, middle
-
-## ~~CSS Colours~~
-
-# CSS Colors
-
----
-
-# CSS Colors
+## CSS ~~Colours~~ Colors
 
 There are many ways to specify color in CSS. The same color values can be used everywhere in CSS, whether you are specifying text color, background color, or whatever else.
 
@@ -495,27 +475,25 @@ The standard color system available in modern computers is 24 bit, which allows 
 
 ---
 
-# CSS Colors
+## CSS Colors
 
-## Keywords
+### Keywords
 
-```html
-<p>This paragraph has a red background</p>
-```
-
-```css
-p {
+<CodePane>{`<p>This paragraph has a red background</p>`}</CodePane>
+<br />
+<CodePane language="css">
+  {`p {
   background-color: red;
-}
-```
+}`}
+</CodePane>
 
 [Full list of color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords)
 
 ---
 
-# CSS Colors
+## CSS Colors
 
-## Hexadecimal values
+### Hexadecimal values
 
 Each hex value consists of a hash/pound symbol (#) followed by six hexadecimal numbers, each of which can take a value between 0 and f (which represents 15) — so **0123456789abcdef**.
 
@@ -523,63 +501,57 @@ Each pair of values represents one of the channels — **red**, **green** and **
 
 ---
 
-# CSS Colors
+## CSS Colors
 
-## Hexadecimal values
+### Hexadecimal values
 
-```css
+<CodePane language="css">
+  {`
 /* equivalent to the red keyword */
 p:nth-child(1) {
   background-color: #ff0000;
 }
-
 /* equivalent to the blue keyword */
 p:nth-child(2) {
   background-color: #0000ff;
 }
-
 /* has no exact keyword equivalent */
 p:nth-child(3) {
   background-color: #e0b0ff;
-}
-```
+}`}
+
+</CodePane>
 
 ---
 
-# CSS Colors
+## CSS Colors
 
-## RGB
+### RGB
 
-An RGB value is a function — `rgb()` — which is given three parameters that represent the `red`, `green` and `blue` channel values of the colors, in much the same way as hex values. The difference with RGB is that each channel is represented not by two hex digits, but by a decimal number between **0** and **255**.
+An RGB value is a function `rgb()` which is given three parameters that represent the `red`, `green` and `blue` channel values of the colors, in much the same way as hex values. The difference with RGB is that each channel is represented not by two hex digits, but by a decimal number between **0** and **255**.
 
----
-
-# CSS Colors
-
-## RGB
-
-```css
+<CodePane language="css">
+  {`
 /* equivalent to the red keyword */
 p:nth-child(1) {
   background-color: rgb(255, 0, 0);
 }
-
 /* equivalent to the blue keyword */
 p:nth-child(2) {
   background-color: rgb(0, 0, 255);
 }
-
 /* has no exact keyword equivalent */
 p:nth-child(3) {
   background-color: rgb(224, 176, 255);
 }
-```
+`}
+</CodePane>
 
 ---
 
-# CSS Colors
+## CSS Colors
 
-## HSL
+### HSL
 
 The `hsl()` function accepts **hue**, **saturation**, and **lightness** values, which are used to distinguish between the 16.7 million colors, but in a different way:
 
@@ -587,28 +559,20 @@ The `hsl()` function accepts **hue**, **saturation**, and **lightness** values, 
 - **Saturation**: how saturated is the color? This takes a value from 0-100%, where 0 is no color (it will appear as a shade of grey), and 100% is full color saturation
 - **Lightness**: how light or bright is the color? This takes a value from 0-100%, where 0 is no light (it will appear completely black) and 100% is full light (it will appear completely white)
 
----
-
-# CSS Colors
-
-## HSL
-
-```css
-/* equivalent to the red keyword */
+<CodePane language="css">
+  {`/* equivalent to the red keyword */
 p:nth-child(1) {
   background-color: hsl(0, 100%, 50%);
 }
-
 /* equivalent to the blue keyword */
 p:nth-child(2) {
   background-color: hsl(240, 100%, 50%);
 }
-
 /* has no exact keyword equivalent */
 p:nth-child(3) {
   background-color: hsl(276, 100%, 85%);
-}
-```
+}`}
+</CodePane>
 
 ---
 
@@ -618,43 +582,36 @@ p:nth-child(3) {
 
 RGB and HSL both have corresponding modes — RGBA and HSLA — that allow you to set not only what color you want to display, but also what transparency you want that color to have.
 
-```css
-/* Transparent red */
+<CodePane language="css">
+  {`/* Transparent red */
 p:nth-child(1) {
   background-color: rgba(255, 0, 0, 0.5);
 }
-
 /* Transparent blue */
 p:nth-child(2) {
   background-color: hsla(240, 100%, 50%, 0.5);
-}
-```
+}`}
+</CodePane>
 
 ---
 
-# CSS Fonts
+## CSS Fonts
 
 There are numerous things we can style to make text look more interesting and more readable.
 
----
-
-# Font properties
+### Font properties
 
 There are lots of CSS properties for styling text but here are some key ones:
 
-```css
-h1 {
+<CodePane language="css">
+  {`h1 {
   font-size: 50px;
   font-family: 'Avenir', 'Arial', sans-serif;
   font-weight: bold;
   font-style: italic;
   line-height: 1.3;
-}
-```
-
----
-
-# Font properties
+}`}
+</CodePane>
 
 - `font-size` sets the size of the text.
 - `font-family` sets the typeface.
@@ -664,80 +621,65 @@ h1 {
 
 ---
 
-# CSS tricks
+## CSS tricks
 
-## Centring the content
+### Centring the content
 
 It's very common for a website to have a centered column of content, narrower than the full width of the screen. To achieve this, we wrap a containing element around the content tags that we want to center.
 
----
-
-# CSS tricks
-
-## Centring the content
-
 A `<div>` tag is ideal for this purpose and is very commonly used to divide up the page into chunks that can be moved around as a single entity.
 
-```html
+<CodePane>
+  {`
 <div>
   <h2>...</h2>
   <p>...</p>
   <p>...</p>
   <blockquote>...</blockquote>
   <p>...</p>
-</div>
-```
-
----
-
-# CSS tricks
-
-## Centring the content
+</div>`}
+</CodePane>
 
 To center this div of content, we give it a `width` and set auto on its horizontal margins.
 
-```css
+<CodePane language="css">
+  {`
 div {
   width: 800px; /* could be any number or unit*/
   margin-left: auto;
   margin-right: auto;
-}
-```
+}`}
+</CodePane>
 
 ---
 
-# CSS tricks
+## CSS tricks
 
-## Centring the content
+### Centring the content
 
 To center text­based content (like paragraphs or headings) we can use the `text-align` property.
 
-```css
-h1 {
+<CodePane language="css">
+  {`h1 {
   text-align: center;
-}
-```
-
+}`}
+</CodePane>
 ---
 
-# CSS
+## CSS
 
 Let's pull all the pieces together
 
 ---
 
-# Cookie recipe
+## Cookie recipe
 
-## Instructions
+### Instructions
 
 1. Download the starter code zip [file](https://github.com/pataruco/ga-fewd-assets/raw/master/cookie-recipe/cookie-recipe-starter-code.zip)
 2. Open the file **instructions.md** and follow the steps
 
----
-
-# Cookie recipe
-
-## CSS
+### CSS
 
 - The background color for the page is `#FFE`
 - The color for the text reading "Related Recipes" is `#887`
@@ -748,9 +690,9 @@ Let's pull all the pieces together
 
 ---
 
-# Homework
+## Homework
 
-## Fan Fiction CV
+### Fan Fiction CV
 
 Take a movie that you like and create a web page about the CV of one the characters.
 
@@ -762,9 +704,9 @@ Here are some examples
 
 ---
 
-# Homework
+## Homework
 
-## Technical requirements
+### Technical requirements
 
 - Use HTML5 structural elements (nav, header, footer)
 - Use Elements and Classes to select and style elements on the page
@@ -776,15 +718,13 @@ Here are some examples
 - Use at least 6 different HTML tags (`h1`, `h2`, `h3`, `blockquote`, `p`, `ul`, `ol`, `a`, `img`) on your pages
 - Indent nested elements to increase your code's readability
 
----
-
-## Bonus
+### Bonus
 
 - Experiment by adding additional HTML tags and CSS properties we did not cover in class - explore!
 
 ---
 
-# Homework
+## Homework
 
 ## Submission
 
