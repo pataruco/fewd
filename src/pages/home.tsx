@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import styled from 'styled-components';
+import Title from '../components/title';
 
 const Weeks = [
   'HTML & CSS Basics',
@@ -35,6 +36,7 @@ const StyledMain = styled.main`
 
 const Home: React.FC = () => (
   <>
+    <Title title="Home" />
     <Header />
     <StyledMain>
       <h1>Welcome to FEWD London 🇬🇧 </h1>
