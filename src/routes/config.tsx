@@ -28,7 +28,7 @@ export const lessonRoutes = [
     component: () => (
       <>
         <Title week={2} lesson={3} />
-        <SlidesDeck slidesDeckName="03" />
+        <SlidesDeck slidesDeckName="03-box-model" />
       </>
     ),
   },
