@@ -83,9 +83,6 @@ const FrontPage: React.FC<FrontPageProps> = ({ title, color = gaRed }) => {
   useEffect(() => {
     dispatch(getWeek());
     dispatch(setThemeColor(color));
-    return () => {
-      dispatch(setThemeColor(white));
-    };
   }, [dispatch, color]);
 
   const handlePrintSlides = (event: React.MouseEvent) => {
