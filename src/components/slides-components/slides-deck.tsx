@@ -59,6 +59,8 @@ const SlideStyles = styled.div`
     text-decoration: none;
     border-bottom: 2px solid ${gaRed};
     transition: 0.2s ease-in all;
+    padding: 0;
+    margin: 0;
 
     &:focus,
     &:active,
