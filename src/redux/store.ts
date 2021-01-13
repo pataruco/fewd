@@ -18,6 +18,7 @@ export const store = configureStore({
         'slides-fetcher/setSlidesRaw',
         'slides-fetcher/setWeekNumber',
         'slides-fetcher/setThemeColor',
+        'slides-fetcher/setIsPrintMode',
       ],
     },
   }),

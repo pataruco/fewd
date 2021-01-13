@@ -7,7 +7,7 @@ import Title from '../components/title';
 
 const Weeks = [
   'HTML & CSS Basics',
-  'Box Model & Positioning',
+  'Box Model, CSS Selectors, Specificity & Floats',
   ' ',
   ' ',
   ' ',
