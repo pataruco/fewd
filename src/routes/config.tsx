@@ -28,7 +28,7 @@ export const lessonRoutes = [
     component: () => (
       <>
         <Title week={2} lesson={3} />
-        <SlidesDeck slidesDeckName="03-box-model" />
+        <SlidesDeck slidesDeckName="04-css-selectors-specificity-float" />
       </>
     ),
   },
