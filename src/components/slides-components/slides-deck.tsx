@@ -82,6 +82,25 @@ const SlideStyles = styled.div`
     background-color: ${markdownCodeBg};
     border-radius: 6px;
   }
+
+  table {
+    border: 1px solid ${black};
+    border-collapse: collapse;
+    td,
+    th,
+    tr {
+      border: 1px solid ${black};
+    }
+
+    td,
+    th {
+      padding: 0.25rem;
+    }
+
+    td:not(td:first-of-type) {
+      text-align: center;
+    }
+  }
 `;
 
 const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
