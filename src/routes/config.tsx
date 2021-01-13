@@ -55,7 +55,7 @@ export const lessonRoutes = [
     component: () => (
       <>
         <Title week={3} lesson={6} />
-        <SlidesDeck slidesDeckName="06" />
+        <SlidesDeck slidesDeckName="06-positioning" />
       </>
     ),
   },
