@@ -43,7 +43,7 @@ const Home: React.FC = () => (
       <nav>
         <ul>
           {Weeks.map((week, i) => (
-            <li>
+            <li key={i}>
               <Link key={i} to={`week-${i + 1}`}>
                 Week {i + 1}: {week}
               </Link>
