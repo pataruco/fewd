@@ -9,7 +9,7 @@ const Weeks = [
   'HTML & CSS Basics',
   'Box Model, CSS Selectors, Specificity & Floats',
   'Flexbox & Positioning',
-  ' ',
+  'Responsive Web development',
   ' ',
   ' ',
   ' ',
