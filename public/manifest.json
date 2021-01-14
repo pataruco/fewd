@@ -1,7 +1,7 @@
 {
   "short_name": "FEWD | GA London",
-  "name": "Front end Web development | General Assembly London",
-  "description": "Course content slides for Front end Web development created by Pedro Martin",
+  "name": "Front-End Web Development Course | General Assembly London",
+  "description": "Course content slides for Front-End Web Development Course created by Pedro Martin",
   "icons": [
     {
       "src": "favicon.ico",
