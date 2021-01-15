@@ -73,7 +73,7 @@ export const lessonRoutes = [
     component: () => (
       <>
         <Title week={4} lesson={8} />
-        <SlidesDeck slidesDeckName="08" />
+        <SlidesDeck slidesDeckName="08-responsive-lab" />
       </>
     ),
   },
