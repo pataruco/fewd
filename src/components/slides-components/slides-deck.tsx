@@ -97,8 +97,8 @@ const SlideStyles = styled.div`
       padding: 0.25rem;
     }
 
-    td:not(td:first-of-type) {
-      text-align: center;
+    td {
+      text-align: left;
     }
   }
 `;
