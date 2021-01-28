@@ -10,7 +10,7 @@ const Weeks = [
   'Box Model, CSS Selectors, Specificity & Floats',
   'Flexbox & Positioning',
   'Responsive Web development',
-  'Intro to JavaScript',
+  'Intro to JavaScript & Document Object Model (DOM)',
   ' ',
   ' ',
   ' ',
@@ -44,8 +44,9 @@ const Home: React.FC = () => (
         <ul>
           {Weeks.map((week, i) => (
             <li key={i}>
+              Week {i + 1}:{' '}
               <Link key={i} to={`week-${i + 1}`}>
-                Week {i + 1}: {week}
+                {week}
               </Link>
             </li>
           ))}
