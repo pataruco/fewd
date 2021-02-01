@@ -1,9 +1,4 @@
-import FrontPage from '../components/slides-components/front-page';
-import BackgroundChange from '../components/slides-components/background-change';
-import CodePane from '../components/slides-components/code-pane';
-import { Table, TableHeader, TableBody, TableRow, TableCell } from 'spectacle';
-
-<FrontPage title="04 CSS Selectors, Specificity & Floats" />
+# 04 CSS Selectors, Specificity & Floats
 
 ---
 

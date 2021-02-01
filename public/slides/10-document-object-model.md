@@ -1,9 +1,4 @@
-import FrontPage from '../components/slides-components/front-page';
-import CodePane from '../components/slides-components/code-pane';
-import BackgroundChange from '../components/slides-components/background-change';
-import { Row, Column } from '../components/slides-components/layout';
-
-<FrontPage title="10 Document Object Model (DOM)" />
+# 10 Document Object Model (DOM)
 
 ---
 

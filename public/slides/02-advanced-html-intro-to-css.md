@@ -1,13 +1,6 @@
-import FrontPage from '../components/slides-components/front-page';
-import BackgroundChange from '../components/slides-components/background-change';
-import CodePane from '../components/slides-components/code-pane';
-import { Row, Column } from '../components/slides-components/layout';
-
-<FrontPage title="Advanced HTML & Intro to CSS" />
+# Advanced HTML & Intro to CSS
 
 ---
-
-<BackgroundChange />
 
 ## Agenda
 
@@ -60,8 +53,6 @@ We can differentiate between an **absolute** URL and a **relative** URL by looki
 
 ---
 
-<BackgroundChange />
-
 ## Images
 
 Images are placed using the `<img>` tag.
@@ -76,8 +67,6 @@ Images are placed using the `<img>` tag.
 ## Images
 
 ### Paths
-
-<BackgroundChange />
 
 - Inside webroot, a relative path could be used:
 
