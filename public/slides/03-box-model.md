@@ -1,9 +1,4 @@
-import FrontPage from '../components/slides-components/front-page';
-import BackgroundChange from '../components/slides-components/background-change';
-import CodePane from '../components/slides-components/code-pane';
-import { Row, Column } from '../components/slides-components/layout';
-
-<FrontPage title="Box model" />
+# "Box model"
 
 ---
 

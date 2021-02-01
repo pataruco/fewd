@@ -1,15 +1,3 @@
-import CodePane from '../components/slides-components/code-pane';
-import FrontPage from '../components/slides-components/front-page';
-import BackgroundChange from '../components/slides-components/background-change';
-import colors from '../styles/colors';
-import { Row, Column } from '../components/slides-components/layout';
-
-<FrontPage title="Orientation and introduction to HTML" />
-
----
-
-<BackgroundChange />
-
 ## Learning Objectives
 
 In this lesson, you will:
