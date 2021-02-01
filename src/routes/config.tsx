@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import SlidesDeck from '../components/slides-components/slides-deck';
+import SlidesDeck from '../components/slides-deck';
 import { importMDX } from 'mdx.macro';
 import Week from '../pages/week';
 import Title from '../components/title';
@@ -10,7 +10,7 @@ export const lessonRoutes = [
     component: () => (
       <>
         <Title week={1} lesson={1} />
-        <SlidesDeck slidesDeckName="01-html-basics" />)
+        <SlidesDeck slidesDeckName="01-html-basics" />
       </>
     ),
   },

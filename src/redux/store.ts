@@ -1,27 +1,11 @@
-import {
-  configureStore,
-  ThunkAction,
-  Action,
-  getDefaultMiddleware,
-} from '@reduxjs/toolkit';
-import slidesFetcherReducer from './slides/slice';
+import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+
 import navigationMenuReducer from './navigation-menu';
 
 export const store = configureStore({
   reducer: {
-    slides: slidesFetcherReducer,
     'navigation-menu': navigationMenuReducer,
   },
-  middleware: getDefaultMiddleware({
-    serializableCheck: {
-      ignoredActions: [
-        'slides-fetcher/setSlidesRaw',
-        'slides-fetcher/setWeekNumber',
-        'slides-fetcher/setThemeColor',
-        'slides-fetcher/setIsPrintMode',
-      ],
-    },
-  }),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

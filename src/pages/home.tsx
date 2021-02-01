@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import Header from '../components/header';
 import styled from 'styled-components';
 import Title from '../components/title';
+import Page from '../components/page';
 
 const Weeks = [
   'HTML & CSS Basics',
@@ -35,7 +36,7 @@ const StyledMain = styled.main`
 `;
 
 const Home: React.FC = () => (
-  <>
+  <Page>
     <Title title="Home" />
     <Header />
     <StyledMain>
@@ -54,7 +55,7 @@ const Home: React.FC = () => (
       </nav>
     </StyledMain>
     <Footer />
-  </>
+  </Page>
 );
 
 export default Home;
