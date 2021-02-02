@@ -70,33 +70,31 @@ In this lesson, you will:
 
 ## Course Outline
 
-<ol>
-  <Row>
-    <Column>
-      <li>Intro to HTML</li>
-      <li>Intro to CSS</li>
-      <li>Intro to Layout</li>
-      <li>Flexbox</li>
-      <li>Flexbox and lab</li>
-      <li>Fonts, Layout Lab</li>
-      <li>Responsive Design</li>
-      <li>Positioning</li>
-      <li>Intro to Programming</li>
-      <li>Intro to JS</li>
-    </Column>
-    <Column>
-      <li>JS Practical</li>
-      <li>JS and CSS Animations</li>
-      <li>JS Logic</li>
-      <li>JS Arrays and Loops</li>
-      <li>Forms and Data</li>
-      <li>Working with APIs</li>
-      <li>Front-end Frameworks</li>
-      <li>Github and other Dev Tools</li>
-      <li>Final Project Lab</li>
-      <li>Final Project Presentation</li>
-    </Column>
-  </Row>
+<ol class="row">
+  <div>
+    <li>Intro to HTML</li>
+    <li>Intro to CSS</li>
+    <li>Intro to Layout</li>
+    <li>Flexbox</li>
+    <li>Flexbox and lab</li>
+    <li>Fonts, Layout Lab</li>
+    <li>Responsive Design</li>
+    <li>Positioning</li>
+    <li>Intro to Programming</li>
+    <li>Intro to JS</li>
+  </div>
+  <div>
+    <li>JS Practical</li>
+    <li>JS and CSS Animations</li>
+    <li>JS Logic</li>
+    <li>JS Arrays and Loops</li>
+    <li>Forms and Data</li>
+    <li>Working with APIs</li>
+    <li>Front-end Frameworks</li>
+    <li>Github and other Dev Tools</li>
+    <li>Final Project Lab</li>
+    <li>Final Project Presentation</li>
+  </div>
 </ol>
 
 > Homework weeks 1-6
@@ -136,16 +134,16 @@ In this lesson, you will:
 
 ## How the Web Works?
 
-<Row>
-  <Column>
+<div class="row">
+  <div>
     <picture>
       <img
         src="https://mdn.mozillademos.org/files/13839/Web%20Application%20with%20HTML%20and%20Steps.png"
         alt="Request and response cycle"
       />
     </picture>
-  </Column>
-  <Column>
+  </div>
+  <div>
     <ol>
       <li>Browser send a HTTP request to the server</li>
       <li>
@@ -160,20 +158,20 @@ In this lesson, you will:
       <li>Sends back a response containing the generated HTML</li>
       <li>Browser read response and re render</li>
     </ol>
-  </Column>
-</Row>
+  </div>
+</div>
 
 ---
 
-# Tell the difference...
+## Tell the difference...
 
 Please, tell us the difference between:
 
-## Frontend vs Backend
+### Frontend vs Backend
 
 ---
 
-# Frontend vs. Backend
+## Frontend vs. Backend
 
 The development process can be broken into two areas:
 
@@ -193,114 +191,103 @@ The development process can be broken into two areas:
 
 ---
 
-# Tell the difference...
+## Tell the difference...
 
 Please, tell us the difference between:
 
-## Website vs Webpage vs Web server
+### Website vs Webpage vs Web server
 
 ---
 
-# The 3 Layers of the Web
+## The 3 Layers of the Web
 
-![](https://mdn.mozillademos.org/files/13502/cake.png)
+<div class="row">
+  <div>
+    <picture>
+      <img src="https://mdn.mozillademos.org/files/13502/cake.png" alt="3 layers of the web">
+    </picture>
+  </div>
+  <div>
+    <ul>
+      <li>HTML is the markup language that we use to structure and give meaning to our web content.</li>
+      <li>CSS is a language of style rules that we use to apply styling to our HTML content.</li>
+      <li>JavaScript is a scripting language that enables you to manipulate dynamically content and style.</li>
+    </ul>
+  </div>
+</div>
 
 ---
 
-# The 3 Layers of the Web
-
-- **HTML** is the markup language that we use to structure and give meaning to our web content.
-- **CSS** is a language of style rules that we use to apply styling to our HTML content.
-- **JavaScript** is a scripting language that enables you to manipulate dynamically content and style.
-
----
-
-# Intro to HTML
+## Intro to HTML
 
 **HTML** _(Hypertext Markup Language)_ is not a programming language; it is a markup language used to tell your browser how to structure the web pages you visit.
 
----
-
-# Intro to HTML
-
 `My cat is very grumpy`
 
-<CodePane>
-  {`
+```html
 <p>My cat is very grumpy</p>
-`}
-</CodePane>
+```
 
 ---
 
-# Anatomy of an HTML element
+## Anatomy of an HTML element
 
 ![](https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png)
 
 ---
 
-# Nesting elements
+## Nesting elements
 
-## What is the difference?
+### What is the difference?
 
-<CodePane>
-  {`
+```html
 <p>My cat is <strong>very</strong> grumpy.</p>
-`}
-</CodePane>
+```
 
-### between
+#### between
 
-<CodePane>
-{`
+```html
 <p>My cat is <strong>very grumpy.</p></strong>
-`}
-
-</CodePane>
+```
 
 ---
 
-# Nesting elements
+## Nesting elements
 
-## Good:
+### Good:
 
-<CodePane>
-  {`
+```html
 <p>My cat is <strong>very</strong> grumpy.</p>
-`}
-</CodePane>
+```
 
-## ~~Bad~~:
+### ~~Bad~~:
 
-<CodePane>
-  {`
+```html
 <p>My cat is <strong>very grumpy.</p></strong>
-`}
-</CodePane>
+```
+
 ---
 
-# Block versus inline elements
+## Block versus inline elements
 
 There are two important categories of elements in HTML which you should know about. They are **block-level** elements and **inline** elements.
 
 ---
 
-# Block
+## Block
 
 - They will appear on a new line from whatever content went before it, and any content that goes after it will also appear on a new line.
 - Tend to be structural elements on the page that represent, for example, paragraphs, lists, navigation menus, footers, etc.
 - A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.
 
-<CodePane>
-  {`
+```html
 <p>Paragraph</p>
 <nav>
   <ul>
     <li>list item</li>
   </ul>
 </nav>
-`}
-</CodePane>
+```
 
 ---
 
@@ -310,53 +297,47 @@ There are two important categories of elements in HTML which you should know abo
 - Will not cause a new line to appear in the document; they would normally appear inside a paragraph of text.
 - For example an `<a>` element (hyperlink) or emphasis elements such as `<em>` or `<strong>`.
 
-<CodePane>
-  {`
+```html
 <p>
   Here is a link to <a href="www.ga.co">General Assembly</a>. Here is an
   <em>emphasis</em>. and here is a <span>common wrapper</span>
 </p>
-`}
-</CodePane>
+```
 
 ---
 
-# Empty elements
+## Empty elements
 
 Are self closing elements
 
-<CodePane>
-  {`
+```html
 <img
   src="https://api.peteroftheday.com/random"
   alt="A random Picture of Peter Martin"
 />
 <hr />
 <input type="color" id="color" />
-`}
-</CodePane>
+```
 
 ---
 
-# HTML text fundamentals
+## HTML text fundamentals
 
-## Headings and Paragraphs
+### Headings and Paragraphs
 
-<CodePane>
-  {`
+```html
 <p>I am a paragraph, oh yes I am.</p>
 <h1>I am the title of the story.</h1>
-`}
-</CodePane>
+```
 
 ---
 
-# HTML text fundamentals
+## HTML text fundamentals
 
-## Implementing structural hierarchy
+### Implementing structural hierarchy
 
-<CodePane>
-{`<h1>Star Wars</h1>
+```html
+<h1>Star Wars</h1>
 <p>By George Lucas</p>
 
 <h2>Episode IV: A New Hope</h2>
@@ -368,49 +349,48 @@ Are self closing elements
 <p>
   A Star Destroyer moves through space, releasing Imperial probe robots from its
   underside.
-</p>`}
-</CodePane>
+</p>
+```
 
 ---
 
-# HTML text fundamentals
+## HTML text fundamentals
 
-## Why do we need semantics?
+### Why do we need semantics?
 
-<CodePane>
-  {`<h1>This is a top level heading</h1>
+```html
+<h1>This is a top level heading</h1>
 <span style="font-size: 32px; margin: 21px 0;">
   Is this a top level heading?
-</span>`}
-</CodePane>
+</span>
+```
 
 ---
 
-# HTML text fundamentals
+## HTML text fundamentals
 
-## Lists
+### Lists
 
-### Unordered
+#### Unordered
 
-<CodePane>
-  {`<ul>
+```html
+<ul>
   <li>milk</li>
   <li>eggs</li>
   <li>bread</li>
   <li>hummus</li>
-</ul>`}
-</CodePane>
+</ul>
+```
 
 ---
 
-# HTML text fundamentals
+## HTML text fundamentals
 
-## Lists
+### Lists
 
-### Ordered
+#### Ordered
 
-<CodePane>
-  {`
+```html
 <ol>
   <li>Drive to the end of the road</li>
   <li>Turn right</li>
@@ -418,15 +398,10 @@ Are self closing elements
   <li>Turn left at the third roundabout</li>
   <li>The school is on your right, 300 meters up the road</li>
 </ol>
-`}
-</CodePane>
+```
 
 ---
 
-# Code along
+## Code along
 
 ## [Press release exercise](https://raw.githubusercontent.com/pataruco/ga-fewd-assets/master/press-release/starter/press-release.txt)
-
----
-
-<FrontPage title="End of presentation" />
