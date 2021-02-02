@@ -133,8 +133,8 @@
     background-size: 12.5%;
     color: var(--white);
     position: relative;
-
     height: 100%;
+
     p {
       position: absolute;
       top: 1rem;
@@ -146,7 +146,8 @@
     }
 
     div {
-      align-items: stretch;
+      max-width: 66.66%;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       height: 100%;
