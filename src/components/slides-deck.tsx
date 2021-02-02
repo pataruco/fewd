@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import '../styles/slide-index.scss';
 
 const { PUBLIC_URL } = process.env;
 

@@ -40,6 +40,7 @@
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
     "mdx.macro": "^0.2.9",
+    "node-sass": "4.14.1",
     "prettier": "^2.2.1",
     "react-snap": "^1.23.0",
     "spectacle-mdx-loader": "^0.1.1"
