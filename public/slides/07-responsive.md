@@ -1,5 +1,5 @@
 class: frontpage
-<a href="/week-4">back to week 3</a>
+<a href="/week-4">back to week 4</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -306,7 +306,7 @@ Here are some tools to help:
 ---
 
 class: frontpage
-<a href="/week-4">back to week 3</a>
+<a href="/week-4">back to week 4</a>
 
 <div>
   <h2>Front-End Web Development</h2>
