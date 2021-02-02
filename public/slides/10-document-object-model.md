@@ -76,6 +76,8 @@ The document is an object and has a method for finding elements within it. Those
 
 A DOM tree is a kind of tree whose nodes represent an HTML document contents. Each HTML document has a unique DOM tree representation. For example, the following document:
 
+.row[
+
 ```html
 <html>
   <head>
@@ -88,9 +90,17 @@ A DOM tree is a kind of tree whose nodes represent an HTML document contents. Ea
 </html>
 ```
 
+<div>
+
 Has a DOM tree that looks like this:
 
-![DOM tree](https://media.prod.mdn.mozit.cloud/attachments/2020/01/29/17084/3d1185f6bd10a5e25fe475a50ebca710/dom-string.png)
+  <picture>
+    <img src="https://media.prod.mdn.mozit.cloud/attachments/2020/01/29/17084/3d1185f6bd10a5e25fe475a50ebca710/dom-string.png" alt="DOM tree">
+  </picture>
+
+</div>
+
+]
 
 ---
 
