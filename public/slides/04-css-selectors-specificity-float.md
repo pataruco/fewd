@@ -1,8 +1,13 @@
-# 04 CSS Selectors, Specificity & Floats
+class: frontpage
+<a href="/week-2">back to week 2</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>CSS Selectors, Specificity & Floats</h1>
+</div>
 
 ---
-
-<BackgroundChange />
 
 # Agenda
 
@@ -12,8 +17,6 @@
 - Lab
 
 ---
-
-<BackgroundChange />
 
 ## Selectors
 
@@ -31,8 +34,6 @@ header a {}`}
 </CodePane>
 
 ---
-
-<BackgroundChange />
 
 ## Simple selectors
 
@@ -60,8 +61,6 @@ Selects all elements that have the given class attribute.
 
 ---
 
-<BackgroundChange />
-
 ## Simple selectors
 
 ### ID `#name`
@@ -86,8 +85,6 @@ Selects all elements
 
 ---
 
-<BackgroundChange />
-
 ## Simple selectors
 
 ### Attribute `[key="value"]`
@@ -101,8 +98,6 @@ Selects elements based on the value of the given attribute.
 </CodePane>
 
 ---
-
-<BackgroundChange />
 
 ## Combinators
 
@@ -128,8 +123,6 @@ Selects siblings
 
 ---
 
-<BackgroundChange />
-
 ## Combinators
 
 ### `>`
@@ -154,8 +147,6 @@ Selects nodes that are descendants of the first element.
 
 ---
 
-<BackgroundChange />
-
 ## Pseudo classes
 
 Other selectors include pseudo selectors for styling state. A classic example is the `:hover` state when mousing over links or the `:focus` state when filling in a form.
@@ -179,8 +170,6 @@ input:focus {
 
 ---
 
-<BackgroundChange />
-
 ## Pseudo elements
 
 Is keyword added to a selector that lets you style a specific part of the selected element(s)
@@ -197,8 +186,6 @@ p::first-line {
 
 ---
 
-<BackgroundChange />
-
 ## Class vs Id
 
 [CodePen](https://codepen.io/pataruco/pen/Pdqrqw)
@@ -210,8 +197,6 @@ p::first-line {
 - **Don't use** ~~`id`~~ for adding styling to elements.
 
 ---
-
-<BackgroundChange />
 
 ## Specificity
 
@@ -239,8 +224,6 @@ Avoid using this because it's a very heavy-handed.
 
 ---
 
-<BackgroundChange />
-
 ## Specificity
 
 We calculate a selectors specificity by counting the number of inline styles, ids, classes and element selectors.
@@ -265,8 +248,6 @@ header div h1 {
 
 ---
 
-<BackgroundChange />
-
 ## Specificity
 
 | Selector                                                       | style | Id  | Classes & attributes | Elements | Total specificity |
@@ -279,8 +260,6 @@ header div h1 {
 
 ---
 
-<BackgroundChange />
-
 ## Source order
 
 If two selectors have the same level of importance and specificity, the one that comes later will win.
@@ -291,8 +270,6 @@ header .title { color: red; } /* Wins !!*/`}
 </CodePane>
 
 ---
-
-<BackgroundChange />
 
 ## Floats
 
@@ -309,8 +286,6 @@ To enable two `block` elements to site next to each other, to create multi-colum
 This is because `block` elements normally stack vertically and `inline` elements don't respond to layout properties like `width` and `height`.
 
 ---
-
-<BackgroundChange />
 
 ## Floats
 
@@ -342,8 +317,6 @@ We can clear to the `left`, `right`, or `both` sides. Which will clear the affec
 
 ---
 
-<BackgroundChange />
-
 ## Floats layout
 
 Back in the day `floats` were the only way to introduce columns, but because a container with floats elements loose their height we need to clear that effect inmmediatly
@@ -363,23 +336,17 @@ Back in the day `floats` were the only way to introduce columns, but because a c
 
 ---
 
-<BackgroundChange />
-
 ## Floats layout
 
 [CodePen](https://codepen.io/pataruco/pen/NLGKrV?editors=1100)
 
 ---
 
-<BackgroundChange />
-
 ## Lab
 
 [CSS Diner](https://flukeout.github.io/)
 
 ---
-
-<BackgroundChange />
 
 ## Homework
 

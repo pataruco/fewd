@@ -13,7 +13,7 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
     remark.create({
       sourceUrl: `${PUBLIC_URL}/slides/${slidesDeckName}.md`,
       count: false,
-      highlightLines: true,
+      highlightLines: false,
       highlightSpans: true,
       highlightStyle: 'atom-one-dark',
       navigation: {
