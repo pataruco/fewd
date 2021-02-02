@@ -1,11 +1,7 @@
 .remark-container {
-  * {
-    box-sizing: border-box;
-  }
-
   html {
     overflow-y: scroll;
-    text-size-adjust: 100%;
+    // text-size-adjust: 100%;
   }
 
   body {
@@ -23,14 +19,14 @@
   h3,
   h4,
   h5 {
-    font-family: var(--ga-sans-serif);
-    text-transform: uppercase;
+    font-family: var(--sans-serif);
     margin-top: 0;
   }
 
   a {
-    color: var(--ga-red);
-    text-decoration: underline;
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 2px solid var(--ga-red);
   }
 
   img {
