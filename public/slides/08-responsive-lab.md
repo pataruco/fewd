@@ -4,7 +4,7 @@ class: frontpage
 <div>
   <h2>Front-End Web Development</h2>
   <hr/>
-  <h1>07 Responsive <wbr/>lab 🧪</h1>
+  <h1>08 Responsive <wbr/>lab 🧪</h1>
 </div>
 
 ---

@@ -4,7 +4,7 @@ class: frontpage
 <div>
   <h2>Front-End Web Development</h2>
   <hr/>
-  <h1>Box model</h1>
+  <h1>03 Box model</h1>
 </div>
 
 ---

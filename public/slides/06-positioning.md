@@ -4,7 +4,7 @@ class: frontpage
 <div>
   <h2>Front-End Web Development</h2>
   <hr/>
-  <h1>Positioning</h1>
+  <h1>06 Positioning</h1>
 </div>
 
 ---

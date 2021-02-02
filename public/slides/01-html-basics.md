@@ -4,7 +4,7 @@ class: frontpage
 <div>
   <h2>Front-End Web Development</h2>
   <hr/>
-  <h1>Orientation and introduction to HTML</h1>
+  <h1>01 Orientation and introduction to HTML</h1>
 </div>
 
 ---

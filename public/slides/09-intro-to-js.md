@@ -4,7 +4,7 @@ class: frontpage
 <div>
   <h2>Front-End Web Development</h2>
   <hr/>
-  <h1>Intro to JavaScript</h1>
+  <h1>09 Intro to JavaScript</h1>
 </div>
 
 ---

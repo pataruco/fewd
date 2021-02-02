@@ -4,7 +4,7 @@ class: frontpage
 <div>
   <h2>Front-End Web Development</h2>
   <hr/>
-  <h1>CSS Selectors, Specificity & Floats</h1>
+  <h1>04 CSS Selectors, Specificity & Floats</h1>
 </div>
 
 ---
