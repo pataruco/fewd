@@ -23,6 +23,10 @@ a {
     color: var(--ga-red);
   }
 
+  &:visited {
+    color: rgba(33, 33, 33, 0.75);
+  }
+
   &:focus,
   &:active {
     color: var(--black);

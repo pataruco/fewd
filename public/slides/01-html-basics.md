@@ -1,3 +1,14 @@
+class: frontpage
+<a href="/week-1">back to week 1</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>Orientation and introduction to HTML</h1>
+</div>
+
+---
+
 ## Learning Objectives
 
 In this lesson, you will:
@@ -405,3 +416,14 @@ Are self closing elements
 ## Code along
 
 ## [Press release exercise](https://raw.githubusercontent.com/pataruco/ga-fewd-assets/master/press-release/starter/press-release.txt)
+
+---
+
+class: frontpage
+<a href="/week-1">back to week 1</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>End of presentation</h1>
+</div>
