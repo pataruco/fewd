@@ -35,6 +35,7 @@ const StyledHeader = styled.header`
   ul a {
     color: white;
     text-decoration: none;
+    border-bottom: none;
     &:hover {
       border-bottom: 2px solid red;
     }
@@ -102,7 +103,9 @@ const Header: React.FC = () => {
   return (
     <StyledHeader>
       <picture>
-        <GALogoTextWhite />
+        <Link to="/">
+          <GALogoTextWhite />
+        </Link>
       </picture>
       <nav>
         <ul>

@@ -4,7 +4,7 @@
 
 body {
   font-size: 100%;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: var(--sans-serif);
 }
 
 img,
@@ -12,4 +12,26 @@ svg {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 2px solid var(--ga-red);
+  padding-bottom: 0.1em;
+
+  &:hover {
+    color: var(--ga-red);
+  }
+
+  &:focus,
+  &:active {
+    color: var(--black);
+    border-bottom: 2px solid var(--black);
+  }
+}
+
+p,
+li {
+  line-height: 1.35;
 }

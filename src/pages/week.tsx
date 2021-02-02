@@ -10,14 +10,6 @@ const StyledMain = styled.main`
   li {
     margin-bottom: 0.75rem;
   }
-
-  a {
-    color: black;
-    text-decoration: none;
-    &:hover {
-      border-bottom: 2px solid red;
-    }
-  }
 `;
 
 const Week: React.FC = ({ children }) => (
