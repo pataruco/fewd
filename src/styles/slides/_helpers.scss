@@ -39,33 +39,6 @@
     max-width: 75%;
   }
 
-  .table table {
-    border: 1px solid;
-    border-collapse: collapse;
-  }
-
-  .table table tr:not(:last-child) td,
-  .table table tr th {
-    border-bottom: 1px solid;
-  }
-
-  .table table tr td:not(:last-child),
-  .table table tr th:not(:last-child) {
-    border-right: 1px solid;
-  }
-
-  .table table td,
-  .table table th {
-    padding: 0.5em;
-    text-align: start;
-  }
-
-  .table table th {
-    text-align: center;
-    background-color: var(--black);
-    color: var(--white);
-  }
-
   .row {
     display: flex;
   }

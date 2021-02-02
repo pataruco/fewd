@@ -45,3 +45,30 @@ blockquote {
   padding-left: 1rem;
   font-style: italic;
 }
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+table tr:not(:last-child) td,
+table tr th {
+  border-bottom: 1px solid;
+}
+
+table tr td:not(:last-child),
+table tr th:not(:last-child) {
+  border-right: 1px solid;
+}
+
+table td,
+table th {
+  padding: 0.5em;
+  text-align: start;
+}
+
+table th {
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+}
