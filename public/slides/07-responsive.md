@@ -1,8 +1,13 @@
-# 07 Responsive Web development
+class: frontpage
+<a href="/week-4">back to week 4</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>07 Responsive Web development</h1>
+</div>
 
 ---
-
-<BackgroundChange />
 
 # Agenda
 
@@ -14,8 +19,6 @@
 
 ---
 
-<BackgroundChange />
-
 # Responsive design overview
 
 - Fluid containers
@@ -23,8 +26,6 @@
 - Flexible images
 
 ---
-
-<BackgroundChange />
 
 # Fixed vs responsive
 
@@ -34,8 +35,6 @@ Checkout these **fixed** sites
 - [Ling's Cars](https://www.lingscars.com/)
 
 ---
-
-<BackgroundChange />
 
 # Fixed vs responsive
 
@@ -47,15 +46,11 @@ Checkout these **responsive** sites:
 
 ---
 
-<BackgroundChange />
-
 # Fixed vs responsive
 
 The important takeaway is that a responsive site uses the same codebase to achieve optimised layout across multiple screens.
 
 ---
-
-<BackgroundChange />
 
 # Fixed layout
 
@@ -66,8 +61,6 @@ The important takeaway is that a responsive site uses the same codebase to achie
 
 ---
 
-<BackgroundChange />
-
 # Fluid layout
 
 - Sized in percentages (or relative units)
@@ -76,15 +69,11 @@ The important takeaway is that a responsive site uses the same codebase to achie
 
 ---
 
-<BackgroundChange />
-
 # Relative units
 
 Further to sizing our containers in percentages, we can size other UI components (`font-size`, `margin`, `padding`, etc.) in relative units which cascade and build a system of proportions.
 
 ---
-
-<BackgroundChange />
 
 # Relative units
 
@@ -96,8 +85,6 @@ Common units of measurement for these components are:
 
 ---
 
-<BackgroundChange />
-
 ## `em` vs `rem`
 
 ### `em`
@@ -105,20 +92,19 @@ Common units of measurement for these components are:
 - Sized based on the width of the letter "M"
 - Size is relative to the parent
 
-<CodePane language="css">
-  {`body {
+```css
+body {
   font-size: 16px;
-}\n
+}
+
 h1 {
   font-size: 2em; /*font size is 32px */
-}`}
-</CodePane>
+}
+```
 
 [CodePen](https://codepen.io/pataruco/pen/dxGRjM)
 
 ---
-
-<BackgroundChange />
 
 # `em` vs `rem`
 
@@ -129,8 +115,6 @@ h1 {
 
 ---
 
-<BackgroundChange />
-
 # Media queries
 
 ## Media Types
@@ -138,17 +122,15 @@ h1 {
 The two main media types are `print` and `screen`
 This means we can write CSS for screen devices (laptops, tablets, mobiles) and different CSS for printing a web page out.
 
-<CodePane language="css">
-  {`@media only screen and (max-width: 800px) {
+```css
+@media only screen and (max-width: 800px) {
   /*styles only apply when viewport is up to 800px */
-}`}
-</CodePane>
+}
+```
 
 [Codepen](https://codepen.io/pataruco/pen/bXErem)
 
 ---
-
-<BackgroundChange />
 
 # Media queries
 
@@ -165,41 +147,39 @@ Separate multiple clauses with `and` and negate with `not`
 
 ---
 
-<BackgroundChange />
-
 # Mobile display
 
 To make our Media queries work we need to add this special metatag to the headin our HTML.
 
-<CodePane>{`<meta name="viewport" content="width=device-width, initial-scale=1" />`}</CodePane>
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+```
 
 ---
 
-<BackgroundChange />
-
 # Using media queries
 
-<CodePane language="css" highlightStart={13} highlightEnd={17}>
-  {`.row {
+```css
+.row {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}\n
+}
+
 .column {
   flex-basis: 100%;
   flex-grow: 1;
   flex-shrink: 1;
-}\n
+}
+
 @media screen and (min-width: 600px) {
   .row {
     flex-direction: row;
   }
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 # Media queries
 
@@ -212,8 +192,6 @@ To make our Media queries work we need to add this special metatag to the headin
 
 ---
 
-<BackgroundChange />
-
 # Media queries
 
 ## Desktop first
@@ -225,8 +203,6 @@ To make our Media queries work we need to add this special metatag to the headin
 
 ---
 
-<BackgroundChange />
-
 # Media queries
 
 ## Breakpoints
@@ -235,8 +211,6 @@ When building a responsive site we often have some common breakpoints where we w
 Or small, medium or large screens.
 
 ---
-
-<BackgroundChange />
 
 # Media queries
 
@@ -247,8 +221,6 @@ I tend to use `500px` to approximate mobile and `800px` to approximate tablets a
 
 ---
 
-<BackgroundChange />
-
 # Media queries
 
 ## Tweakpoints
@@ -258,8 +230,6 @@ We call these tweak points and they can take any pixel value to wrangle your lay
 
 ---
 
-<BackgroundChange />
-
 # Media queries
 
 You can either put all of your media queries in one place in your stylesheet (at the bottom to ensure no specificity issues).
@@ -267,30 +237,26 @@ Or you can have multiple `@media` declarations throughout your stylesheet, setti
 
 ---
 
-<BackgroundChange />
-
 # Flexible images
 
 Images have fixed dimensions that can break our fluid layouts.
 
 We can make them flexible by setting `max-width`
 
-<CodePane language="css">
-  {`img {
+```css
+img {
   max-width: 100%;
   display: block;
   height: auto;
-}`}
-</CodePane>
+}
+```
 
 ---
 
-<BackgroundChange />
-
 # Responsive images
 
-<CodePane>
-  {`<img
+```html
+<img
   srcset="
     elva-fairy-320w.jpg 320w,
     elva-fairy-480w.jpg 480w,
@@ -298,41 +264,36 @@ We can make them flexible by setting `max-width`
   "
   src="elva-fairy-800w.jpg"
   alt="Elva dressed as a fairy"
-/>`}
-</CodePane>
+/>
+```
 
 [CodePen](https://codepen.io/pataruco/pen/KOVXNM)
 
 ---
 
-<BackgroundChange />
-
 # Responsive images
 
-<CodePane>
-  {`<img
+```html
+<img
   srcset="elva-fairy-320w.jpg, elva-fairy-480w.jpg 1.5x, elva-fairy-640w.jpg 2x"
   src="elva-fairy-640w.jpg"
   alt="Elva dressed as a fairy"
-/>`}
-</CodePane>
----
+/>
+```
 
-<BackgroundChange />
+---
 
 # Responsive images
 
-<CodePane>
-  {`<picture>
+```html
+<picture>
   <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
   <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
   <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
-</picture>`}
-</CodePane>
+</picture>
+```
 
 ---
-
-<BackgroundChange />
 
 # Tools
 
@@ -344,4 +305,11 @@ Here are some tools to help:
 
 ---
 
-<FrontPage title="End of presentation" />
+class: frontpage
+<a href="/week-4">back to week 4</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>End of presentation</h1>
+</div>

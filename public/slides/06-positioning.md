@@ -1,10 +1,15 @@
-# 06 Positioning
+class: frontpage
+<a href="/week-3">back to week 3</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>06 Positioning</h1>
+</div>
 
 ---
 
-<BackgroundChange />
-
-# Agenda
+## Agenda
 
 - Recap
 - Resets and Boilerplates
@@ -16,8 +21,6 @@
 
 ---
 
-<BackgroundChange />
-
 ## CSS Reset
 
 There are a lot of annoying default styles that are inconsistent across browsers.
@@ -25,22 +28,18 @@ Sometimes we might want to remove them all so we have a blank canvas.
 
 ---
 
-<BackgroundChange />
-
 ## CSS Reset
 
 ### Simple reset
 
-<CodePane language="css">
-  {`* {
+```css
+* {
   margin: 0;
   padding: 0;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## CSS Reset
 
@@ -51,8 +50,6 @@ One approach:
 
 ---
 
-<BackgroundChange />
-
 ## CSS Reset
 
 ### Normalize
@@ -60,8 +57,6 @@ One approach:
 My preference: [https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/)
 
 ---
-
-<BackgroundChange />
 
 ## CSS Float: Part II
 
@@ -71,8 +66,6 @@ My preference: [https://necolas.github.io/normalize.css/](https://necolas.github
 
 ---
 
-<BackgroundChange />
-
 ## Clearfix
 
 When floating elements, the parent container will collapse in height if it only contains floating elements.
@@ -81,32 +74,31 @@ This is because the floating elements have floated out of the container and the 
 
 ---
 
-<BackgroundChange />
-
 ## Clearfix
 
 To work around this, we use the "clearfix" technique which is like putting a wedge in the top of the container and a wedge in the bottom of the container and forcing it open so it can correctly calculate the height.
 
 Add this snippet to your CSS so you can **clearfix** collapsing containers
 
-<CodePane language="css">
-  {`.clearfix:before,
+```css
+.clearfix:before,
 .clearfix:after {
   content: ' ';
   display: table;
-}\n
+}
+
 .clearfix:after {
   clear: both;
-}`}
-</CodePane>
+}
+```
 
 To prevent a container from collapsing we add the clearfix class to the container in the HTML
 
-<CodePane>{`<div class="main-content clearfix">...</div>`}</CodePane>
+```html
+<div class="main-content clearfix">...</div>
+```
 
 ---
-
-<BackgroundChange />
 
 ## Grids
 
@@ -116,16 +108,12 @@ Could we use someting in CSS to standardise this?
 
 ---
 
-<BackgroundChange />
-
 ## Grids
 
 Yes. `class` selectors are perfect for building grids as they can be repeated on many different elements.
 We write a very small amount of CSS which is then reused many times throughout a page and throughout a project.
 
 ---
-
-<BackgroundChange />
 
 ## Grids
 
@@ -135,8 +123,6 @@ We write a very small amount of CSS which is then reused many times throughout a
 
 ---
 
-<BackgroundChange />
-
 ## Grids
 
 `flex`
@@ -144,8 +130,6 @@ We write a very small amount of CSS which is then reused many times throughout a
 [CodePen](https://codepen.io/pataruco/pen/EeyoVE)
 
 ---
-
-<BackgroundChange />
 
 ## Can we build stuff like this?
 
@@ -156,8 +140,6 @@ We write a very small amount of CSS which is then reused many times throughout a
 
 ---
 
-<BackgroundChange />
-
 ## CSS Positioning
 
 - Precise placement of elements
@@ -166,8 +148,6 @@ We write a very small amount of CSS which is then reused many times throughout a
 - Mostly for tackling complex design
 
 ---
-
-<BackgroundChange />
 
 ## CSS position property
 
@@ -184,8 +164,6 @@ CSS `position` can take 1 of 4 values.
 
 ---
 
-<BackgroundChange />
-
 ## `position: relative`
 
 - Move elements `relative` to themselves
@@ -193,8 +171,6 @@ CSS `position` can take 1 of 4 values.
 - Position elements absolutely inside
 
 ---
-
-<BackgroundChange />
 
 ## `position: absolute`
 
@@ -204,8 +180,6 @@ CSS `position` can take 1 of 4 values.
 
 ---
 
-<BackgroundChange />
-
 ## `position: fixed`
 
 - Fix an element in place, regardless of scroll
@@ -213,8 +187,6 @@ CSS `position` can take 1 of 4 values.
 - Position is set relative to the body
 
 ---
-
-<BackgroundChange />
 
 ## `z-index`
 
@@ -224,8 +196,6 @@ CSS `position` can take 1 of 4 values.
 - `z-index` only works for position other than static
 
 ---
-
-<BackgroundChange />
 
 ## Units
 
@@ -240,8 +210,6 @@ It can be divided in:
 
 ---
 
-<BackgroundChange />
-
 ## Font-relative lengths
 
 Font-relative lengths define the **length** value in terms of the size of a particular character or font attribute in the font currently in effect in an element or its parent.
@@ -250,16 +218,12 @@ Note: These units, especially em and rem, are often used to create scalable layo
 
 ---
 
-<BackgroundChange />
-
 ## Font-relative lengths
 
 - `em`: represents the calculated `font-size` of the element. If used on the font-size property itself, it represents the inherited font-size of the element.
 - `rem`: Represents the font-size of the root element (typically `<html>`). When used within the root element font-size, it represents its initial value (a common browser default is 16px, but user-defined preferences may modify this).
 
 ---
-
-<BackgroundChange />
 
 ## Viewport-percentage lengths
 
@@ -269,8 +233,6 @@ Viewport-percentage lengths define the **length** value relative to the size of 
 
 ---
 
-<BackgroundChange />
-
 ## Viewport-percentage lengths
 
 - `vh`: equal to 1% of the height of the viewport's initial containing block.
@@ -278,15 +240,11 @@ Viewport-percentage lengths define the **length** value relative to the size of 
 
 ---
 
-<BackgroundChange />
-
 ## Lab
 
 [Pig Exercise](https://codepen.io/pataruco/pen/rZLvPZ)
 
 ---
-
-<BackgroundChange />
 
 ## Homework
 
@@ -306,8 +264,6 @@ Submit the finished version for homework.
 
 ---
 
-<BackgroundChange />
-
 ## Homework
 
 ### Technical Requirements
@@ -322,8 +278,6 @@ Submit the finished version for homework.
 
 ---
 
-<BackgroundChange />
-
 ## Homework
 
 ### Bonus
@@ -332,8 +286,6 @@ Submit the finished version for homework.
 - Link the "About" link in the header to the you built last week
 
 ---
-
-<BackgroundChange />
 
 ## Homework
 
@@ -344,4 +296,12 @@ Submit the finished version for homework.
 
 ---
 
-<FrontPage title="End of presentation" />
+class: frontpage
+
+<a href="/week-3">back to week 3</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>End of presentation</h1>
+</div>

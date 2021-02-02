@@ -14,7 +14,7 @@ const StyledFooter = styled.footer`
 
     a {
       color: white;
-      text-decoration: none;
+      border-bottom: none;
       &:hover {
         border-bottom: 2px solid red;
       }

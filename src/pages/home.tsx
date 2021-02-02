@@ -25,14 +25,6 @@ const StyledMain = styled.main`
   li {
     margin-bottom: 0.5rem;
   }
-
-  a {
-    color: black;
-    text-decoration: none;
-    &:hover {
-      border-bottom: 2px solid red;
-    }
-  }
 `;
 
 const Home: React.FC = () => (

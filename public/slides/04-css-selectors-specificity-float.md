@@ -1,8 +1,13 @@
-# 04 CSS Selectors, Specificity & Floats
+class: frontpage
+<a href="/week-2">back to week 2</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>04 CSS Selectors, Specificity & Floats</h1>
+</div>
 
 ---
-
-<BackgroundChange />
 
 # Agenda
 
@@ -13,26 +18,25 @@
 
 ---
 
-<BackgroundChange />
-
 ## Selectors
 
 So far we've seen the following type of CSS selectors. They match the HTML elements in your document but are quite limiting when dealing with complex projects.
 
-<CodePane language="css">
-  {`/* element selector */
-p {}\n
+```css
+/* element selector */
+p {
+}
 /* multiple elements selector */
 h1,
 h2,
-h3 {}\n
-/* descendent element selector */ 
-header a {}`}
-</CodePane>
+h3 {
+}
+/* descendent element selector */
+header a {
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Simple selectors
 
@@ -42,25 +46,23 @@ To have more control over the sections of the page to be styled, there are a who
 
 Selects all elements that match the given node name.
 
-<CodePane language="css">
-  {`header {
+```css
+header {
   background-color: pink;
-}`}
-</CodePane>
+}
+```
 
 ### Class `.name`
 
 Selects all elements that have the given class attribute.
 
-<CodePane language="css">
-  {`.column {
+```css
+.column {
   display: flex;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Simple selectors
 
@@ -68,25 +70,23 @@ Selects all elements that have the given class attribute.
 
 Selects an element based on the value of its id attribute. _There should be only one element with a given ID in a document_
 
-<CodePane language="css">
-  {`#hamburguer {
+```css
+#hamburguer {
   position: absolute;
-}`}
-</CodePane>
+}
+```
 
 ### Universal `*`
 
 Selects all elements
 
-<CodePane language="css">
-  {`* {
+```css
+* {
   box-sizing: border-box;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Simple selectors
 
@@ -94,15 +94,13 @@ Selects all elements
 
 Selects elements based on the value of the given attribute.
 
-<CodePane language="css">
-  {`input[type="email"] {
+```css
+input[type='email'] {
   border: none;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Combinators
 
@@ -110,25 +108,23 @@ Selects elements based on the value of the given attribute.
 
 Selects adjacent siblings
 
-<CodePane language="css">
-  {`input[type="email"] {
+```css
+input[type='email'] {
   border: none;
-}`}
-</CodePane>
+}
+```
 
 ### `~`
 
 Selects siblings
 
-<CodePane language="css">
-  {`section ~ article {
+```css
+section ~ article {
   font-family: max-width: 1280px;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Combinators
 
@@ -136,68 +132,62 @@ Selects siblings
 
 Selects nodes that are direct children of the first element
 
-<CodePane language="css">
-  {`ul > li {
+```css
+ul > li {
   border-bottom: none;
-}`}
-</CodePane>
+}
+```
 
 ### (space)
 
 Selects nodes that are descendants of the first element.
 
-<CodePane language="css">
-  {`.menu-open nav {
+```css
+.menu-open nav {
   display: none;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Pseudo classes
 
 Other selectors include pseudo selectors for styling state. A classic example is the `:hover` state when mousing over links or the `:focus` state when filling in a form.
 
-<CodePane language="css">
-  {`a {
+```css
+a {
   color: red;
-}\n
+}
 a:hover {
   color: blue;
-}\n
+}
 input {
   background: #fff;
-}\n
+}
 input:focus {
   background: #eee;
-}`}
-</CodePane>
+}
+```
 
 [MDN Index of pseudo classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#Index_of_standard_pseudo-classes)
 
 ---
 
-<BackgroundChange />
-
 ## Pseudo elements
 
 Is keyword added to a selector that lets you style a specific part of the selected element(s)
 
-<CodePane language="css">
-  {`/* The first line of every <p> element. */
+```css
+/* The first line of every <p> element. */
 p::first-line {
   color: blue;
   text-transform: uppercase;
-}`}
-</CodePane>
+}
+```
 
 [MDN Index of pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#Index_of_standard_pseudo-elements)
 
 ---
-
-<BackgroundChange />
 
 ## Class vs Id
 
@@ -210,8 +200,6 @@ p::first-line {
 - **Don't use** ~~`id`~~ for adding styling to elements.
 
 ---
-
-<BackgroundChange />
 
 ## Specificity
 
@@ -228,18 +216,17 @@ The styles that "win" and will be rendered in the browser are determined by 3 ma
 CSS declarations with `!important` beat everything.
 Avoid using this because it's a very heavy-handed.
 
-<CodePane language="css">
-  {`h1 {
+```css
+h1 {
   color: white !important; /*wins*/
-}\n
+}
+
 #main-title {
   color: red;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Specificity
 
@@ -254,18 +241,17 @@ This produces a 4 digit number called the **specifcity value**.
 
 1 `element` and 1 `id` beats 3 `elements`
 
-<CodePane language="css">
-  {`header #main-title {
+```css
+header #main-title {
   color: red; /* 0101 wins */
 }
+
 header div h1 {
   color: white; /* 0003 */
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Specificity
 
@@ -279,20 +265,21 @@ header div h1 {
 
 ---
 
-<BackgroundChange />
-
 ## Source order
 
 If two selectors have the same level of importance and specificity, the one that comes later will win.
 
-<CodePane language="css">
-  {`header .title { color: black; }
-header .title { color: red; } /* Wins !!*/`}
-</CodePane>
+```css
+header .title {
+  color: black;
+}
+
+header .title {
+  color: red; /* Wins !!*/
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Floats
 
@@ -310,39 +297,43 @@ This is because `block` elements normally stack vertically and `inline` elements
 
 ---
 
-<BackgroundChange />
-
 ## Floats
 
 An element can be floated to the `left` or the `right` side of its container.
 
-<CodePane language="css">
-  {`header .title { color: black; }
+```css
+header .title {
+  color: black;
+}
+
 head.main-content {
   width: 500px;
   float: left;
 }
+
 .sidebar {
   width: 300px;
   float: right;
-}`}
-</CodePane>
+}
+```
+
+---
+
+## Floats
 
 When elements float, surrounding elements try to flow around them which can cause some weird knock-on effects.
 
 To get the layout back on track, we can `clear` the floats and bring everything back to normal.
 
-<CodePane language="css">
-  {`.footer {
+```css
+.footer {
   clear: both;
-}`}
-</CodePane>
+}
+```
 
 We can clear to the `left`, `right`, or `both` sides. Which will clear the affect of elements floating to the left, right or both left and right.
 
 ---
-
-<BackgroundChange />
 
 ## Floats layout
 
@@ -350,20 +341,18 @@ Back in the day `floats` were the only way to introduce columns, but because a c
 
 ### [Clearfix hack](http://nicolasgallagher.com/micro-clearfix-hack/)
 
-<CodePane language="css">
-  {`.cf:before,
+```css
+.cf:before,
 .cf:after {
-  content: ' '; 
-  display: table; 
-}\n
+  content: ' ';
+  display: table;
+}
 .cf:after {
   clear: both;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Floats layout
 
@@ -371,15 +360,11 @@ Back in the day `floats` were the only way to introduce columns, but because a c
 
 ---
 
-<BackgroundChange />
-
 ## Lab
 
 [CSS Diner](https://flukeout.github.io/)
 
 ---
-
-<BackgroundChange />
 
 ## Homework
 
@@ -389,4 +374,12 @@ Back in the day `floats` were the only way to introduce columns, but because a c
 
 ---
 
-<FrontPage title="End of presentation" />
+class: frontpage
+
+<a href="/week-2">back to week 2</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>End of presentation</h1>
+</div>

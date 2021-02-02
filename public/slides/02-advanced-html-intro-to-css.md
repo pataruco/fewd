@@ -1,4 +1,11 @@
-# Advanced HTML & Intro to CSS
+class: frontpage
+<a href="/week-1">back to week 1</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>02 Advanced HTML & Intro to CSS</h1>
+</div>
 
 ---
 
@@ -25,31 +32,20 @@
 
 We can differentiate between an **absolute** URL and a **relative** URL by looking only at the path part of the URL.
 
-<CodePane language="javascript">
-  {`
+```javascript
 './i-am-relative-path/filename.txt';
-// From my current position get to a directory and then get the file    
-    `}
-</CodePane>
+// From my current position get to a directory and then get the file
 
-<br />
-
-<CodePane language="javascript">
-  {`
 '../i-am-also-a-relative-path/filename.txt';
 // From my current position go up to my parent directory and
 // then to another directory and the get the file
-`}
 
-</CodePane>
+```
 
-<br />
-
-<CodePane language="javascript">
-  {`
+```javascript
 'https://www.ga.com'; // I am an absolute path
-  `}
-</CodePane>
+
+```
 
 ---
 
@@ -57,7 +53,9 @@ We can differentiate between an **absolute** URL and a **relative** URL by looki
 
 Images are placed using the `<img>` tag.
 
-<CodePane>{`<img src="img/image-name.jpg" alt="alternative text" />`}</CodePane>
+```html
+<img src="img/image-name.jpg" alt="alternative text" />
+```
 
 - The `img` tag requires a `src` attribute, which tells the browser where to find the image.
 - The `src` points to a resource a bit like the `href` of an `<a>` tag.
@@ -70,15 +68,21 @@ Images are placed using the `<img>` tag.
 
 - Inside webroot, a relative path could be used:
 
-<CodePane>{`<img src="images/logo.png" />`}</CodePane>
+```html
+<img src="images/logo.png" />
+```
 
 - Relative path
 
-<CodePane>{`<img src="../images/logo.png" />`}</CodePane>
+```html
+<img src="../images/logo.png" />
+```
 
 - Absolute Path
 
-<CodePane>{`<img src="https://api.peteroftheday.com/random" />`}</CodePane>
+```html
+<img src="https://api.peteroftheday.com/random" />
+```
 
 ---
 
@@ -86,14 +90,12 @@ Images are placed using the `<img>` tag.
 
 `alt` attribute provides a text description of the image
 
-<CodePane>
-  {`
+```html
 <img
   src="https://api.peteroftheday.com/random"
-  alt="A random picture of Peter Martin"  
+  alt="A random picture of Peter Martin"
 />
-  `}
-</CodePane>
+```
 
 ---
 
@@ -143,8 +145,7 @@ Images are placed using the `<img>` tag.
 
 ## What is the HTML head?
 
-<CodePane highlightStart={4} highlightEnd={7}>
-  {`
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -155,8 +156,7 @@ Images are placed using the `<img>` tag.
     <p>This is my page</p>
   </body>
 </html>
-  `}
-</CodePane>
+```
 
 ---
 
@@ -164,46 +164,49 @@ Images are placed using the `<img>` tag.
 
 ### Metadata
 
-<CodePane highlightStart={3} highlightEnd={5}>
-  {`
+```html
 <head>
   <meta charset="utf-8" />
   <meta name="author" content="Pedro Martin" />
   <meta name="description" content="A Lesson about HTMLs" />
 </head>
-`}
-</CodePane>
+```
 
 ---
 
 ## Applying CSS and JavaScript to HTML
 
-<CodePane>{`<link rel="stylesheet" href="my-css-file.css" />`}</CodePane>
-<br />
-<CodePane>{`<script src="my-js-file.js"></script>`}</CodePane>
+```html
+<link rel="stylesheet" href="my-css-file.css" />
+```
+
+```html
+<script src="my-js-file.js"></script>
+```
 
 ---
 
 ## Setting the primary language of the document
 
-<CodePane>{`<html lang="en-GB"></html>`}</CodePane>
+```html
+<html lang="en-GB"></html>
+```
 
 ---
 
 ## Creating links
 
-<CodePane>
-  {`
+```html
 <p>
   I'm creating a link to
   <a
     href="https://en.wikipedia.org/wiki/Star_Wars"
     title="Star Wars Wikipedia page"
   >
-    Star Wars Wikipedia page </a>.
+    Star Wars Wikipedia page </a
+  >.
 </p>
-  `}
-</CodePane>
+```
 
 ---
 
@@ -211,15 +214,13 @@ Images are placed using the `<img>` tag.
 
 ### Relative links
 
-<CodePane>
-  {`
+```html
 <h2 id="Mailing_address">Mailing address</h2>
 <p>
   Want to write us a letter? Use our
   <a href="contacts.html#Mailing_address">mailing address</a>.
 </p>
-  `}
-</CodePane>
+```
 
 ---
 
@@ -227,43 +228,27 @@ Images are placed using the `<img>` tag.
 
 ### Email links
 
-<CodePane>
-  {`
+```html
 <p>
-  <a href="mailto:mail@example.com">
-    Send an email
-  </a>
+  <a href="mailto:mail@example.com"> Send an email </a>
 </p>
-  `}
-</CodePane>
+```
 
 ---
 
 # Document and website structure
 
-<CodePane>
-  {`
+```html
 <body>
-  <header>
-    ...
-  </header>
-  <nav>
-    ...
-  </nav>
+  <header>...</header>
+  <nav>...</nav>
   <main>
-    <article>
-      ...
-    </article>
-    <aside>
-      ...
-    </aside>
+    <article>...</article>
+    <aside>...</aside>
   </main>
-  <footer>
-    ...
-  </footer>
+  <footer>...</footer>
 </body>
-  `}
-</CodePane>
+```
 
 ---
 
@@ -280,26 +265,24 @@ Web browsers apply CSS rules to a document to affect how they are displayed. A C
 
 ## How it looks?
 
-<CodePane>
-  {`
+```html
 <h1>Hello World!</h1>
 <p>This is my first CSS example</p>
-`}
-</CodePane>
+```
 
-<br />
-
-<CodePane language="css">
-  {`
+```css
 h1 {
   color: blue;
   background-color: yellow;
   border: 1px solid black;
 }
-`}
-</CodePane>
+```
 
-<CodePane language="css">{`p { color: red }`}</CodePane>
+```css
+p {
+  color: red;
+}
+```
 
 ---
 
@@ -309,31 +292,31 @@ h1 {
 
 ---
 
-# How does CSS actually work?
+## How does CSS actually work?
 
-## About the DOM
+### About the DOM Document Object Model (**DOM**) represents the
 
 Document Object Model (**DOM**) represents the document in the computer's memory. It combines the document's content with its style.
 
-A DOM has a tree-like structure. Each element, attribute and piece of text in the markup language becomes a DOM node in the tree structure. The nodes are defined by their relationship to other DOM nodes. Some elements are parents of child nodes, and child nodes have siblings.
+A DOM has a tree-like structure. Each element, attribute and piece of
+text in the markup language becomes a DOM node in the tree structure. The
+nodes are defined by their relationship to other DOM nodes. Some elements are
+parents of child nodes, and child nodes have siblings.
 
 ---
 
 ## How does CSS actually work?
 
-<CodePane>
-  {`
+```html
 <p>
   Let's use:
   <span>Cascading</span>
   <span>Style</span>
   <span>Sheets</span>
 </p>
-`}
-</CodePane>
-<br />
-<CodePane language="text">
-  {`
+```
+
+```txt
 P
 ├─ "Let's use:"
 ├─ SPAN
@@ -342,8 +325,7 @@ P
 |  └─ "Style"
 └─ SPAN
    └─ "Sheets"
-`}
-</CodePane>
+```
 
 ---
 
@@ -351,46 +333,29 @@ P
 
 Using a `link` tag with a reference to a CSS file
 
-<CodePane>
-  {`
+```html
 <head>
   ...
   <link rel="stylesheet" href="style.css" />
   ...
 </head>
-`}
-</CodePane>
+```
 
 ---
 
 ## How to apply your CSS to your HTML
 
-Using a `link` tag on the `head`
+Using a `style` tag
 
-<CodePane>
-  {`
+```html
 <head>
-  ...
-  <link rel="stylesheet" href="style.css" />
-  ...
-</head>
-`}
-</CodePane>
-
----
-
-## How to apply your CSS to your HTML
-
-Using a `style` tag on the `head`
-
-<CodePane>
-  {`<head>
   <style>
     h1 {
       color: blue;
       background-color: yellow;
       border: 1px solid black;
     }
+
     p {
       color: red;
     }
@@ -400,28 +365,29 @@ Using a `style` tag on the `head`
 <body>
   <h1>Hello World!</h1>
   <p>This is my first CSS example</p>
-</body>`}
-</CodePane>
+</body>
+```
+
 ---
 
 ## How to apply your CSS to your HTML
 
 Using inline styles
 
-<CodePane>
-  {`<body>
+```html
+<body>
   <h1 style="color: blue;background-color: yellow;border: 1px solid black;">
     Hello World!
   </h1>
   <p style="color:red;">This is my first CSS example</p>
-</body>`}
-</CodePane>
+</body>
+```
 
 ---
 
 ## CSS Building blocks
 
-### Declaration
+### Declarations
 
 ![](https://mdn.mozillademos.org/files/3665/css%20syntax%20-%20declaration.png)
 
@@ -445,17 +411,23 @@ Using inline styles
 
 ## CSS values and units
 
-Absolute vs relative
+### Absolute vs relative
 
 [CodePen](https://codepen.io/pataruco/pen/vzEKOO)
 
 ---
 
-## CSS ~~Colours~~ Colors
+## CSS ~~Colours~~
 
-There are many ways to specify color in CSS. The same color values can be used everywhere in CSS, whether you are specifying text color, background color, or whatever else.
+## CSS Colors
 
-The standard color system available in modern computers is 24 bit, which allows the display of about `16.7 million` distinct colors via a combination of different **red**, **green** and **blue** channels with 256 different values per channel
+There are many ways to specify color in CSS. The same color values
+can be used everywhere in CSS, whether you are specifying text color,
+background color, or whatever else.
+
+The standard color system available in modern computers is 24 bit, which allows the display of about `16.7 million`
+distinct colors via a combination of different **red**, **green** and
+**blue** channels with 256 different values per channel
 
 ## 256 x 256 x 256 = 16,777,216
 
@@ -465,11 +437,15 @@ The standard color system available in modern computers is 24 bit, which allows 
 
 ### Keywords
 
-<CodePane>{`<p>This paragraph has a red background</p>`}</CodePane>
-<br />
-<CodePane language="css">
-{`p { background-color: red; }`}
-</CodePane>
+```html
+<p>This paragraph has a red background</p>
+```
+
+```css
+p {
+  background-color: red;
+}
+```
 
 [Full list of color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords)
 
@@ -479,32 +455,23 @@ The standard color system available in modern computers is 24 bit, which allows 
 
 ### Hexadecimal values
 
-Each hex value consists of a hash/pound symbol (#) followed by six hexadecimal numbers, each of which can take a value between 0 and f (which represents 15) — so **0123456789abcdef**.
+Each hex value consists of a hash/pound symbol (#) followed by six hexadecimal numbers, each of which can take a value between 0 and f (which represents 15) — so
+**0123456789abcdef**. Each pair of values represents one of the channels —
+**red**, **green** and **blue** — and allows us to specify any of the 256
+available values for each (16 x 16 = 256.) --- ## CSS Colors ###
+Hexadecimal values
 
-Each pair of values represents one of the channels — **red**, **green** and **blue** — and allows us to specify any of the 256 available values for each (16 x 16 = 256.)
-
----
-
-## CSS Colors
-
-### Hexadecimal values
-
-<CodePane language="css">
-  {`
-/* equivalent to the red keyword */
+```css
 p:nth-child(1) {
-  background-color: #ff0000;
+  background-color: #ff0000; /* equivalent to the red keyword */
 }
-/* equivalent to the blue keyword */
 p:nth-child(2) {
-  background-color: #0000ff;
+  background-color: #0000ff; /* equivalent to the blue keyword */
 }
-/* has no exact keyword equivalent */
 p:nth-child(3) {
-  background-color: #e0b0ff;
-}`}
-
-</CodePane>
+  background-color: #e0b0ff; /* has no exact keyword equivalent */
+}
+```
 
 ---
 
@@ -512,24 +479,22 @@ p:nth-child(3) {
 
 ### RGB
 
-An RGB value is a function `rgb()` which is given three parameters that represent the `red`, `green` and `blue` channel values of the colors, in much the same way as hex values. The difference with RGB is that each channel is represented not by two hex digits, but by a decimal number between **0** and **255**.
+An RGB value is a function `rgb()` which is given three parameters that represent the `red`, `green` and `blue` channel values of the colors, in much the same way as hex values.
 
-<CodePane language="css">
-  {`
-/* equivalent to the red keyword */
+The difference with RGB is that each channel is represented not by two hex
+digits, but by a decimal number between **0** and **255**.
+
+```css
 p:nth-child(1) {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0); /* equivalent to the red keyword */
 }
-/* equivalent to the blue keyword */
 p:nth-child(2) {
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(0, 0, 255); /* equivalent to the blue keyword */
 }
-/* has no exact keyword equivalent */
 p:nth-child(3) {
-  background-color: rgb(224, 176, 255);
+  background-color: rgb(224, 176, 255); /* has no exact keyword equivalent */
 }
-`}
-</CodePane>
+```
 
 ---
 
@@ -539,43 +504,41 @@ p:nth-child(3) {
 
 The `hsl()` function accepts **hue**, **saturation**, and **lightness** values, which are used to distinguish between the 16.7 million colors, but in a different way:
 
-- **Hue**: the base shade of the color. This takes a value between 0 and 360, presenting the angles round a color wheel.
+- **Hue**: the base shade of the color. This takes a value between 0 and
+  360, presenting the angles round a color wheel.
+
 - **Saturation**: how saturated is the color? This takes a value from 0-100%, where 0 is no color (it will appear as a shade of grey), and 100% is full color saturation
 - **Lightness**: how light or bright is the color? This takes a value from 0-100%, where 0 is no light (it will appear completely black) and 100% is full light (it will appear completely white)
 
-<CodePane language="css">
-  {`/* equivalent to the red keyword */
+```css
 p:nth-child(1) {
-  background-color: hsl(0, 100%, 50%);
+  background-color: hsl(0, 100%, 50%); /* equivalent to the red keyword */
 }
-/* equivalent to the blue keyword */
-p:nth-child(2) {
-  background-color: hsl(240, 100%, 50%);
+keyword */ p:nth-child(2) {
+  background-color: hsl(240, 100%, 50%); /* equivalent to the blue */
 }
-/* has no exact keyword equivalent */
+
 p:nth-child(3) {
-  background-color: hsl(276, 100%, 85%);
-}`}
-</CodePane>
+  background-color: hsl(276, 100%, 85%); /* has no exact keyword equivalent */
+}
+```
 
 ---
 
 # CSS Colors
 
-## RGBA and HSLA
+## RGBA
 
-RGB and HSL both have corresponding modes — RGBA and HSLA — that allow you to set not only what color you want to display, but also what transparency you want that color to have.
+and HSLA RGB and HSL both have corresponding modes — RGBA and HSLA — that allow you to set not only what color you want to display, but also what transparency you want that color to have.
 
-<CodePane language="css">
-  {`/* Transparent red */
+```css
 p:nth-child(1) {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.5); /* Transparent red */
 }
-/* Transparent blue */
 p:nth-child(2) {
-  background-color: hsla(240, 100%, 50%, 0.5);
-}`}
-</CodePane>
+  background-color: hsla(240, 100%, 50%, 0.5); /* Transparent blue */
+}
+```
 
 ---
 
@@ -587,15 +550,19 @@ There are numerous things we can style to make text look more interesting and mo
 
 There are lots of CSS properties for styling text but here are some key ones:
 
-<CodePane language="css">
-  {`h1 {
+```css
+h1 {
   font-size: 50px;
   font-family: 'Avenir', 'Arial', sans-serif;
   font-weight: bold;
   font-style: italic;
   line-height: 1.3;
-}`}
-</CodePane>
+}
+```
+
+---
+
+## Font properties
 
 - `font-size` sets the size of the text.
 - `font-family` sets the typeface.
@@ -611,29 +578,39 @@ There are lots of CSS properties for styling text but here are some key ones:
 
 It's very common for a website to have a centered column of content, narrower than the full width of the screen. To achieve this, we wrap a containing element around the content tags that we want to center.
 
+---
+
+## CSS tricks
+
+### Centring the content
+
 A `<div>` tag is ideal for this purpose and is very commonly used to divide up the page into chunks that can be moved around as a single entity.
 
-<CodePane>
-  {`
+```html
 <div>
   <h2>...</h2>
   <p>...</p>
   <p>...</p>
   <blockquote>...</blockquote>
   <p>...</p>
-</div>`}
-</CodePane>
+</div>
+```
+
+---
+
+## CSS tricks
+
+### Centring the content
 
 To center this div of content, we give it a `width` and set auto on its horizontal margins.
 
-<CodePane language="css">
-  {`
+```css
 div {
   width: 800px; /* could be any number or unit*/
   margin-left: auto;
   margin-right: auto;
-}`}
-</CodePane>
+}
+```
 
 ---
 
@@ -643,25 +620,26 @@ div {
 
 To center text­based content (like paragraphs or headings) we can use the `text-align` property.
 
-<CodePane language="css">
-  {`h1 {
+```css
+h1 {
   text-align: center;
-}`}
-</CodePane>
+}
+```
+
 ---
 
-## CSS
+## Let's pull all the pieces together
 
-Let's pull all the pieces together
+### Cookie recipe
+
+#### Instructions
+
+1. Download the starter code zip [file](https://github.com/pataruco/ga-fewd-assets/raw/master/cookie-recipe/cookie-recipe-starter-code.zip)
+2. Open the file **instructions.md** and follow the steps
 
 ---
 
 ## Cookie recipe
-
-### Instructions
-
-1. Download the starter code zip [file](https://github.com/pataruco/ga-fewd-assets/raw/master/cookie-recipe/cookie-recipe-starter-code.zip)
-2. Open the file **instructions.md** and follow the steps
 
 ### CSS
 
@@ -702,7 +680,9 @@ Here are some examples
 - Use at least 6 different HTML tags (`h1`, `h2`, `h3`, `blockquote`, `p`, `ul`, `ol`, `a`, `img`) on your pages
 - Indent nested elements to increase your code's readability
 
-### Bonus
+---
+
+## Bonus
 
 - Experiment by adding additional HTML tags and CSS properties we did not cover in class - explore!
 
@@ -710,11 +690,18 @@ Here are some examples
 
 ## Homework
 
-## Submission
+### Submission
 
 - Create a folder using the following convention `name-surename-week-1`, e.g `pedro-martin-week-1`
 - Submit your work via Google Drive (even it's not finished) by **Sunday** 11:59 PM to the instructors
 
 ---
 
-<FrontPage title="End of presentation" />
+class: frontpage
+<a href="/week-1">back to week 1</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>End of presentation</h1>
+</div>

@@ -1,8 +1,13 @@
-# 05 Flexbox
+class: frontpage
+<a href="/week-3">back to week 3</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>05 Flexbox</h1>
+</div>
 
 ---
-
-<BackgroundChange />
 
 ## Agenda
 
@@ -22,27 +27,21 @@
 
 ---
 
-<BackgroundChange />
-
 ## Let's talk about Space Jam
 
 ![space jam](https://upload.wikimedia.org/wikipedia/en/1/14/Space_jam.jpg)
 
-## [Official website](https://spacejam.com/)
+> [Official website](https://spacejam.com/)
 
 ---
-
-<BackgroundChange />
 
 ## Let's talk about Ling Cars
 
 ![Ling face](https://images.lingscars.com/images/index/ling-face.png)
 
-## [Website](https://www.lingscars.com/)
+> [Website](https://www.lingscars.com/)
 
 ---
-
-<BackgroundChange />
 
 ## What is not?
 
@@ -51,8 +50,6 @@
 - Another kind of grid
 
 ---
-
-<BackgroundChange />
 
 ## What it is ?
 
@@ -70,8 +67,6 @@ When we describe flexbox as being one dimensional we are describing the fact tha
 
 ---
 
-<BackgroundChange />
-
 ## Why we should use it?
 
 [Can I use Flexbox?](https://caniuse.com/#feat=flexbox)
@@ -81,8 +76,6 @@ When we describe flexbox as being one dimensional we are describing the fact tha
 
 ---
 
-<BackgroundChange />
-
 ### Before we start...
 
 Let's talk about `direction` & `align`
@@ -91,38 +84,32 @@ Let's talk about `direction` & `align`
 
 ---
 
-<BackgroundChange />
-
 ## How it works?
 
-<CodePane language="css">
-  {`.row {
+```css
+.row {
   display: flex;
-}`}
-</CodePane>
+}
+```
 
 ![Flex axes](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox/flex_terms.png)
 ![Flex box sandbox](https://codepen.io/pataruco/pen/XBPmqj)
 
 ---
 
-<BackgroundChange />
-
 ## Flex container
 
 An area of a document laid out using flexbox is called a **flex container**. To create a flex container, we set the value of the area's container's display property to flex.
 
-<CodePane language="css">
-  {`.row {
+```css
+.row {
   display: flex;
-}`}
-</CodePane>
+}
+```
 
 As soon as we do this the direct children of that container become **flex items**.
 
 ---
-
-<BackgroundChange />
 
 ## Flex container
 
@@ -130,19 +117,17 @@ As soon as we do this the direct children of that container become **flex items*
 
 How flex items are placed in the flex container defining the main axis and the direction
 
-<CodePane language="css">
-  {`.container {
+```css
+.container {
   display: flex;
   flex-direction: row;
   flex-direction: column;
   flex-direction: row-reverse;
   flex-direction: column-reverse;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex container
 
@@ -150,18 +135,16 @@ How flex items are placed in the flex container defining the main axis and the d
 
 Specifies whether flex items are forced into a single line or can be wrapped onto multiple lines.
 
-<CodePane language="css">
-  {`.container {
+```css
+.container {
   display: flex;
   flex-wrap: wrap;
   flex-wrap: nowrap;
   flex-wrap: wrap-reverse;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex container
 
@@ -169,19 +152,17 @@ Specifies whether flex items are forced into a single line or can be wrapped ont
 
 Is is a shorthand property for `flex-direction` and `flex-wrap` individual properties.
 
-<CodePane language="css">
-  {`.container {
-  display: flex;\n
+```css
+.container {
+  display: flex;
   /* flex-flow: <'flex-direction'> and <'flex-wrap'> */
   flex-flow: row nowrap;
   flex-flow: column wrap;
   flex-flow: column-reverse wrap-reverse;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex container
 
@@ -189,26 +170,26 @@ Is is a shorthand property for `flex-direction` and `flex-wrap` individual prope
 
 Defines how the browser distributes space between and around content items along the **main-axis** of their container.
 
-<CodePane language="css">
-  {`.container {
-  display: flex;\n
+```css
+.container {
+  display: flex;
+
   /* Positional alignment */
   justify-content: center;
   justify-content: flex-start;
   justify-content: flex-end;
   justify-content: left;
-  justify-content: right;\n
+  justify-content: right;
+
   /* Distributed alignment */
   justify-content: space-between;
   justify-content: space-around;
   justify-content: space-evenly;
   justify-content: stretch;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex container
 
@@ -216,23 +197,23 @@ Defines how the browser distributes space between and around content items along
 
 Sets the `align-self` (flex item property) value on all direct children as a group. It controls the alignment of items on the **cross axis**
 
-<CodePane language="css">
-  {`.container {
-  display: flex;\n
+```css
+.container {
+  display: flex;
+
   /* Basic keywords */
   align-items: normal;
-  align-items: stretch;\n
+  align-items: stretch;
+
   /* Positional alignment */
   align-items: center;
   align-items: flex-start;
   align-items: flex-end;
   align-items: baseline;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex container
 
@@ -240,26 +221,27 @@ Sets the `align-self` (flex item property) value on all direct children as a gro
 
 Handles the remaining space between and around content items along the **cross-axis** with multiple lines.
 
-<CodePane language="css">
-  {`.container {
-  display: flex;\n
+```css
+.container {
+  display: flex;
+
   /* Basic keywords */
   align-content: center;
   align-content: flex-start;
-  align-content: flex-end;\n
+  align-content: flex-end;
+
   /* Baseline alignment */
-  align-content: baseline;\n
+  align-content: baseline;
+
   /* Distributed alignment */
   align-content: space-between;
   align-content: space-around;
   align-content: space-evenly;
   align-content: stretch;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex items
 
@@ -272,7 +254,7 @@ To have more control over flex items we can target them directly. We do this by 
 - `align-self`
 - `order`
 
-<BackgroundChange />
+---
 
 ## Flex items
 
@@ -280,18 +262,17 @@ To have more control over flex items we can target them directly. We do this by 
 
 Specifies the initial main size of a flex item. This property determines the size of the content-box
 
-<CodePane language="css">
-  {`.container {
+```css
+.container {
   display: flex;
-}\n
+}
+
 .item {
   flex-basis: 33%;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex items
 
@@ -299,18 +280,17 @@ Specifies the initial main size of a flex item. This property determines the siz
 
 Specifies what amount of space inside the flex container the item should take up. The flex grow factor of a flex item is relative to the size of the other children in the flex-container.
 
-<CodePane language="css">
-  {`.container {
+```css
+.container {
   display: flex;
-}\n
+}
+
 .item {
   flex-grow: 1;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex items
 
@@ -318,18 +298,17 @@ Specifies what amount of space inside the flex container the item should take up
 
 Flex items will shrink to fill the container according to the flex-shrink number, when the default size of flex items is larger than the flex container.
 
-<CodePane language="css">
-  {`.container {
+```css
+.container {
   display: flex;
-}\n
+}
+
 .item {
   flex-shrink: 1;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex items
 
@@ -337,18 +316,17 @@ Flex items will shrink to fill the container according to the flex-shrink number
 
 Is a shorthand property that sets `flex-grow`, `flex-shrink`, and `flex-basis`.
 
-<CodePane language="css">
-  {`.container {
+```css
+.container {
   display: flex;
-}\n
+}
+
 .item {
   flex: 1 1 25%;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex items
 
@@ -356,20 +334,19 @@ Is a shorthand property that sets `flex-grow`, `flex-shrink`, and `flex-basis`.
 
 Aligns flex items of the current flex line overriding the align-items value. If any of the item's cross-axis margin is set to auto, then align-self is ignored.
 
-<CodePane language="css">
-  {`.container {
+```css
+.container {
   display: flex;
-}\n
+}
+
 .item {
   align-self: center; /* Put the item around the center */
   align-self: flex-start; /* Put the flex item at the start */
   align-self: flex-end; /* Put the flex item at the end */
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Flex items
 
@@ -377,19 +354,18 @@ Aligns flex items of the current flex line overriding the align-items value. If 
 
 Specifies the order used to lay out a flex or grid item in its flex container. Items within the same container are laid out in ascending order according to their order values. Elements with the same order value are laid out in the order in which they appear in the source code.
 
-<CodePane language="css">
-  {`.container {
+```css
+.container {
   display: flex;
-}\n
+}
+
 .item {
   order: 1;
   order: -1;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Lab
 
@@ -397,4 +373,12 @@ Do [Flex Froggy](https://flexboxfroggy.com/)
 
 ---
 
-<FrontPage title="End of presentation" />
+class: frontpage
+
+<a href="/week-3">back to week 3</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>End of presentation</h1>
+</div>

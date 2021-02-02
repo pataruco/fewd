@@ -1,8 +1,13 @@
-# "Box model"
+class: frontpage
+<a href="/week-2">back to week 2</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>03 Box model</h1>
+</div>
 
 ---
-
-<BackgroundChange />
 
 ## Agenda
 
@@ -32,19 +37,17 @@ Examples are elements like `<div>` or `<ul>` or `<p>`.
 
 ## Box model
 
-<BackgroundChange />
-
 We can change the type of element by changing the CSS `display` property.
 
-<CodePane language="css">
-  {`div {
+```css
+div {
   display: inline;
-}\n
+}
+
 img {
   display: block;
-}`}
-
-</CodePane>
+}
+```
 
 ---
 
@@ -67,8 +70,6 @@ Wouldn't it be nice if we could simplify things?
 
 ---
 
-<BackgroundChange />
-
 ## Box Model
 
 ### **Content box** vs **border box**
@@ -79,51 +80,45 @@ Wouldn't it be nice if we could simplify things?
 
 ---
 
-<BackgroundChange />
 ## Box sizing
 
 I add this snippet on every site at the top of the CSS file
 
-<CodePane language="css">
-  {`* {
+```css
+* {
   box-sizing: border-box;
-}`}
-
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Shorthand
 
 `margin` and `padding` can be set on 1 or more sides with a single line of code
 
-<CodePane language="css">
-  {`div {
+```css
+div {
   margin: 20px; /* all four sides */
   margin: 20px 40px; /* top/bottom and left/right */
   margin: 20px 40px 10px; /* top left/right and bottom */
   margin: 10px 20px 30px 40px; /* top right bottom left */
-}`}
-</CodePane>
+}
+```
 
 ### Do you see a pattern here?
 
 Border is made up of 3 properties which can combine to apply the same border on all four sides
 
-<CodePane language="css">
-  {`div {
+```css
+div {
   border-width: 1px;
   border-style: solid;
   border-color: red;
   border: 1px solid red;
-}`}
-</CodePane>
+}
+```
 
 ---
-
-<BackgroundChange />
 
 ## Lab
 
@@ -133,24 +128,19 @@ Please download the [starter code](https://github.com/pataruco/ga-fewd-assets/ra
 
 ---
 
-<BackgroundChange />
-
 ## Nested selectors
 
 We have seen how to select elements on the page with CSS
 
-<CodePane language="css">
-  {`h1 {
+```css
+h1 {
   color: red;
-}`}
-
-</CodePane>
+}
+```
 
 Will select all `<h1>`and make them red.
 
 ---
-
-<BackgroundChange />
 
 ## Nested selectors
 
@@ -158,27 +148,25 @@ But what if don't want all `<h1>` to be red. What if we just want the main headi
 
 We can use the tree-like structure of HTML (where we have parent, child and sibling elements) to select elements based on their parent element.
 
-<CodePane language="css">
-  {`article h1 {
+```css
+article h1 {
   color: red;
-}`}
-</CodePane>
+}
+```
 
 Will select any `<h1>` that are children of `<article>` tags.
 
 We call these descendent selectors and they can contain as many elements as necessary to target elements specifically.
 
-<CodePane language="css">
-  {`header nav a {
+```css
+header nav a {
   text-decoration: none;
-}`}
-</CodePane>
+}
+```
 
 Next time we'll learn more specific types of selectors.
 
 ---
-
-<BackgroundChange />
 
 ## Lab
 
@@ -186,9 +174,7 @@ Next time we'll learn more specific types of selectors.
 
 ---
 
-<BackgroundChange />
-
-# Google Fonts
+## Google Fonts
 
 Google fonts is a free service that provides access to a whole range of different font families.
 
@@ -201,12 +187,19 @@ Google fonts is a free service that provides access to a whole range of differen
 6. Copy and paste the `<link>` stylesheet code snippet
 7. Copy and paste the font-family into your CSS eg.
 
-<CodePane language="css">
-  {`body {
+```css
+body {
   font-family: 'Lato', sans-serif;
-}`}
-</CodePane>
+}
+```
 
 ---
 
-<FrontPage title="End of presentation" />
+class: frontpage
+<a href="/week-2">back to week 2</a>
+
+<div>
+  <h2>Front-End Web Development</h2>
+  <hr/>
+  <h1>End of presentation</h1>
+</div>

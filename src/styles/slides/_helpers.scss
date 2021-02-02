@@ -1,0 +1,173 @@
+.remark-container {
+  .align-left {
+    text-align: start;
+  }
+
+  .image-one-fourth {
+    display: block;
+    margin: 0 auto;
+    max-width: 25%;
+  }
+
+  .image-one-fourth--align-left {
+    display: block;
+    margin: 0;
+    max-width: 25%;
+  }
+
+  .image-third {
+    display: block;
+    margin: 0 auto;
+    max-width: 33.33%;
+  }
+
+  .image-half {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+
+  .image-two-thirds {
+    display: block;
+    margin: 0 auto;
+    max-width: 66.66%;
+  }
+
+  .image-three-fourths {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .row > * {
+    margin: 0 10px;
+    flex: 1;
+  }
+
+  .row--five-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row--five-columns > * {
+    flex: 1;
+    flex-basis: 25%;
+  }
+
+  .fullscreen {
+    align-content: center;
+    bottom: 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+  }
+
+  .bg-red {
+    background-color: var(--red);
+  }
+
+  .bg-black {
+    background-color: var(--black);
+  }
+
+  .bg-teal {
+    background-color: var(--ga-teal);
+  }
+  .bg-teal a {
+    color: var(--white);
+  }
+
+  .bg-burgundy {
+    background-color: var(--ga-burgundy);
+  }
+
+  .bg-yellow {
+    background-color: var(--ga-yellow);
+    color: var(--black);
+  }
+
+  .bg-pink {
+    background-color: var(--ga-pink);
+    color: var(--black);
+  }
+
+  .bg-white {
+    color: var(--black);
+  }
+
+  .center.middle {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .center.middle > * {
+    flex: 1 1 auto;
+  }
+
+  .logo {
+    display: block;
+    max-width: 33%;
+    margin: 0 auto;
+  }
+
+  .frontpage {
+    background-color: var(--ga-red);
+    background-image: url(https://pataruco.s3.amazonaws.com/ga/assets/ga-white.svg);
+    background-position: bottom right;
+    background-size: 12.5%;
+    color: var(--white);
+    position: relative;
+    height: 100%;
+
+    p {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      a {
+        color: white;
+        border-bottom: 2px solid white;
+      }
+    }
+
+    div {
+      max-width: 70%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    hr {
+      height: 1rem;
+      width: 10%;
+      background-color: white;
+      border: 1px solid white;
+      margin: 0;
+    }
+
+    h1 {
+      margin-top: 1rem;
+    }
+  }
+}
