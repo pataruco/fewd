@@ -100,7 +100,7 @@ export const lessonRoutes = [
     component: () => (
       <>
         <Title week={6} lesson={11} />
-        <SlidesDeck slidesDeckName="11" />
+        <SlidesDeck slidesDeckName="11-conditional-statements" />
       </>
     ),
   },
