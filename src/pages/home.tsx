@@ -12,7 +12,7 @@ const Weeks = [
   'Flexbox & Positioning',
   'Responsive Web development',
   'Intro to JavaScript & Document Object Model (DOM)',
-  ' ',
+  'Conditional statements, arrays & loops',
   ' ',
   ' ',
   ' ',
