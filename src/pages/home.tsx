@@ -14,7 +14,7 @@ const Weeks = [
   'Intro to JavaScript & Document Object Model (DOM)',
   'Conditional statements, arrays & loops',
   'CSS animations & JavaScript plugins',
-  ' ',
+  'Forms ',
   ' ',
   ' ',
 ];
