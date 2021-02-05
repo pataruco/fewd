@@ -14,12 +14,6 @@ It is divided:
 
 ## How to install
 
-- Install [Git LFS plugin](https://git-lfs.github.com/)
-
-  ```sh
-  brew install git-lfs
-  ```
-
 - Clone this repo
 
   ```sh
