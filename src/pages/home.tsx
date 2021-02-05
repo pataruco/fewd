@@ -15,8 +15,8 @@ const Weeks = [
   'Conditional statements, arrays & loops',
   'CSS animations & JavaScript plugins',
   `Forms & API Requests and Responses`,
-  'Git and Sass',
-  ' ',
+  'Git, Sass, Accessibility and SVG',
+  'Final Presentations',
 ];
 
 const StyledMain = styled.main`
