@@ -5,6 +5,7 @@ import Home from '../pages/home';
 import { lessonRoutes, weekRoutes } from './config';
 import ErrorPage from '../pages/404';
 import '../styles/site-index.scss';
+import About from '../pages/about';
 
 export const history = createBrowserHistory();
 
@@ -24,6 +25,7 @@ const Routes = () => (
   <CustomBrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
       {WeekRouteComponents}
       {LessonsRouteComponents}
       <Route path="/*" component={ErrorPage} />
