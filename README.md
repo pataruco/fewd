@@ -4,28 +4,32 @@
 
 ## What it is?
 
-Is [React][react] app hosted in [Netlify][netlify] with the content slides for Front-end Web Development for [General Assembly London][ga] 🇬🇧
+Is a **monorepo** with content for Front-end Web Development course for [General Assembly London][ga] 🇬🇧
 
-Check the [website][site]
+It is divided:
+
+- [Web ](./web/readme.md): [React][react] app hosted in [Netlify][netlify] with the custom domain [**https://fewd.pataruco.dev**][site]
+- [Labs](./labs/readme.md): Labs & exercises for each lesson
+- [Homeworks](./homeworks/readme.md): Exercises for students outside class
 
 ## How to install
 
 - Clone this repo
 
-```sh
-git clone git@github.com:pataruco/fewd.git
-```
+  ```sh
+  git clone git@github.com:pataruco/fewd.git
+  ```
 
 - Install dependencies
 
-```sh
-yarn
-```
+  ```sh
+  yarn
+  ```
 
 ## How to run locally
 
 ```sh
-yarn start
+yarn workspace web start
 ```
 
 ## How to deploy
@@ -34,31 +38,23 @@ A [Github action][gh-actions] is set to deal with deployments to prod. To trigge
 
 - Create a git release [tag][git-tag] with the following convention `R.<number>.<number>.<number>`
 
-```sh
-git tag R.1.0
-```
+  ```sh
+  git tag R.1.0
+  ```
 
 - Push tag to remote
 
-```sh
-git push --tags
-```
+  ```sh
+  git push --tags
+  ```
 
 - You can check CI/CD build [here](https://github.com/pataruco/fewd/actions?query=workflow%3ACI)
 
 - Make a tea 🫖
 
-- Check live [site][site]
+- Check [site][site] live
 
 - 🚀
-
-## Content
-
-### Slides
-
-Slides are written in remark markdown syntax, you can check more about the syntax [here][remark-syntax]
-
-Slides are store inside the [public folder](./public/slides)
 
 [react]: https://reactjs.org/
 [netlify]: https://www.netlify.com/
@@ -68,11 +64,3 @@ Slides are store inside the [public folder](./public/slides)
 [remark-syntax]: https://github.com/gnab/remark/wiki/Markdown
 [git-tag]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
 [site]: https://fewd.pataruco.dev/
-
-### Homeworks
-
-⚠️ WIP
-
-### Labs
-
-⚠️ WIP
