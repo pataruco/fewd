@@ -415,7 +415,7 @@ Are self closing elements
 
 ## Code along
 
-## [Press release exercise](https://raw.githubusercontent.com/pataruco/ga-fewd-assets/master/press-release/starter/press-release.txt)
+## [Press release exercise](https://github.com/pataruco/fewd/raw/master/labs/press-release/press-release-starter-code.zip)
 
 ---
 
