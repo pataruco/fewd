@@ -172,7 +172,7 @@ export const lessonRoutes = [
     component: () => (
       <>
         <Title week={10} lesson={19} />
-        <SlidesDeck slidesDeckName="19" />
+        <SlidesDeck slidesDeckName="19-bootstrap" />
       </>
     ),
   },
@@ -181,7 +181,7 @@ export const lessonRoutes = [
     component: () => (
       <>
         <Title week={10} lesson={20} />
-        <SlidesDeck slidesDeckName="20" />
+        <SlidesDeck slidesDeckName="20-final-presentations" />
       </>
     ),
   },

@@ -16,7 +16,7 @@ const Weeks = [
   'CSS animations & JavaScript plugins',
   `Forms & API Requests and Responses`,
   'Git, Sass, Accessibility and SVG',
-  'Final Presentations',
+  'UI libraries & Final Presentations',
 ];
 
 const StyledMain = styled.main`
