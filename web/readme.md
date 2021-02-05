@@ -50,28 +50,6 @@ The idea behind it, is to have in the same repo a reference for the homework wit
 
 All labs are stored in the [labs package](../labs/readme.md)
 
-Each labs has a main folder with the following structure
-
-```text
-lab-name
-|
-|- readme.md
-|- starter-code
-    |-index.html
-    |-styles
-    |-scripts
-    |-readme.md
-|- solution-code
-    |-index.html
-    |-styles
-    |-scripts
-    |-readme.md
-starter-code.zip
-solution-code.zip
-```
-
-The idea behind it, is to have in the same repo a reference for the lab with a link to download a zip
-
 [react]: https://reactjs.org/
 [netlify]: https://www.netlify.com/
 [ga]: https://generalassemb.ly/locations/london
