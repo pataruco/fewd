@@ -32,7 +32,7 @@ const About: React.FC = () => (
           rel="noreferrer"
         >
           Guy
-        </a>{' '}
+        </a>
         ,{' '}
         <a
           href="https://generalassemb.ly/instructors/matt-studdert/4526"
@@ -60,7 +60,7 @@ const About: React.FC = () => (
       </p>
 
       <p>
-        The code for this website is available on{' '}
+        The code for this website and the content of the slides is available on{' '}
         <a
           href="https://github.com/pataruco/fewd"
           target="_blank"
