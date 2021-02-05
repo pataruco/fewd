@@ -39,3 +39,8 @@ rm name-of-lab-solution-code.zip
 ```sh
 zip -r name-of-lab-solution-code.zip <folder-name>
 ```
+
+## Index
+
+- [Press release](./press-release)
+- [Cookie recipe](./cookie-recipe)
