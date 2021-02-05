@@ -154,7 +154,7 @@ export const lessonRoutes = [
     component: () => (
       <>
         <Title week={9} lesson={17} />
-        <SlidesDeck slidesDeckName="17" />
+        <SlidesDeck slidesDeckName="17-git-sass" />
       </>
     ),
   },

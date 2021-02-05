@@ -6,9 +6,7 @@
 
 Is [React][react] app hosted in [Netlify][netlify] with the content slides for Front-end Web Development for [General Assembly London][ga] 🇬🇧
 
-## Website
-
-Here is [site][site]
+Check the [website][site]
 
 ## How to install
 
@@ -60,7 +58,7 @@ git push --tags
 
 Slides are written in remark markdown syntax, you can check more about the syntax [here][remark-syntax]
 
-Slides are stores inside the [public folder](./public/slides)
+Slides are store inside the [public folder](./public/slides)
 
 [react]: https://reactjs.org/
 [netlify]: https://www.netlify.com/

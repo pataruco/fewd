@@ -5,6 +5,8 @@
 body {
   font-size: 100%;
   font-family: var(--sans-serif);
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 img,
@@ -16,21 +18,16 @@ svg {
 
 a {
   color: var(--black);
-  text-decoration: none;
-  border-bottom: 2px solid var(--ga-red);
+  text-decoration: underline 2px var(--ga-red);
 
   &:hover {
     color: var(--ga-red);
   }
 
-  &:visited {
-    color: rgba(33, 33, 33, 0.75);
-  }
-
   &:focus,
   &:active {
     color: var(--black);
-    border-bottom: 2px solid var(--black);
+    text-decoration: underline 2px var(--black);
   }
 }
 
