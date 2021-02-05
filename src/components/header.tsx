@@ -114,7 +114,7 @@ const Header: React.FC = () => {
             <Weeks />
           </li>
           <li>
-            <Link to="/">home</Link>
+            <Link to="/about">about</Link>
           </li>
         </ul>
       </nav>

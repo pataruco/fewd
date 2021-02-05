@@ -7,16 +7,15 @@ const StyledFooter = styled.footer`
   p {
     color: white;
     text-align: center;
-
+    max-width: 100%;
     span {
       color: red;
     }
 
     a {
       color: white;
-      border-bottom: none;
       &:hover {
-        border-bottom: 2px solid red;
+        text-decoration: underline 2px solid white;
       }
     }
   }
