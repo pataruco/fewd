@@ -1,9 +1,9 @@
 import React from 'react';
 import { hydrate, render } from 'react-dom';
-import { store } from '../redux/store';
+import { store } from './redux/store';
 import { Provider } from 'react-redux';
 import 'normalize.css';
-import Routes from '../routes';
+import Routes from './routes';
 
 const rootElement = document.getElementById('root');
 
