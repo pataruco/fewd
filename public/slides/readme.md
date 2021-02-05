@@ -23,7 +23,7 @@ Are written in [remark markdown syntax][remark-syntax]
 14. [JavaScript plugins](./14-plugins.md)
 15. [HTML Forms](./15-forms.md)
 16. [API Requests and Responses](./16-api.md)
-17. [17.md](./17.md)
+17. [Git and Sass](./17-git-sass.md)
 18. [18.md](./18.md)
 19. [19.md](./19.md)
 20. [20.md](./20.md)

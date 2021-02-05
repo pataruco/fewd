@@ -5,6 +5,8 @@
 body {
   font-size: 100%;
   font-family: var(--sans-serif);
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 img,

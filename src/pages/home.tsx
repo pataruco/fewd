@@ -15,7 +15,7 @@ const Weeks = [
   'Conditional statements, arrays & loops',
   'CSS animations & JavaScript plugins',
   `Forms & API Requests and Responses`,
-  ' ',
+  'Git and Sass',
   ' ',
 ];
 
