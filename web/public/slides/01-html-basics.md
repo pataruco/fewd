@@ -20,13 +20,30 @@ In this lesson, you will:
 
 ---
 
+## Meet the Team - Abigail Coe
+
+- [Software Engineer at Red Badger](https://red-badger.com/people/abigail-coe/)
+- Former Antiques Conservator
+- General Assembly 2016
+- World’s second best crochet artist
+- Humble
+- English Lit graduate
+- [Oolong](https://en.wikipedia.org/wiki/Oolong) nerd
+- Not as much of a dork as that all sounds
+
+---
+
+## Meet the Team - Alex Wheldon
+
+---
+
 ## Meet the Team - Pedro Martin
 
 - [Software Engineer at Red Badger.](https://red-badger.com/people/pedro-martin/)
 - Former science teacher.
 - General Assembly alumni 2015.
 - [Teaching courses and workshops at General Assembly since 2015.](https://generalassemb.ly/instructors/pedro-martin/7012)
-- Originally from Caracas, Venezuela.
+- Originally from Caracas, Venezuela 🇻🇪.
 - [Former Rope Access Technician.](https://www.theguardian.com/artanddesign/2015/jul/20/hanging-by-thread-rats-keep-skyscrapers-standing)
 - Hardcore Star Wars fan.
 
