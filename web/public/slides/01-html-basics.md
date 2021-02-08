@@ -432,9 +432,9 @@ Are self closing elements
 
 ## Code along
 
-## [Press release exercise](https://github.com/pataruco/fewd/raw/master/labs/press-release/press-release-starter-code.zip)
+### [Press release exercise ](https://github.com/pataruco/fewd/raw/master/labs/press-release/press-release-starter-code.zip)
 
-### [Press release exercise solution](https://github.com/pataruco/fewd/raw/master/labs/press-release/press-release-solution-code.zip)
+> [solution](https://github.com/pataruco/fewd/raw/master/labs/press-release/press-release-solution-code.zip)
 
 ---
 

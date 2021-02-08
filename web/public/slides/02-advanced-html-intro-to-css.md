@@ -455,11 +455,9 @@ p {
 
 ### Hexadecimal values
 
-Each hex value consists of a hash/pound symbol (#) followed by six hexadecimal numbers, each of which can take a value between 0 and f (which represents 15) — so
-**0123456789abcdef**. Each pair of values represents one of the channels —
-**red**, **green** and **blue** — and allows us to specify any of the 256
-available values for each (16 x 16 = 256.) --- ## CSS Colors ###
-Hexadecimal values
+Each hex value consists of a hash/pound symbol (`#`) followed by six hexadecimal numbers, each of which can take a value between 0 and f (which represents 15) — so
+**0123456789abcdef**. Each pair of values represents one of the channels — **red**, **green** and **blue** — and allows us to specify any of the 256
+available values for each (16 x 16 = 256.)
 
 ```css
 p:nth-child(1) {
@@ -514,10 +512,9 @@ The `hsl()` function accepts **hue**, **saturation**, and **lightness** values, 
 p:nth-child(1) {
   background-color: hsl(0, 100%, 50%); /* equivalent to the red keyword */
 }
-keyword */ p:nth-child(2) {
+p:nth-child(2) {
   background-color: hsl(240, 100%, 50%); /* equivalent to the blue */
 }
-
 p:nth-child(3) {
   background-color: hsl(276, 100%, 85%); /* has no exact keyword equivalent */
 }
@@ -525,9 +522,9 @@ p:nth-child(3) {
 
 ---
 
-# CSS Colors
+## CSS Colors
 
-## RGBA
+### RGBA
 
 and HSLA RGB and HSL both have corresponding modes — RGBA and HSLA — that allow you to set not only what color you want to display, but also what transparency you want that color to have.
 
