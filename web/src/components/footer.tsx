@@ -28,10 +28,6 @@ const localeFormatOptions: Intl.DateTimeFormatOptions = {
   year: 'numeric',
   month: 'numeric',
   day: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-  second: 'numeric',
-  hour12: true,
   timeZone: 'Europe/London',
 };
 const updtatedAt = new Intl.DateTimeFormat('en-GB', localeFormatOptions).format(

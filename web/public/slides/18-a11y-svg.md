@@ -570,11 +570,6 @@ There are three possible values for `stroke-linecap`:
 
 ### Loading spinner
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Spinning SVG" src="https://codepen.io/pataruco/embed/dKrPMw?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/pataruco/pen/dKrPMw'>Spinning SVG</a> by Pedro Martin
-  (<a href='https://codepen.io/pataruco'>@pataruco</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
 [https://codepen.io/pataruco/pen/dKrPMw](https://codepen.io/pataruco/pen/dKrPMw)
 
 ---
