@@ -1,7 +1,5 @@
 import React, { lazy, Suspense } from 'react';
 import SlidesDeck from '../components/slides-deck';
-// import { importMDX } from 'mdx.macro';
-// import Week from '../pages/week';
 import Title from '../components/title';
 
 export const lessonRoutes = [
@@ -202,130 +200,130 @@ export const weekRoutes = [
       );
     },
   },
-  // {
-  //   path: '/week-2',
-  //   component: () => {
-  //     const Content = lazy(() => importMDX('../weeks/2.mdx'));
-  //     return (
-  //       <Week>
-  //         <Title week={2} />
-  //         <Suspense fallback={<div>Loading...</div>}>
-  //           <Content />
-  //         </Suspense>
-  //       </Week>
-  //     );
-  //   },
-  // },
-  // {
-  //   path: '/week-3',
-  //   component: () => {
-  //     const Content = lazy(() => importMDX('../weeks/3.mdx'));
-  //     return (
-  //       <Week>
-  //         <Title week={3} />
-  //         <Suspense fallback={<div>Loading...</div>}>
-  //           <Content />
-  //         </Suspense>
-  //       </Week>
-  //     );
-  //   },
-  // },
-  // {
-  //   path: '/week-4',
-  //   component: () => {
-  //     const Content = lazy(() => importMDX('../weeks/4.mdx'));
-  //     return (
-  //       <Week>
-  //         <Title week={4} />
-  //         <Suspense fallback={<div>Loading...</div>}>
-  //           <Content />
-  //         </Suspense>
-  //       </Week>
-  //     );
-  //   },
-  // },
-  // {
-  //   path: '/week-5',
-  //   component: () => {
-  //     const Content = lazy(() => importMDX('../weeks/5.mdx'));
-  //     return (
-  //       <Week>
-  //         <Title week={5} />
-  //         <Suspense fallback={<div>Loading...</div>}>
-  //           <Content />
-  //         </Suspense>
-  //       </Week>
-  //     );
-  //   },
-  // },
-  // {
-  //   path: '/week-6',
-  //   component: () => {
-  //     const Content = lazy(() => importMDX('../weeks/6.mdx'));
-  //     return (
-  //       <Week>
-  //         <Title week={6} />
-  //         <Suspense fallback={<div>Loading...</div>}>
-  //           <Content />
-  //         </Suspense>
-  //       </Week>
-  //     );
-  //   },
-  // },
-  // {
-  //   path: '/week-7',
-  //   component: () => {
-  //     const Content = lazy(() => importMDX('../weeks/7.mdx'));
-  //     return (
-  //       <Week>
-  //         <Title week={7} />
-  //         <Suspense fallback={<div>Loading...</div>}>
-  //           <Content />
-  //         </Suspense>
-  //       </Week>
-  //     );
-  //   },
-  // },
-  // {
-  //   path: '/week-8',
-  //   component: () => {
-  //     const Content = lazy(() => importMDX('../weeks/8.mdx'));
-  //     return (
-  //       <Week>
-  //         <Title week={8} />
-  //         <Suspense fallback={<div>Loading...</div>}>
-  //           <Content />
-  //         </Suspense>
-  //       </Week>
-  //     );
-  //   },
-  // },
-  // {
-  //   path: '/week-9',
-  //   component: () => {
-  //     const Content = lazy(() => importMDX('../weeks/9.mdx'));
-  //     return (
-  //       <Week>
-  //         <Title week={9} />
-  //         <Suspense fallback={<div>Loading...</div>}>
-  //           <Content />
-  //         </Suspense>
-  //       </Week>
-  //     );
-  //   },
-  // },
-  // {
-  //   path: '/week-10',
-  //   component: () => {
-  //     const Content = lazy(() => importMDX('../weeks/10.mdx'));
-  //     return (
-  //       <Week>
-  //         <Title week={10} />
-  //         <Suspense fallback={<div>Loading...</div>}>
-  //           <Content />
-  //         </Suspense>
-  //       </Week>
-  //     );
-  //   },
-  // },
+  {
+    path: '/week-2',
+    component: () => {
+      const Content = lazy(() => import('../pages/weeks/2'));
+      return (
+        <>
+          <Title week={2} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </>
+      );
+    },
+  },
+  {
+    path: '/week-3',
+    component: () => {
+      const Content = lazy(() => import('../pages/weeks/3'));
+      return (
+        <>
+          <Title week={3} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </>
+      );
+    },
+  },
+  {
+    path: '/week-4',
+    component: () => {
+      const Content = lazy(() => import('../pages/weeks/4'));
+      return (
+        <>
+          <Title week={4} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </>
+      );
+    },
+  },
+  {
+    path: '/week-5',
+    component: () => {
+      const Content = lazy(() => import('../pages/weeks/5'));
+      return (
+        <>
+          <Title week={5} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </>
+      );
+    },
+  },
+  {
+    path: '/week-6',
+    component: () => {
+      const Content = lazy(() => import('../pages/weeks/6'));
+      return (
+        <>
+          <Title week={6} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </>
+      );
+    },
+  },
+  {
+    path: '/week-7',
+    component: () => {
+      const Content = lazy(() => import('../pages/weeks/7'));
+      return (
+        <>
+          <Title week={7} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </>
+      );
+    },
+  },
+  {
+    path: '/week-8',
+    component: () => {
+      const Content = lazy(() => import('../pages/weeks/8'));
+      return (
+        <>
+          <Title week={8} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </>
+      );
+    },
+  },
+  {
+    path: '/week-9',
+    component: () => {
+      const Content = lazy(() => import('../pages/weeks/9'));
+      return (
+        <>
+          <Title week={9} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </>
+      );
+    },
+  },
+  {
+    path: '/week-10',
+    component: () => {
+      const Content = lazy(() => import('../pages/weeks/10'));
+      return (
+        <>
+          <Title week={10} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Content />
+          </Suspense>
+        </>
+      );
+    },
+  },
 ];
