@@ -31,6 +31,31 @@ const resources = [
   ],
 ];
 
-const Week1 = () => <Week weekNumber={1} resources={resources} />;
+const bonuses = [
+  [
+    "Complete a challenge that you haven't done yet on",
+    'https://learn.shayhowe.com/html-css/getting-to-know-html/',
+  ],
+
+  [
+    'Read through Getting to know CSS',
+    'https://learn.shayhowe.com/html-css/getting-to-know-css/',
+  ],
+  [
+    'Watch Intro to GitHub video',
+    'https://www.youtube.com/watch?v=vDv5K5PbvO8',
+  ],
+];
+
+const Week1 = () => (
+  <Week
+    weekNumber={1}
+    resources={resources}
+    bonuses={bonuses}
+    firstLessonTitle="Orientation and introduction to HTML"
+    secondLessonTitle="Advanced HTML & Intro to CSS"
+    homeworkPath="/week-1/lesson-2#43"
+  />
+);
 
 export default Week1;

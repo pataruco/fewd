@@ -10,6 +10,10 @@ const StyledMain = styled.main`
   li {
     margin-bottom: 0.75rem;
   }
+
+  summary > h2 {
+    display: inline-block;
+  }
 `;
 
 const WeekPage: React.FC = ({ children }) => (
