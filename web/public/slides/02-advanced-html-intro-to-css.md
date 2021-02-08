@@ -631,14 +631,10 @@ h1 {
 
 #### Instructions
 
-1. Download the starter code zip [file](https://github.com/pataruco/ga-fewd-assets/raw/master/cookie-recipe/cookie-recipe-starter-code.zip)
+1. Download the starter code zip [file](https://github.com/pataruco/fewd/raw/master/labs/cookie-recipe/cookie-recipe-starter-code.zip)
 2. Open the file **instructions.md** and follow the steps
 
----
-
-## Cookie recipe
-
-### CSS
+#### CSS
 
 - The background color for the page is `#FFE`
 - The color for the text reading "Related Recipes" is `#887`
@@ -667,7 +663,7 @@ Here are some examples
 
 ### Technical requirements
 
-- Use HTML5 structural elements (nav, header, footer)
+- Use HTML5 structural elements (`nav`, `header`, `footer`)
 - Use Elements and Classes to select and style elements on the page
 - Follow naming conventions, maintain consistency across .html and .css files and use best practices for naming classes
 - Use a unique `title` and a single unique `h1` tag
