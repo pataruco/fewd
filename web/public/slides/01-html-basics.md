@@ -20,14 +20,31 @@ In this lesson, you will:
 
 ---
 
+## Meet the Team - Abigail Coe
+
+- [Software Engineer at Red Badger](https://red-badger.com/people/abigail-coe/)
+- Former Antiques Conservator
+- General Assembly 2016
+- World’s second best crochet artist
+- Humble
+- English Lit graduate
+- [Oolong](https://en.wikipedia.org/wiki/Oolong) nerd
+- Not as much of a dork as that all sounds
+
+---
+
+## Meet the Team - Alex Wheldon
+
+---
+
 ## Meet the Team - Pedro Martin
 
-- [Software Engineer at Red Badger.](https://red-badger.com/people/pedro-martin/)
+- [Software engineer at Red Badger.](https://red-badger.com/people/pedro-martin/)
 - Former science teacher.
 - General Assembly alumni 2015.
 - [Teaching courses and workshops at General Assembly since 2015.](https://generalassemb.ly/instructors/pedro-martin/7012)
-- Originally from Caracas, Venezuela.
-- [Former Rope Access Technician.](https://www.theguardian.com/artanddesign/2015/jul/20/hanging-by-thread-rats-keep-skyscrapers-standing)
+- Originally from Caracas, Venezuela 🇻🇪.
+- [Former Rope Access Technician (RAT 🐀).](https://www.theguardian.com/artanddesign/2015/jul/20/hanging-by-thread-rats-keep-skyscrapers-standing)
 - Hardcore Star Wars fan.
 
 ---
@@ -85,25 +102,25 @@ In this lesson, you will:
   <div>
     <li>Intro to HTML</li>
     <li>Intro to CSS</li>
-    <li>Intro to Layout</li>
+    <li>Box Model</li>
+    <li>CSS Selectors, Specificity & Floats</li>
     <li>Flexbox</li>
-    <li>Flexbox and lab</li>
-    <li>Fonts, Layout Lab</li>
-    <li>Responsive Design</li>
     <li>Positioning</li>
-    <li>Intro to Programming</li>
-    <li>Intro to JS</li>
+    <li>Responsive Web development</li>
+    <li>Responsive Web development lab 🧪</li>
+    <li>Intro to JavaScript</li>
+    <li>Document Object Model</li>
   </div>
   <div>
-    <li>JS Practical</li>
-    <li>JS and CSS Animations</li>
-    <li>JS Logic</li>
-    <li>JS Arrays and Loops</li>
-    <li>Forms and Data</li>
-    <li>Working with APIs</li>
-    <li>Front-end Frameworks</li>
-    <li>Github and other Dev Tools</li>
-    <li>Final Project Lab</li>
+    <li>Conditional statements</li>
+    <li>Arrays and loops</li>
+    <li>CSS animations</li>
+    <li>JavaScript plugins</li>
+    <li>Forms</li>
+    <li>API Requests and Responses</li>
+    <li>Git and Sass</li>
+    <li>Accessibility and SVG</li>
+    <li>UI Frameworks / Final Project Lab</li>
     <li>Final Project Presentation</li>
   </div>
 </ol>
@@ -415,7 +432,9 @@ Are self closing elements
 
 ## Code along
 
-## [Press release exercise](https://github.com/pataruco/fewd/raw/master/labs/press-release/press-release-starter-code.zip)
+### [Press release exercise ](https://github.com/pataruco/fewd/raw/master/labs/press-release/press-release-starter-code.zip)
+
+> [solution](https://github.com/pataruco/fewd/raw/master/labs/press-release/press-release-solution-code.zip)
 
 ---
 
