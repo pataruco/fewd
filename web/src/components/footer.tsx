@@ -24,17 +24,13 @@ const StyledFooter = styled.footer`
   }
 `;
 
-const localeFormatOptions: Intl.DateTimeFormatOptions = {
+const updateTime = new Intl.DateTimeFormat('en-GB', {
   year: 'numeric',
-  month: 'numeric',
+  month: 'long',
   day: 'numeric',
-  timeZone: 'Europe/London',
-};
-const updtatedAt = new Intl.DateTimeFormat('en-GB', localeFormatOptions).format(
-  new Date(),
-);
+}).format(new Date());
 
-const updatedAta11y = new Intl.DateTimeFormat('en-GB').format(new Date());
+const datimeString = new Intl.DateTimeFormat('es-GB').format(new Date());
 
 const Footer: React.FC = () => (
   <StyledFooter>
@@ -48,7 +44,7 @@ const Footer: React.FC = () => (
     </p>
     <p>
       <small>
-        Last update <time dateTime={updatedAta11y}>{updtatedAt}</time>
+        Last update <time dateTime={datimeString}>{updateTime}</time>
       </small>
     </p>
   </StyledFooter>
