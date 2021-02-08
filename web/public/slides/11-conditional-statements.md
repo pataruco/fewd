@@ -197,7 +197,7 @@ switch (transportOption) {
 
 ## Multi-Case `switch`
 
-`switch` can be used to funnel multiple cases to the same instruction. Just list cases together before the instruction/break combo, and you can cleanly handle  similar cases:
+`switch` can be used to funnel multiple cases to the same instruction. Just list cases together before the instruction/break combo, and you can cleanly handle similar cases:
 
 ```javascript
 switch (seasonCheck) {
