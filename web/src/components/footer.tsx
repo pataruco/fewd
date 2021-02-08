@@ -24,8 +24,6 @@ const StyledFooter = styled.footer`
   }
 `;
 
-const date = new Date();
-
 const localeFormatOptions: Intl.DateTimeFormatOptions = {
   year: 'numeric',
   month: 'numeric',
@@ -37,10 +35,10 @@ const localeFormatOptions: Intl.DateTimeFormatOptions = {
   timeZone: 'Europe/London',
 };
 const updtatedAt = new Intl.DateTimeFormat('en-GB', localeFormatOptions).format(
-  date,
+  new Date(),
 );
 
-const updatedAta11y = new Intl.DateTimeFormat('en-GB').format(date);
+const updatedAta11y = new Intl.DateTimeFormat('en-GB').format(new Date());
 
 const Footer: React.FC = () => (
   <StyledFooter>
