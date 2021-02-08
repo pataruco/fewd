@@ -155,10 +155,7 @@ The grid structure is very similar to what we've done:
 
 Check out the CodePen below to see grid breakpoints in action!
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Bootstrap Grid Reference" src="https://codepen.io/pataruco/embed/MWbKqpB?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/pataruco/pen/MWbKqpB'>Bootstrap Grid Reference</a> by Pedro Martin
-  (<a href='https://codepen.io/pataruco'>@pataruco</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+> [CodePen](https://codepen.io/pataruco/pen/MWbKqpB)
 
 ---
 
@@ -182,10 +179,7 @@ Bootstrap has a solid set of standard components that can easily be dropped into
 - Dropdown menus
 - And so much more...
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Bootstrap Components Reference" src="https://codepen.io/pataruco/embed/mdOVGMr?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/pataruco/pen/mdOVGMr'>Bootstrap Components Reference</a> by Pedro Martin
-  (<a href='https://codepen.io/pataruco'>@pataruco</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+> [CodePen](https://codepen.io/pataruco/pen/mdOVGMr)
 
 ---
 
