@@ -4,6 +4,9 @@ import styled from 'styled-components';
 const StyledFooter = styled.footer`
   background-color: black;
   padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+
   p {
     color: white;
     text-align: center;
@@ -21,6 +24,24 @@ const StyledFooter = styled.footer`
   }
 `;
 
+const date = new Date();
+
+const localeFormatOptions: Intl.DateTimeFormatOptions = {
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric',
+  hour12: true,
+  timeZone: 'Europe/London',
+};
+const updtatedAt = new Intl.DateTimeFormat('en-GB', localeFormatOptions).format(
+  date,
+);
+
+const updatedAta11y = new Intl.DateTimeFormat('en-GB').format(date);
+
 const Footer: React.FC = () => (
   <StyledFooter>
     <p>
@@ -30,6 +51,11 @@ const Footer: React.FC = () => (
       </span>{' '}
       by <a href="https://github.com/pataruco">@pataruco</a>{' '}
       {new Date().getFullYear()}
+    </p>
+    <p>
+      <small>
+        Last update <time dateTime={updatedAta11y}>{updtatedAt}</time>
+      </small>
     </p>
   </StyledFooter>
 );
