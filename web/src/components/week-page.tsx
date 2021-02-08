@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import Page from '../components/page';
+import Header from './header';
+import Footer from './footer';
+import Page from './page';
 
 const StyledMain = styled.main`
   padding: 1.25rem;
@@ -12,7 +12,7 @@ const StyledMain = styled.main`
   }
 `;
 
-const Week: React.FC = ({ children }) => (
+const WeekPage: React.FC = ({ children }) => (
   <Page>
     <Header />
     <StyledMain>{children}</StyledMain>
@@ -20,4 +20,4 @@ const Week: React.FC = ({ children }) => (
   </Page>
 );
 
-export default Week;
+export default WeekPage;
