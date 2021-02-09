@@ -35,6 +35,12 @@ In this lesson, you will:
 
 ## Meet the Team - Alex Wheldon
 
+- Automation Engineer at [Splash](https://www.splashworldwide.com/) Worldwide
+- Used to work in account management at advertising production agencies
+- GA Alumni 2020
+- Unashamedly love Lego
+- Crossing all fingers that I can finally go see live music again this year
+
 ---
 
 ## Meet the Team - Pedro Martin
