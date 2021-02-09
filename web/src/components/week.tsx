@@ -47,17 +47,22 @@ const Week: React.FC<WeekProps> = ({
   return (
     <WeekPage>
       <h1>Week {weekNumber}</h1>
-      <h2>Lessons</h2>
-      <ul>
-        <li>
-          Lesson {firstLesson}:{' '}
-          <Link to={firstLessonPath}>{firstLessonTitle}</Link>
-        </li>
-        <li>
-          Lesson {secondLesson}:{' '}
-          <Link to={secondLessonPath}>{secondLessonTitle}</Link>
-        </li>
-      </ul>
+
+      <details>
+        <summary>
+          <h2>Lessons</h2>
+        </summary>
+        <ul>
+          <li>
+            Lesson {firstLesson}:{' '}
+            <Link to={firstLessonPath}>{firstLessonTitle}</Link>
+          </li>
+          <li>
+            Lesson {secondLesson}:{' '}
+            <Link to={secondLessonPath}>{secondLessonTitle}</Link>
+          </li>
+        </ul>
+      </details>
 
       {resources ? (
         <details>
