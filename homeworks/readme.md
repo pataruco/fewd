@@ -39,3 +39,7 @@ rm name-of-homework-solution-code.zip
 ```sh
 zip -r name-of-homework-solution-code.zip <folder-name>
 ```
+
+## Index
+
+- [Relaxr 1](./relaxr-1)

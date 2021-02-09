@@ -14,6 +14,10 @@ const StyledMain = styled.main`
   summary > h2 {
     display: inline-block;
   }
+
+  details ul {
+    margin: 0;
+  }
 `;
 
 const WeekPage: React.FC = ({ children }) => (
