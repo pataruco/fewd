@@ -47,15 +47,15 @@ const bonuses = [
   ],
 ];
 
-const Week1 = () => (
-  <Week
-    weekNumber={1}
-    resources={resources}
-    bonuses={bonuses}
-    firstLessonTitle="Orientation and introduction to HTML"
-    secondLessonTitle="Advanced HTML & Intro to CSS"
-    homeworkPath="/week-1/lesson-2#43"
-  />
-);
+const weekConfig = {
+  weekNumber: 1,
+  resources: resources,
+  bonuses: bonuses,
+  firstLessonTitle: 'Orientation and introduction to HTML',
+  secondLessonTitle: 'Advanced HTML & Intro to CSS',
+  homeworkPath: '/week-1/lesson-2#43',
+};
+
+const Week1 = () => <Week {...weekConfig} />;
 
 export default Week1;
