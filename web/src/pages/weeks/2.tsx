@@ -6,6 +6,7 @@ const Week2 = () => (
     weekNumber={2}
     firstLessonTitle="Box model"
     secondLessonTitle="CSS Selectors, Specificity & Floats"
+    homeworkPath="/week-2/lesson-4#22"
   />
 );
 
