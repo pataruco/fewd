@@ -42,5 +42,7 @@ zip -r name-of-lab-solution-code.zip <folder-name>
 
 ## Index
 
-- [Press release](./press-release)
 - [Cookie recipe](./cookie-recipe)
+- [Press release](./press-release)
+- [Nested selectors](./nested-selectors)
+- [Tag boxes](./tag-boxes)
