@@ -24,14 +24,6 @@ const StyledFooter = styled.footer`
   }
 `;
 
-const updateTime = new Intl.DateTimeFormat('en-GB', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-}).format(new Date());
-
-const datimeString = new Intl.DateTimeFormat('es-GB').format(new Date());
-
 const Footer: React.FC = () => (
   <StyledFooter>
     <p>
@@ -41,11 +33,6 @@ const Footer: React.FC = () => (
       </span>{' '}
       by <a href="https://github.com/pataruco">@pataruco</a>{' '}
       {new Date().getFullYear()}
-    </p>
-    <p>
-      <small>
-        Last update <time dateTime={datimeString}>{updateTime}</time>
-      </small>
     </p>
   </StyledFooter>
 );
