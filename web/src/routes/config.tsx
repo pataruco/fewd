@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import SlidesDeck from '../components/slides-deck';
 import Title from '../components/title';
+import Loading from '../pages/loading';
 
 export const lessonRoutes = [
   {
@@ -193,7 +194,7 @@ export const weekRoutes = [
       return (
         <>
           <Title week={1} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Content />
           </Suspense>
         </>
@@ -207,7 +208,7 @@ export const weekRoutes = [
       return (
         <>
           <Title week={2} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Content />
           </Suspense>
         </>
@@ -221,7 +222,7 @@ export const weekRoutes = [
       return (
         <>
           <Title week={3} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Content />
           </Suspense>
         </>
@@ -235,7 +236,7 @@ export const weekRoutes = [
       return (
         <>
           <Title week={4} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Content />
           </Suspense>
         </>
@@ -249,7 +250,7 @@ export const weekRoutes = [
       return (
         <>
           <Title week={5} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Content />
           </Suspense>
         </>
@@ -263,7 +264,7 @@ export const weekRoutes = [
       return (
         <>
           <Title week={6} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Content />
           </Suspense>
         </>
@@ -277,7 +278,7 @@ export const weekRoutes = [
       return (
         <>
           <Title week={7} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Content />
           </Suspense>
         </>
@@ -291,7 +292,7 @@ export const weekRoutes = [
       return (
         <>
           <Title week={8} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Content />
           </Suspense>
         </>
@@ -305,7 +306,7 @@ export const weekRoutes = [
       return (
         <>
           <Title week={9} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Content />
           </Suspense>
         </>
@@ -319,7 +320,7 @@ export const weekRoutes = [
       return (
         <>
           <Title week={10} />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Content />
           </Suspense>
         </>
