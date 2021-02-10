@@ -14,7 +14,7 @@ const ErrorPage: React.FC = () => (
     <Title title="404" />
     <Header />
     <StyledMain>
-      <h1>Page not found ☹️</h1>
+      <h1>Page not found &#128542;</h1>
     </StyledMain>
     <Footer />
   </Page>
