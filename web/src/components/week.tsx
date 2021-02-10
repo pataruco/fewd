@@ -41,8 +41,8 @@ const Week: React.FC<WeekProps> = ({
   const secondLesson = weekNumber * 2;
   const firstLesson = secondLesson - 1;
 
-  const firstLessonPath = `week-${weekNumber}/lesson-${firstLesson}`;
-  const secondLessonPath = `week-${weekNumber}/lesson-${secondLesson}`;
+  const firstLessonPath = `/week-${weekNumber}/lesson-${firstLesson}`;
+  const secondLessonPath = `/week-${weekNumber}/lesson-${secondLesson}`;
 
   return (
     <WeekPage>
