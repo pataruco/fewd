@@ -214,7 +214,7 @@ It can be divided in:
 
 Font-relative lengths define the **length** value in terms of the size of a particular character or font attribute in the font currently in effect in an element or its parent.
 
-Note: These units, especially em and rem, are often used to create scalable layouts, which maintain the vertical rhythm of the page even when the user changes the font size.
+> Note: These units, especially `em` and `rem`, are often used to create scalable layouts, which maintain the vertical rhythm of the page even when the user changes the font size.
 
 ---
 
@@ -229,7 +229,7 @@ Note: These units, especially em and rem, are often used to create scalable layo
 
 Viewport-percentage lengths define the **length** value relative to the size of the viewport, i.e., the visible portion of the document.
 
-**Note: If the `<html>` and `<body>` elements are set as `overflow:auto`, space taken by scrollbars is not subtracted from the viewport, whereas it will be subtracted if set as `overflow:scroll`.**
+> Note: If the `<html>` and `<body>` elements are set as `overflow:auto`, space taken by scrollbars is not subtracted from the viewport, whereas it will be subtracted if set as `overflow:scroll`.\*\*
 
 ---
 
@@ -240,7 +240,7 @@ Viewport-percentage lengths define the **length** value relative to the size of 
 
 ---
 
-## Lab
+## Lab 🧪
 
 [Pig Exercise](https://codepen.io/pataruco/pen/rZLvPZ)
 
@@ -252,15 +252,9 @@ Viewport-percentage lengths define the **length** value relative to the size of 
 
 Relaxr was really impressed by your work last week and wants you to continue development on their landing page.
 
-Starting in class, you will work to build out a more complex layout for their company site.
+Download the [starter code](https://github.com/pataruco/fewd/raw/master/homeworks/relaxr-2/relaxr-2-starter-code.zip)
 
-They decided on creating a blog, and their back-end engineers will be focused on developing the blog's functionality.
-
-They want your front-end skills to style their designs using HTML and CSS so Relaxr's engineers can begin integrating. Once again, the designers have handed you a basic [design file with instructions](https://raw.githubusercontent.com/pataruco/ga-fewd-assets/master/relaxr-2/starter_code/readme) and the JPEG below to help you bring the blog to life.
-
-Submit the finished version for homework.
-
-[Relaxr Blog image](https://raw.githubusercontent.com/pataruco/ga-fewd-assets/master/relaxr-2/starter_code/relaxr_blog.jpg)
+[Final version](https://raw.githubusercontent.com/pataruco/fewd/master/homeworks/relaxr-2/starter-code/images/relaxr-blog.jpg)
 
 ---
 
@@ -269,7 +263,7 @@ Submit the finished version for homework.
 ### Technical Requirements
 
 - Use flexbox in your CSS to achieve a two-column layout
-- Use the correct `Open Sans` Google Font typeface to style the text denoted in the [design file](https://raw.githubusercontent.com/pataruco/ga-fewd-assets/master/relaxr-2/starter_code/readme) and according to the JPEG provided
+- Use the correct `Open Sans` Google Font typeface to style the text denoted in the [design file](https://github.com/pataruco/fewd/blob/master/homeworks/relaxr-2/starter-code/instructions.md) and according to the JPEG provided
 - Use proper filename conventions (lowercase, .html)
 - Use a single external CSS stylesheet to style all pages
 - Use a background image for the headers

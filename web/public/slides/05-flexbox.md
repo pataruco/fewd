@@ -93,7 +93,7 @@ Let's talk about `direction` & `align`
 ```
 
 ![Flex axes](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox/flex_terms.png)
-![Flex box sandbox](https://codepen.io/pataruco/pen/XBPmqj)
+[Flex box sandbox](https://codepen.io/pataruco/pen/XBPmqj)
 
 ---
 
@@ -367,7 +367,7 @@ Specifies the order used to lay out a flex or grid item in its flex container. I
 
 ---
 
-## Lab
+## Lab 🧪
 
 Do [Flex Froggy](https://flexboxfroggy.com/)
 
