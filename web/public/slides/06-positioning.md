@@ -214,7 +214,7 @@ It can be divided in:
 
 Font-relative lengths define the **length** value in terms of the size of a particular character or font attribute in the font currently in effect in an element or its parent.
 
-Note: These units, especially em and rem, are often used to create scalable layouts, which maintain the vertical rhythm of the page even when the user changes the font size.
+> Note: These units, especially `em` and `rem`, are often used to create scalable layouts, which maintain the vertical rhythm of the page even when the user changes the font size.
 
 ---
 
@@ -229,7 +229,7 @@ Note: These units, especially em and rem, are often used to create scalable layo
 
 Viewport-percentage lengths define the **length** value relative to the size of the viewport, i.e., the visible portion of the document.
 
-**Note: If the `<html>` and `<body>` elements are set as `overflow:auto`, space taken by scrollbars is not subtracted from the viewport, whereas it will be subtracted if set as `overflow:scroll`.**
+> Note: If the `<html>` and `<body>` elements are set as `overflow:auto`, space taken by scrollbars is not subtracted from the viewport, whereas it will be subtracted if set as `overflow:scroll`.\*\*
 
 ---
 
@@ -240,7 +240,7 @@ Viewport-percentage lengths define the **length** value relative to the size of 
 
 ---
 
-## Lab
+## Lab 🧪
 
 [Pig Exercise](https://codepen.io/pataruco/pen/rZLvPZ)
 
