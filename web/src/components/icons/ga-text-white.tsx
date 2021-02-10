@@ -1,8 +1,12 @@
 import React from 'react';
 
 const GALogoTextWhite: React.FC = () => (
-  <svg viewBox="0 0 502.615 209.149" xmlns="http://www.w3.org/2000/svg">
-    <defs />
+  <svg
+    viewBox="0 0 502.615 209.149"
+    xmlns="http://www.w3.org/2000/svg"
+    width="502.615"
+    height="209.149"
+  >
     <defs>
       <clipPath id="a">
         <path d="M0 156.862h376.961V0H0z" />

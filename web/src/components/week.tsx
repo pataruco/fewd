@@ -30,6 +30,17 @@ const ListOfDetails: React.FC<ListOfDetailsProps> = ({ details }) => (
   </ul>
 );
 
+const Note: React.FC = () => (
+  <p>
+    <small>
+      <strong>Note</strong>: To navigate the lesson slides use{' '}
+      <kbd>&#8593;</kbd>, <kbd>&#8592;</kbd>, <kbd>PgUp</kbd>, <kbd>K</kbd> to
+      go to previous slide and <kbd>&#8595;</kbd>, <kbd>&#8594;</kbd>,{' '}
+      <kbd>PgDn</kbd>,<kbd>Spacebar</kbd>, <kbd>J</kbd> to go next slide.
+    </small>
+  </p>
+);
+
 const Week: React.FC<WeekProps> = ({
   weekNumber,
   resources,
@@ -62,6 +73,7 @@ const Week: React.FC<WeekProps> = ({
             <Link to={secondLessonPath}>{secondLessonTitle}</Link>
           </li>
         </ul>
+        <Note />
       </details>
 
       {resources ? (
