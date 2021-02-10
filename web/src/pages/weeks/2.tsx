@@ -56,12 +56,20 @@ const resources = [
   ],
 ];
 
+const bonuses = [
+  [
+    'Read through opening the Box Model',
+    'http://learn.shayhowe.com/html-css/opening-the-box-model/',
+  ],
+];
+
 const weekConfig = {
-  weekNumber: 2,
+  bonuses,
   firstLessonTitle: 'Box model',
-  secondLessonTitle: 'CSS Selectors, Specificity & Floats',
   homeworkPath: '/week-2/lesson-4#22',
   resources,
+  secondLessonTitle: 'CSS Selectors, Specificity & Floats',
+  weekNumber: 2,
 };
 
 const Week2 = () => <Week {...weekConfig} />;

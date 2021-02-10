@@ -29,6 +29,18 @@ const resources = [
     'Intro to Document Object Model (DOM)',
     'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction',
   ],
+  [
+    "The Difference Between 'Block' and 'Inline'",
+    'http://www.impressivewebs.com/difference-block-inline-css/',
+  ],
+  [
+    'MDN: Block-level elements',
+    'https://developer.mozilla.org/en/docs/Web/HTML/Block-level_elements',
+  ],
+  [
+    'MDN: Inline elements',
+    'https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements',
+  ],
 ];
 
 const bonuses = [
