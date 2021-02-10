@@ -18,6 +18,21 @@ const StyledMain = styled.main`
   details ul {
     margin: 0;
   }
+
+  kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font: 11px monospace;
+    line-height: normal;
+    line-height: 10px;
+    color: #444d56;
+    vertical-align: middle;
+    background-color: #fafbfc;
+    border-bottom-color: #d1d5da;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 #d1d5da;
+  }
 `;
 
 const WeekPage: React.FC = ({ children }) => (
