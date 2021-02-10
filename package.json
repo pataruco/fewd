@@ -17,7 +17,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,yml,md,mdx}": [
+    "*.{js,json,yml,md}": [
       "yarn prettier --write"
     ],
     "*.{ts,tsx}": [
