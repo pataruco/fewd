@@ -1,12 +1,21 @@
 import React from 'react';
 import Week from '../../components/week';
 
-const Week4 = () => (
-  <Week
-    weekNumber={4}
-    firstLessonTitle="Responsive Web development"
-    secondLessonTitle="Responsive Web development lab 🧪"
-  />
-);
+const resources = [
+  [
+    'CSS Tricks: Font Size Idea: px at the Root, rem for Components, em for Text Elements ',
+    'https://css-tricks.com/rems-ems/',
+  ],
+  ['REM vs EM – The Great Debate', 'https://zellwk.com/blog/rem-vs-em/'],
+];
+
+const weekConfig = {
+  resources,
+  weekNumber: 4,
+  firstLessonTitle: 'Responsive Web development',
+  secondLessonTitle: 'Responsive Web development lab 🧪',
+};
+
+const Week4 = () => <Week {...weekConfig} />;
 
 export default Week4;
