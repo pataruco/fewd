@@ -2,7 +2,7 @@ import React from 'react';
 import WeekPage from './week-page';
 import { Link } from 'react-router-dom';
 
-interface WeekProps {
+export interface WeekProps {
   weekNumber: number;
   resources?: string[][];
   bonuses?: string[][];

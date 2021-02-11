@@ -14,6 +14,7 @@ const weekConfig = {
   weekNumber: 4,
   firstLessonTitle: 'Responsive Web development',
   secondLessonTitle: 'Responsive Web development lab 🧪',
+  homeworkPath: '/week-4/lesson-8#3',
 };
 
 const Week4 = () => <Week {...weekConfig} />;
