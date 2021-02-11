@@ -43,6 +43,17 @@ In this lesson, you will:
 
 ---
 
+## Meet the Team - Declan Slevin
+
+- [Test Lead at Red Badger](https://red-badger.com/people/declan-slevin/)
+- Currently transitioning to become a Junior Software Engineer
+- Fun fact: Pedro and I joined Red Badger a week apart and worked together on the RB internal site as our first project
+- Completed the FEWD course at General Assembly in 2019
+- Studied digital film-making, animation and visual effects at university
+- Unabashed emo-kid/metalhead and video/board game nerd
+
+---
+
 ## Meet the Team - Pedro Martin
 
 - [Software engineer at Red Badger.](https://red-badger.com/people/pedro-martin/)
