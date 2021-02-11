@@ -19,6 +19,7 @@ const StyledHeader = styled.header`
 
   picture {
     max-width: 12.5%;
+    min-width: 100px;
   }
 
   ul {

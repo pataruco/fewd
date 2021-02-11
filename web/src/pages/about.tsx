@@ -18,9 +18,9 @@ const About: React.FC = () => (
       <p>I love to teach!</p>
 
       <p>
-        I love passing on the knowledge and seeing people grow. I've helped
-        around 350+ people go from being novices to solid coders in a series of
-        10 week courses.
+        I love passing on knowledge and seeing people grow. I've helped around
+        350+ people go from being novices to solid coders in a series of 10-week
+        courses.
       </p>
 
       <p>
@@ -55,20 +55,22 @@ const About: React.FC = () => (
 
       <p>
         The content on the slides is my adaption from official FEWD 3.0
-        curriculum and the experiences I have had as teacher assistant and lead
-        instructor in the last 6 years of teaching.
+        curriculum and the experiences I have had as a teacher assistant and
+        lead instructor in the last 6 years of teaching.
       </p>
 
       <p>
-        The code for this website and the content of the slides is available on{' '}
+        The code for this website and the content of the slides are available on{' '}
         <a
           href="https://github.com/pataruco/fewd"
           target="_blank"
           rel="noreferrer"
         >
-          GitHub
+          GitHub.
         </a>
       </p>
+
+      <p>Pedro.</p>
     </StyledMain>
     <Footer />
   </Page>
