@@ -31,14 +31,29 @@ const ListOfDetails: React.FC<ListOfDetailsProps> = ({ details }) => (
 );
 
 const Note: React.FC = () => (
-  <p>
-    <small>
-      <strong>Note</strong>: To navigate the lesson slides use{' '}
-      <kbd>&#8593;</kbd>, <kbd>&#8592;</kbd>, <kbd>PgUp</kbd>, <kbd>K</kbd> to
-      go to previous slide and <kbd>&#8595;</kbd>, <kbd>&#8594;</kbd>,{' '}
-      <kbd>PgDn</kbd>,<kbd>Spacebar</kbd>, <kbd>J</kbd> to go next slide.
-    </small>
-  </p>
+  <footer className="notes">
+    <p>
+      <small>
+        <strong>Note</strong>: Follow this instructions to navigate lesson
+        slides
+      </small>
+    </p>
+
+    <ul>
+      <li>
+        <small>
+          Use <kbd>&#8595;</kbd>, <kbd>&#8594;</kbd>, <kbd>PgDn</kbd>,
+          <kbd>Spacebar</kbd>, <kbd>J</kbd> to go next slide.
+        </small>
+      </li>
+      <li>
+        <small>
+          Use <kbd>&#8593;</kbd>, <kbd>&#8592;</kbd>, <kbd>PgUp</kbd>,{' '}
+          <kbd>K</kbd> to go to previous slide.
+        </small>
+      </li>
+    </ul>
+  </footer>
 );
 
 const Week: React.FC<WeekProps> = ({
