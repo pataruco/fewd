@@ -48,11 +48,15 @@ const StyledHeader = styled.header`
     border: none;
     color: white;
     margin-bottom: 0.75rem;
+    padding: 0;
   }
 
-  nav > ul > li:first-of-type > ul > li {
-    background-color: black;
-    padding: 0.75rem 0.5rem;
+  nav > ul > li {
+    margin-left: 1.25rem;
+    &:first-of-type > ul > li {
+      background-color: black;
+      padding: 0.75rem 0.5rem;
+    }
   }
 
   nav > ul li ul {
@@ -62,10 +66,6 @@ const StyledHeader = styled.header`
 
   nav > ul li ul.menu-open {
     display: block;
-  }
-
-  nav > ul > li:last-of-type {
-    margin-left: 1.25rem;
   }
 `;
 
@@ -101,6 +101,10 @@ const Header: React.FC = () => {
     dispatch(openMenu());
   };
 
+  const close = (event: React.MouseEvent) => {
+    dispatch(closeMenu());
+  };
+
   return (
     <StyledHeader>
       <picture>
@@ -108,14 +112,17 @@ const Header: React.FC = () => {
           <GALogoTextWhite />
         </Link>
       </picture>
-      <nav>
+      <nav onMouseLeave={close}>
         <ul>
           <li>
-            <button onMouseEnter={handleOnMouseEnter}>weeks</button>
+            <button onMouseEnter={handleOnMouseEnter}>Weeks</button>
             <Weeks />
           </li>
           <li>
-            <Link to="/about">about</Link>
+            <Link to="/final-project-brief">Final project</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>
