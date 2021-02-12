@@ -44,6 +44,7 @@ zip -r name-of-lab-solution-code.zip <folder-name>
 
 - [Color switcher](./color-switcher)
 - [Cookie recipe](./cookie-recipe)
+- [Drum kit](./drum-kit)
 - [Nested selectors](./nested-selectors)
 - [Press release](./press-release)
 - [Responsive lab](./responsive-lab)

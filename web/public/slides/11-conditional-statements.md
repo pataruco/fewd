@@ -229,6 +229,18 @@ Conditionals make programs harder to debug because more operations can take plac
 
 ---
 
+## Lab 🧪
+
+## Drum kit
+
+> [Starter code](https://github.com/pataruco/fewd/raw/master/labs/drum-kit/drum-kit-starter-code.zip)
+
+???
+
+[Solution code](https://github.com/pataruco/fewd/raw/master/labs/drum-kit/drum-kit-solution-code.zip)
+
+---
+
 .row[
 .column[
 
