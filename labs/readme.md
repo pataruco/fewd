@@ -42,7 +42,10 @@ zip -r name-of-lab-solution-code.zip <folder-name>
 
 ## Index
 
+- [Color switcher](./color-switcher)
 - [Cookie recipe](./cookie-recipe)
-- [Press release](./press-release)
 - [Nested selectors](./nested-selectors)
+- [Press release](./press-release)
+- [Responsive lab](./responsive-lab)
+- [Responsive Uber](./responsive-uber)
 - [Tag boxes](./tag-boxes)
