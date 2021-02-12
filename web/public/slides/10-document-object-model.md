@@ -326,7 +326,7 @@ There are many events that occur in the browser as the user interacts with the p
 
 ### Score keeper
 
-> [Starter code](https://github.com/pataruco/fewd/raw/master/labs/traffic-lights/traffic-lights-starter-code.zip)
+> [Starter code](https://github.com/pataruco/fewd/raw/master/labs/score-keeper/score-keeper-starter-code.zip)
 
 ---
 
