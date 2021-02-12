@@ -49,3 +49,4 @@ zip -r name-of-lab-solution-code.zip <folder-name>
 - [Responsive lab](./responsive-lab)
 - [Responsive Uber](./responsive-uber)
 - [Tag boxes](./tag-boxes)
+- [Traffic lights](./traffic-lights)

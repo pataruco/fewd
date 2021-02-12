@@ -314,9 +314,11 @@ There are many events that occur in the browser as the user interacts with the p
 
 ---
 
-## Solo Lab
+## Solo Lab 🧪
 
-### [Traffic lights](https://codepen.io/pataruco/pen/oNvxGxR)
+### Traffic lights
+
+> [Starter code](https://github.com/pataruco/fewd/raw/master/labs/traffic-lights/traffic-lights-starter-code.zip)
 
 ---
 
