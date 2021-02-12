@@ -384,6 +384,18 @@ We'll see this in action in a future lesson…!
 
 ---
 
+## Lab 🧪
+
+## Arrays and loops
+
+> [Starter code](https://github.com/pataruco/fewd/raw/master/labs/array-loops/array-loops-starter-code.zip)
+
+???
+
+[Solution code](https://github.com/pataruco/fewd/raw/master/labs/array-loops/array-loops-solution-code.zip)
+
+---
+
 .row[
 .column[
 
