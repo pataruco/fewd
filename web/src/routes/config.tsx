@@ -328,3 +328,18 @@ export const weekRoutes = [
     },
   },
 ];
+
+export const FinalProjectRoute = {
+  path: '/final-project-brief',
+  component: () => {
+    const Content = lazy(() => import('../pages/final-project-brief'));
+    return (
+      <>
+        <Title title="Final project brief" />
+        <Suspense fallback={<Loading />}>
+          <Content />
+        </Suspense>
+      </>
+    );
+  },
+};

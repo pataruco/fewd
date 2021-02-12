@@ -322,15 +322,17 @@ There are many events that occur in the browser as the user interacts with the p
 
 ---
 
-## Bonus Lab
+## Bonus Lab 🧪
 
-### [Score keeper](https://codepen.io/pataruco/pen/pLXwaz)
+### Score keeper
+
+> [Starter code](https://github.com/pataruco/fewd/raw/master/labs/traffic-lights/traffic-lights-starter-code.zip)
 
 ---
 
 ## Final project brief
 
-- [Link to brief]()
+- [Link to brief](/final-project-brief)
 
 ---
 
