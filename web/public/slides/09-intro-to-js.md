@@ -318,18 +318,25 @@ function square(number) {
 
 ---
 
+.row[
+.column[
+
 ## Key Takeaways
 
 - Computers Think in Small Steps
 - Use pseudocode to plan out steps of a program.
 - You can define functions to encapsulate common procedures.
 - Use variables for anything you need the computer to keep track of.
+  ]
+  .column[
 
 ## For Next Time
 
 - JavaScript and the DOM
   - Use JavaScript to interact with elements on the page.
   - Respond to user actions by setting event listeners.
+    ]
+    ]
 
 ---
 

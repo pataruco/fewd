@@ -306,27 +306,33 @@ There are many events that occur in the browser as the user interacts with the p
 
 ---
 
-## Pair Lab
+## Pair Lab 🧪
 
-### [Color switcher](https://codepen.io/pataruco/pen/bGVmGXo)
+### Color switcher
 
----
-
-## Solo Lab
-
-### [Traffic lights](https://codepen.io/pataruco/pen/oNvxGxR)
+> [Starter code](https://github.com/pataruco/fewd/raw/master/labs/color-switcher/color-switcher-starter-code.zip)
 
 ---
 
-## Bonus Lab
+## Solo Lab 🧪
 
-### [Score keeper](https://codepen.io/pataruco/pen/pLXwaz)
+### Traffic lights
+
+> [Starter code](https://github.com/pataruco/fewd/raw/master/labs/traffic-lights/traffic-lights-starter-code.zip)
+
+---
+
+## Bonus Lab 🧪
+
+### Score keeper
+
+> [Starter code](https://github.com/pataruco/fewd/raw/master/labs/traffic-lights/traffic-lights-starter-code.zip)
 
 ---
 
 ## Final project brief
 
-- [Link to brief]()
+- [Link to brief](/final-project-brief)
 
 ---
 
