@@ -109,8 +109,8 @@ input[type='email'] {
 Selects adjacent siblings
 
 ```css
-input[type='email'] {
-  border: none;
+h2 + p {
+  font-family: monospace;
 }
 ```
 
