@@ -229,6 +229,21 @@ Conditionals make programs harder to debug because more operations can take plac
 
 ---
 
+## Lab 🧪
+
+## Drum kit
+
+> [Starter code](https://github.com/pataruco/fewd/raw/master/labs/drum-kit/drum-kit-starter-code.zip)
+
+???
+
+[Solution code](https://github.com/pataruco/fewd/raw/master/labs/drum-kit/drum-kit-solution-code.zip)
+
+---
+
+.row[
+.column[
+
 ## Key Takeaways
 
 > Conditionals Allow Decisions
@@ -237,13 +252,19 @@ Conditionals make programs harder to debug because more operations can take plac
 - Conditionals are one tool in the control flow toolbox.
 - Use logical operators and conditional chains for more complex reasoning.
 
-## For Next Time
+  ]
+  .column[
+
+  ## For Next Time
 
 JavaScript Loops and Arrays
 
 - Loops will allow you to repeat a code block until a condition is met.
 - Loops are another example of control flow determining how and when code should execute.
 - Arrays are collections of data that allow us to store multiple things together.
+
+  ]
+  ]
 
 ---
 

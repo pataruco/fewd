@@ -28,7 +28,7 @@ const resources = [
 
 const bonuses = [
   [
-    'Read through MDN JavaScript Bbasics',
+    'Read through MDN JavaScript Basics',
     'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics',
   ],
   [
