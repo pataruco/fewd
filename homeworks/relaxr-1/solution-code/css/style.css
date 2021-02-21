@@ -20,6 +20,12 @@ body {
   font-size: 100%;
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -133,20 +139,10 @@ h1 {
 .footer a {
   display: inline-block;
   width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  line-height: 40px;
-  vertical-align: middle;
 }
 
-.footer a[title='twitter'] {
-  background-image: url(../images/twitter.png);
-}
-
-.footer a[title='facebook'] {
-  background-image: url(../images/facebook.png);
-  margin-left: 55px;
+.footer a:first-of-type {
+  margin-right: 55px;
 }
 
 .footer p:last-of-type {
