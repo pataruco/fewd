@@ -388,20 +388,20 @@ Building actual components means taking everything you know and putting it toget
 
 ---
 
-# Lab
+# Lab 🧪
 
 > TODO
-> [Hmaburguer menu]()
+> [Hamburguer menu]()
 
 ---
 
-# Lab
+# Lab 🧪
 
 [CodePen](https://codepen.io/pataruco/pen/wYEMmb)
 
 ---
 
-# Bonus
+# Bonus 🧪
 
 [CodePen](https://codepen.io/pataruco/pen/eYOeGrj)
 
