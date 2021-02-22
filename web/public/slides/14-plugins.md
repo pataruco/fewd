@@ -16,4 +16,4 @@ Share link for
 - Accordion
 - Hamburguer menu
 - Magic scroll
-- S lider
+- Slider
