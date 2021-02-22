@@ -42,13 +42,19 @@ zip -r name-of-lab-solution-code.zip <folder-name>
 
 ## Index
 
+- [Accordion](./accordion)
 - [Arrays & loops](./array-loops)
 - [Color switcher](./color-switcher)
 - [Cookie recipe](./cookie-recipe)
 - [Drum kit](./drum-kit)
+- [Hamburguer menu](./hamburguer-menu)
+- [Magic scroll](./magic-scroll)
+- [Mobile menu](./mobile-menu)
 - [Nested selectors](./nested-selectors)
 - [Press release](./press-release)
 - [Responsive lab](./responsive-lab)
 - [Responsive Uber](./responsive-uber)
+- [Score keeper](./score-keeper)
+- [Slider](./slider)
 - [Tag boxes](./tag-boxes)
 - [Traffic lights](./traffic-lights)
