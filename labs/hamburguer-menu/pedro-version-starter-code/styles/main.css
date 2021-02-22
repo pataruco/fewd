@@ -36,8 +36,16 @@ header a {
   text-decoration: 2px underline;
 }
 
-header button {
+header .button {
   display: none;
+}
+
+.button {
+  appearance: none;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: white;
+  text-decoration: 2px solid underline;
 }
 
 main {
@@ -67,5 +75,37 @@ footer p {
 }
 
 body > nav {
-  display: none;
+  position: absolute;
+  width: 200px;
+  background-color: #3a4449;
+  bottom: 0;
+  top: 0;
+  padding: 1.25rem;
+  color: white;
+  right: -200px;
+  transition: 0.25s ease-in all;
+}
+
+body.menu-is-open > nav {
+  transform: translateX(-200px);
+}
+
+body > nav li {
+  list-style: none;
+  margin-bottom: 0.75rem;
+}
+
+body > nav a {
+  color: white;
+  text-decoration: 2px underline;
+}
+
+@media screen and (max-width: 800px) {
+  header nav {
+    display: none;
+  }
+
+  header .button {
+    display: block;
+  }
 }
