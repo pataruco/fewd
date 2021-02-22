@@ -3,6 +3,9 @@ import SlidesDeck from '../components/slides-deck';
 import Title from '../components/title';
 import Loading from '../pages/loading';
 
+// Lessons
+// Path: week-n/lesson-n
+
 export const lessonRoutes = [
   {
     path: '/week-1/lesson-1',
@@ -186,6 +189,8 @@ export const lessonRoutes = [
   },
 ];
 
+// Weeks
+// Path: week-n
 export const weekRoutes = [
   {
     path: '/week-1',
@@ -329,6 +334,23 @@ export const weekRoutes = [
   },
 ];
 
+// Bonus lessons
+// Path: /bonus-lessons/n
+export const bonusLessonRoutes = [
+  {
+    path: '/bonus-lessons/grids',
+    component: () => (
+      <>
+        <Title title="Bonus Lesson | Grids" />
+        <SlidesDeck slidesDeckName="bonus-lesson-grids" />
+      </>
+    ),
+  },
+];
+
+// Final project
+// Path: /final-project-brief
+
 export const FinalProjectRoute = {
   path: '/final-project-brief',
   component: () => {
@@ -336,6 +358,23 @@ export const FinalProjectRoute = {
     return (
       <>
         <Title title="Final project brief" />
+        <Suspense fallback={<Loading />}>
+          <Content />
+        </Suspense>
+      </>
+    );
+  },
+};
+
+// Bonus lessons pags
+// Path: //bonus-lessons
+export const BonusLessonsRoute = {
+  path: '/bonus-lessons',
+  component: () => {
+    const Content = lazy(() => import('../pages/bonus-lessons'));
+    return (
+      <>
+        <Title title="Bonus Lessons" />
         <Suspense fallback={<Loading />}>
           <Content />
         </Suspense>
