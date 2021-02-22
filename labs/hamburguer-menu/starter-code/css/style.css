@@ -2,34 +2,34 @@
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
+  min-height: 100vh;
 }
 
 .site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-
+  align-items: center;
+  background: #541c36;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 1em;
-  background: #541c36;
+  padding: 1.25rem;
 }
+
 .logo {
-  margin: 0;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 100;
   font-size: 1rem;
+  font-weight: 100;
+  margin: 0;
+  text-transform: uppercase;
 }
-.logo i {
+
+.logo-icon {
   display: inline-block;
-  margin-right: 1rem;
-  font-style: normal;
   font-size: 3rem;
+  font-style: normal;
+  margin-right: 1rem;
   vertical-align: middle;
 
   /* add a pulsing animation */
@@ -45,19 +45,20 @@ body {
 .hamburger svg {
   fill: #fff;
 }
+
 .hamburger:focus {
   outline: 0;
 }
+
 .site-nav {
   position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 375px;
+  background: #3a4449;
   height: 100vh;
   padding: 8em 2em;
-  background: #3a4449;
+  right: 0;
+  top: 0;
   transition: 0.4s;
+  width: 375px;
 
   /* add a transition and a transform to set the "A" state of the nav */
 }
@@ -108,10 +109,11 @@ body {
 }
 
 .main-content {
+  flex: 1 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   background: linear-gradient(45deg, #ff4e55, #d3206e);
 }
 
@@ -128,4 +130,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 1px 1px 2px #666;
+}
+
+footer {
+  padding: 1.25rem;
+  background: black;
+  color: white;
+}
+
+footer p {
+  text-align: center;
 }
