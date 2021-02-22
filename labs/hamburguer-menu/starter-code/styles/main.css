@@ -25,7 +25,7 @@ h1 span {
   margin-right: 1rem;
   font-size: 3rem;
   vertical-align: middle;
-  animation: pulse 5s 1s infinite ease;
+  /* Set an infinite pulse animation  */
 }
 
 header ul {
@@ -54,7 +54,7 @@ header .button {
   background-color: transparent;
   color: white;
   text-decoration: 2px solid underline;
-  transition: 0.25s ease-in all;
+  /* Set transition for hover and active states */
 }
 
 .button:hover {
@@ -100,11 +100,11 @@ body > nav {
   padding: 1.25rem;
   color: white;
   right: -200px;
-  transition: 0.25s ease-in all;
+  /* Write a transition t */
 }
 
 body.menu-is-open > nav {
-  /* Write a transition that make the nav appear on screen  */
+  /* Write a transform that make the nav appear on screen  */
 }
 
 body > nav li {
