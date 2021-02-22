@@ -390,8 +390,13 @@ Building actual components means taking everything you know and putting it toget
 
 # Lab 🧪
 
-> TODO
-> [Hamburguer menu]()
+## Hamburguer menu 🍔
+
+[Starter code](https://github.com/pataruco/fewd/raw/master/labs/hamburguer-menu/hamburguer-menu-starter-code.zip)
+
+???
+
+Solution code https://github.com/pataruco/fewd/raw/master/labs/hamburguer-menu/hamburguer-menu-solution-code.zip
 
 ---
 
