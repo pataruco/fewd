@@ -20,6 +20,14 @@ header {
   color: white;
 }
 
+h1 span {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 3rem;
+  vertical-align: middle;
+  animation: pulse 5s 1s infinite ease;
+}
+
 header ul {
   list-style: none;
   padding: 0;
@@ -46,6 +54,15 @@ header .button {
   background-color: transparent;
   color: white;
   text-decoration: 2px solid underline;
+  transition: 0.25s ease-in all;
+}
+
+.button:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 main {
@@ -107,5 +124,16 @@ body > nav a {
 
   header .button {
     display: block;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  20%,
+  30% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
   }
 }

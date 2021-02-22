@@ -2,48 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hamburger Transitions and Animations</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>🍔 Hamburguer menu lab 🧪</title>
   </head>
   <body>
-    <header class="site-header">
-      <h1 class="logo">
-        <span class="logo-icon" role="img">🍔</span> Burger Burger
+    <header>
+      <h1>
+        <span role="image" aria-labelledby="Hamburguer">🍔</span> Hamburguer
+        menu lab
       </h1>
-      <button class="hamburger js-nav-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          width="32"
-          height="32"
-        >
-          <path
-            d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z"
-          />
-        </svg>
-      </button>
-      <nav class="site-nav">
-        <ul class="site-nav-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
         </ul>
-        <button class="site-nav-icon js-nav-icon">&times;</button>
       </nav>
+      <button class="js-nav button">Open</button>
     </header>
-    <main class="main-content">
-      <h2 class="main-title">
-        <span>Great Taste</span>
-        Build Your Own Burger
-      </h1>
+    <main>
+      <p>Build your own burguer</p>
     </main>
     <footer>
-      <p>
-        Copyright &copy;
-      </p>
+      <footer>
+        <p>Copyright &copy;</p>
+      </footer>
     </footer>
-    <script src="js/script.js"></script>
+    <nav>
+      <button class="js-nav button">Close</button>
+      <ul>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
