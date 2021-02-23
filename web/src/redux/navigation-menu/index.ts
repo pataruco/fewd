@@ -2,30 +2,51 @@ import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 
 interface NavigationMenu {
-  isOpen: boolean;
+  weekIsOpen: boolean;
+  bonusLessonsIsOpen: boolean;
+  mobileMenuIsOpen: boolean;
 }
 
 const initialState: NavigationMenu = {
-  isOpen: false,
+  weekIsOpen: false,
+  bonusLessonsIsOpen: false,
+  mobileMenuIsOpen: false,
 };
 
 export const navigationMenuSlice = createSlice({
   name: 'navigation-menu',
   initialState,
   reducers: {
-    openMenu: (state) => {
-      state.isOpen = true;
+    openWeekMenu: (state) => {
+      state.weekIsOpen = true;
     },
-    closeMenu: (state) => {
-      state.isOpen = false;
+    closeWeekMenu: (state) => {
+      state.weekIsOpen = false;
     },
-    toggleMenu: (state) => {
-      state.isOpen = !state.isOpen;
+
+    openBonusLessonMenu: (state) => {
+      state.bonusLessonsIsOpen = true;
+    },
+    closeBonusLessonMenu: (state) => {
+      state.bonusLessonsIsOpen = false;
+    },
+    openMobileMenu: (state) => {
+      state.mobileMenuIsOpen = true;
+    },
+    closeMobileMenu: (state) => {
+      state.mobileMenuIsOpen = false;
     },
   },
 });
 
-export const { openMenu, closeMenu, toggleMenu } = navigationMenuSlice.actions;
+export const {
+  closeBonusLessonMenu,
+  closeWeekMenu,
+  openBonusLessonMenu,
+  openWeekMenu,
+  openMobileMenu,
+  closeMobileMenu,
+} = navigationMenuSlice.actions;
 
 export const selectNavigationMenu = (state: RootState) =>
   state['navigation-menu'];

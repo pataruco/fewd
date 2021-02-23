@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
-  background-color: black;
+  background-color: var(--black);
   padding: 1.25rem;
   display: flex;
   justify-content: space-between;
 
   p {
-    color: white;
+    color: var(--white);
     text-align: center;
     max-width: 100%;
     span {
@@ -16,7 +16,7 @@ const StyledFooter = styled.footer`
     }
 
     a {
-      color: white;
+      color: var(--white);
       &:hover {
         text-decoration: underline 2px solid white;
       }
