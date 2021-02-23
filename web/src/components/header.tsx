@@ -3,11 +3,14 @@ import styled from 'styled-components';
 import { Link, withRouter } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {
-  closeMenu,
-  openMenu,
+  closeBonusLessonMenu,
+  closeWeekMenu,
+  openBonusLessonMenu,
+  openWeekMenu,
   selectNavigationMenu,
 } from '../redux/navigation-menu';
 import GALogoTextWhite from './icons/ga-text-white';
+import { bonusLessonRoutes } from '../routes/config';
 
 const StyledHeader = styled.header`
   padding: 1.25rem;
@@ -72,15 +75,17 @@ const StyledHeader = styled.header`
 const weeksIterator = new Array(10).fill('week');
 
 const Weeks: React.FC = () => {
-  const { isOpen } = useSelector(selectNavigationMenu);
+  const { weekIsOpen } = useSelector(selectNavigationMenu);
   const dispatch = useDispatch();
 
   const close = (event: React.MouseEvent) => {
-    dispatch(closeMenu());
+    dispatch(closeWeekMenu());
+    dispatch(closeWeekMenu());
+    dispatch(closeBonusLessonMenu());
   };
 
   return (
-    <ul className={isOpen ? 'menu-open' : ''} onMouseLeave={close}>
+    <ul className={weekIsOpen ? 'menu-open' : ''} onMouseLeave={close}>
       {weeksIterator.map((week, i) => (
         <li key={i}>
           <Link to={`${week}-${i + 1}`}>
@@ -94,15 +99,55 @@ const Weeks: React.FC = () => {
   );
 };
 
+const gridsPath = bonusLessonRoutes[0].path;
+
+const bonusLessons = [['Grids', gridsPath]];
+
+const BonusLessons: React.FC = () => {
+  const { bonusLessonsIsOpen } = useSelector(selectNavigationMenu);
+  const dispatch = useDispatch();
+
+  const close = (event: React.MouseEvent) => {
+    dispatch(closeWeekMenu());
+    dispatch(closeBonusLessonMenu());
+  };
+
+  return (
+    <ul className={bonusLessonsIsOpen ? 'menu-open' : ''} onMouseLeave={close}>
+      {bonusLessons.map((week, i) => {
+        const [name, path] = week;
+        return (
+          <li key={i}>
+            <Link to={path}>
+              <span onClick={close}>{name}</span>
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
 const Header: React.FC = () => {
   const dispatch = useDispatch();
 
-  const handleOnMouseEnter = (event: React.MouseEvent) => {
-    dispatch(openMenu());
+  const dispatchClose = () => {
+    dispatch(closeWeekMenu());
+    dispatch(closeBonusLessonMenu());
   };
 
   const close = (event: React.MouseEvent) => {
-    dispatch(closeMenu());
+    dispatchClose();
+  };
+
+  const handleWeeksOnMouseEnter = (event: React.MouseEvent) => {
+    dispatchClose();
+    dispatch(openWeekMenu());
+  };
+
+  const handleOnBonusLessonsMouseEnter = (event: React.MouseEvent) => {
+    dispatchClose();
+    dispatch(openBonusLessonMenu());
   };
 
   return (
@@ -115,8 +160,14 @@ const Header: React.FC = () => {
       <nav onMouseLeave={close}>
         <ul>
           <li>
-            <button onMouseEnter={handleOnMouseEnter}>Weeks</button>
+            <button onMouseEnter={handleWeeksOnMouseEnter}>Weeks</button>
             <Weeks />
+          </li>
+          <li>
+            <button onMouseEnter={handleOnBonusLessonsMouseEnter}>
+              Bonus lessons
+            </button>
+            <BonusLessons />
           </li>
           <li>
             <Link to="/final-project-brief">Final project</Link>
