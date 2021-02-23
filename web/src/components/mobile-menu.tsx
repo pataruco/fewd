@@ -37,6 +37,7 @@ const StyledNav = styled.nav`
 
     &:hover {
       color: rgba(255, 255, 255, 0.75);
+      text-decoration: underline 2px var(--ga-red);
     }
 
     &:focus,
@@ -56,6 +57,10 @@ const StyledNav = styled.nav`
 
   a {
     color: var(--white);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline 2px var(--ga-red);
+    }
   }
 
   @media screen and (min-width: 600px) {
@@ -72,7 +77,6 @@ const CloseLink: React.FC<{ to: string; children: React.ReactNode }> = ({
   const dispatch = useDispatch();
 
   const handleOnClick = (event: React.MouseEvent) => {
-    event.preventDefault();
     dispatch(closeMobileMenu());
   };
 
@@ -115,7 +119,6 @@ const MobileMenu: React.FC = () => {
   const dispatch = useDispatch();
 
   const handleOnClick = (event: React.MouseEvent) => {
-    // event.preventDefault();
     dispatch(closeMobileMenu());
   };
 
