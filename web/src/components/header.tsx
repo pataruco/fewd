@@ -15,7 +15,7 @@ import { bonusLessonRoutes } from '../routes/config';
 
 const StyledHeader = styled.header`
   padding: 1.25rem;
-  background-color: black;
+  background-color: var(--black);
 
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@ const StyledHeader = styled.header`
   }
 
   ul a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     border-bottom: none;
     &:hover {
@@ -48,9 +48,9 @@ const StyledHeader = styled.header`
 
   button {
     appearance: none;
-    background-color: black;
+    background-color: var(--black);
     border: none;
-    color: white;
+    color: var(--white);
     margin-bottom: 0.75rem;
     padding: 0;
   }
@@ -58,7 +58,7 @@ const StyledHeader = styled.header`
   nav > ul > li {
     margin-left: 1.25rem;
     &:first-of-type > ul > li {
-      background-color: black;
+      background-color: var(--black);
       padding: 0.75rem 0.5rem;
     }
   }
@@ -99,7 +99,7 @@ const StyledHeader = styled.header`
   }
 `;
 
-const weeksIterator = new Array(10).fill('week');
+export const weeksIterator = new Array(10).fill('week');
 
 const Weeks: React.FC = () => {
   const { weekIsOpen } = useSelector(selectNavigationMenu);
@@ -128,7 +128,7 @@ const Weeks: React.FC = () => {
 
 const gridsPath = bonusLessonRoutes[0].path;
 
-const bonusLessons = [['Grids', gridsPath]];
+export const bonusLessons = [['Grids', gridsPath]];
 
 const BonusLessons: React.FC = () => {
   const { bonusLessonsIsOpen } = useSelector(selectNavigationMenu);
@@ -141,8 +141,8 @@ const BonusLessons: React.FC = () => {
 
   return (
     <ul className={bonusLessonsIsOpen ? 'menu-open' : ''} onMouseLeave={close}>
-      {bonusLessons.map((week, i) => {
-        const [name, path] = week;
+      {bonusLessons.map((lesson, i) => {
+        const [name, path] = lesson;
         return (
           <li key={i}>
             <Link to={path}>

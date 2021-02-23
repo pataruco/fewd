@@ -6,8 +6,9 @@ import {
   selectNavigationMenu,
   closeMobileMenu,
 } from '../redux/navigation-menu';
+import { weeksIterator, bonusLessons } from './header';
 
-const width = '200px';
+const width = '250px';
 
 const StyledNav = styled.nav`
   position: absolute;
@@ -24,8 +25,37 @@ const StyledNav = styled.nav`
     transform: translateX(-${width});
   }
 
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+    padding: 0;
+    text-decoration: underline 2px var(--ga-red);
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: underline 2px rgba(255, 0, 0, 0.5);
+    }
+  }
+
   ul {
     list-style: none;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: var(--white);
   }
 
   @media screen and (min-width: 600px) {
@@ -35,8 +65,10 @@ const StyledNav = styled.nav`
   }
 `;
 
-const MobileMenu: React.FC = () => {
-  const { mobileMenuIsOpen } = useSelector(selectNavigationMenu);
+const CloseLink: React.FC<{ to: string; children: React.ReactNode }> = ({
+  to,
+  children,
+}) => {
   const dispatch = useDispatch();
 
   const handleOnClick = (event: React.MouseEvent) => {
@@ -45,16 +77,73 @@ const MobileMenu: React.FC = () => {
   };
 
   return (
+    <Link to={to} onClick={handleOnClick}>
+      {children}
+    </Link>
+  );
+};
+
+const Weeks: React.FC = () => (
+  <ul>
+    {weeksIterator.map((week, i) => (
+      <li key={i}>
+        <CloseLink to={`${week}-${i + 1}`}>
+          <span>
+            {week} {i + 1}
+          </span>
+        </CloseLink>
+      </li>
+    ))}
+  </ul>
+);
+
+const BonusLessons: React.FC = () => (
+  <ul>
+    {bonusLessons.map((lesson, i) => {
+      const [name, path] = lesson;
+      return (
+        <li key={i}>
+          <CloseLink to={path}>{name}</CloseLink>
+        </li>
+      );
+    })}
+  </ul>
+);
+
+const MobileMenu: React.FC = () => {
+  const { mobileMenuIsOpen } = useSelector(selectNavigationMenu);
+  const dispatch = useDispatch();
+
+  const handleOnClick = (event: React.MouseEvent) => {
+    // event.preventDefault();
+    dispatch(closeMobileMenu());
+  };
+
+  return (
     <StyledNav className={mobileMenuIsOpen ? 'mobile-menu-open' : ''}>
       <button onClick={handleOnClick}>Close</button>
       <ul>
-        <li>Weeks</li>
-        <li>Bonus Lessons</li>
-        <li>Final Project</li>
-        <li>About</li>
+        <li>
+          <details>
+            <summary>Weeks</summary>
+            <Weeks />
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Bonus Lessons</summary>
+            <BonusLessons />
+          </details>
+        </li>
+        <li>
+          <CloseLink to="/final-project-brief">Final Project</CloseLink>
+        </li>
+        <li>
+          <CloseLink to="/about">About</CloseLink>
+        </li>
       </ul>
     </StyledNav>
   );
 };
 
-export default MobileMenu;
+export default withRouter(MobileMenu);
