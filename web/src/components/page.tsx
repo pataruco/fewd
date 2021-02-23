@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import MobileMenu from './mobile-menu';
 
 const StyledDiv = styled.div`
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 100%;
+  min-height: 100vh;
+  position: relative;
 
   picture {
     display: block;
@@ -24,6 +26,11 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Page: React.FC = ({ children }) => <StyledDiv>{children}</StyledDiv>;
+const Page: React.FC = ({ children }) => (
+  <StyledDiv>
+    {children}
+    <MobileMenu />
+  </StyledDiv>
+);
 
 export default Page;

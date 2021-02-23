@@ -8,6 +8,7 @@ import {
   openBonusLessonMenu,
   openWeekMenu,
   selectNavigationMenu,
+  openMobileMenu,
 } from '../redux/navigation-menu';
 import GALogoTextWhite from './icons/ga-text-white';
 import { bonusLessonRoutes } from '../routes/config';
@@ -69,6 +70,32 @@ const StyledHeader = styled.header`
 
   nav > ul li ul.menu-open {
     display: block;
+  }
+
+  & > button {
+    display: none;
+    text-decoration: underline 2px var(--ga-red);
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: underline 2px rgba(255, 0, 0, 0.5);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    & > button {
+      display: block;
+    }
+
+    nav {
+      display: none;
+    }
   }
 `;
 
@@ -150,6 +177,10 @@ const Header: React.FC = () => {
     dispatch(openBonusLessonMenu());
   };
 
+  const handleOnOpenMobileMenuClick = (event: React.MouseEvent) => {
+    dispatch(openMobileMenu());
+  };
+
   return (
     <StyledHeader>
       <picture>
@@ -177,6 +208,7 @@ const Header: React.FC = () => {
           </li>
         </ul>
       </nav>
+      <button onClick={handleOnOpenMobileMenuClick}>Menu</button>
     </StyledHeader>
   );
 };

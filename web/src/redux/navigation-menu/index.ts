@@ -4,11 +4,13 @@ import { RootState } from '../store';
 interface NavigationMenu {
   weekIsOpen: boolean;
   bonusLessonsIsOpen: boolean;
+  mobileMenuIsOpen: boolean;
 }
 
 const initialState: NavigationMenu = {
   weekIsOpen: false,
   bonusLessonsIsOpen: false,
+  mobileMenuIsOpen: false,
 };
 
 export const navigationMenuSlice = createSlice({
@@ -28,6 +30,12 @@ export const navigationMenuSlice = createSlice({
     closeBonusLessonMenu: (state) => {
       state.bonusLessonsIsOpen = false;
     },
+    openMobileMenu: (state) => {
+      state.mobileMenuIsOpen = true;
+    },
+    closeMobileMenu: (state) => {
+      state.mobileMenuIsOpen = false;
+    },
   },
 });
 
@@ -36,6 +44,8 @@ export const {
   closeWeekMenu,
   openBonusLessonMenu,
   openWeekMenu,
+  openMobileMenu,
+  closeMobileMenu,
 } = navigationMenuSlice.actions;
 
 export const selectNavigationMenu = (state: RootState) =>
