@@ -42,6 +42,7 @@ const weekConfig = {
   resources,
   secondLessonTitle: 'Positioning',
   weekNumber: 3,
+  homeworkPath: '/week-3/lesson-6#27',
 };
 
 const Week3 = () => <Week {...weekConfig} />;
