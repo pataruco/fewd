@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const { REACT_APP_TIMESTAMP } = process.env;
+
 const StyledFooter = styled.footer`
   background-color: var(--black);
   padding: 1.25rem;
@@ -22,7 +24,71 @@ const StyledFooter = styled.footer`
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    & {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    p {
+      text-align: start;
+      &:first-of-type {
+        margin-top: 0;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
 `;
+
+const createTimeStamp = () => {
+  if (!REACT_APP_TIMESTAMP) {
+    return null;
+  }
+
+  const now = new Date(Number(REACT_APP_TIMESTAMP) * 1000);
+  const locale = 'en-GB';
+  const printTimeStampOptions: Intl.DateTimeFormatOptions = {
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    month: 'long',
+    second: 'numeric',
+    timeZone: 'Europe/London',
+    timeZoneName: 'short',
+    year: 'numeric',
+    hour12: true,
+  };
+
+  const printTimestamp = new Intl.DateTimeFormat(
+    locale,
+    printTimeStampOptions,
+  ).format(now);
+
+  const dateTimestamp = now.toISOString();
+
+  return {
+    printTimestamp,
+    dateTimestamp,
+  };
+};
+
+const TimeStamp: React.FC = () => {
+  const timestamps = createTimeStamp();
+  if (timestamps) {
+    const { printTimestamp, dateTimestamp } = timestamps;
+    return (
+      <p>
+        <small>
+          Updated at: <time dateTime={dateTimestamp}>{printTimestamp}</time>
+        </small>
+      </p>
+    );
+  }
+  return null;
+};
 
 const Footer: React.FC = () => (
   <StyledFooter>
@@ -31,9 +97,13 @@ const Footer: React.FC = () => (
       <span role="img" aria-labelledby="heart">
         ❤️
       </span>{' '}
-      by <a href="https://github.com/pataruco">@pataruco</a>{' '}
+      by{' '}
+      <a href="https://github.com/pataruco" target="_blank" rel="noreferrer">
+        @pataruco
+      </a>{' '}
       {new Date().getFullYear()}
     </p>
+    <TimeStamp />
   </StyledFooter>
 );
 

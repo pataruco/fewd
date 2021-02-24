@@ -45,11 +45,13 @@
   "license": "MIT",
   "name": "web",
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "prebuild": "sh ./timestamp.sh",
+    "prestart": "sh ./timestamp.sh",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "version": "0.1.0"
 }
