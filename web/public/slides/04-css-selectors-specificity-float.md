@@ -360,7 +360,7 @@ Back in the day `floats` were the only way to introduce columns, but because a c
 
 ---
 
-## Lab
+## Lab &#x1F9EA;
 
 [CSS Diner](https://flukeout.github.io/)
 

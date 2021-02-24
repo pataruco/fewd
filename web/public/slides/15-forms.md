@@ -69,11 +69,7 @@ What type of information might we want to send in a form?
 
 ---
 
-# Forms inputs
-
 [CodePen](https://codepen.io/pataruco/pen/BjoQRK)
-
----
 
 # Form inputs
 
@@ -221,13 +217,13 @@ There are a handful of third-party solutions that allow you to put a working for
 - [Wufoo](https://www.wufoo.com)
 - [Kontactr](https://kontactr.com/)
 - [Google Forms](https://docs.google.com/forms)
-- [FormSpree](formspreee.io)
+- [FormSpree](https://formspree.io/)
 
 ---
 
-# Lab
+# Lab &#x1F9EA;
 
-[Starter code](https://github.com/pataruco/ga-fewd-assets/raw/master/forms/starter-code.zip)
+[Starter code](https://github.com/pataruco/fewd/raw/master/labs/forms/forms-starter-code.zip)
 
 ---
 

@@ -4,7 +4,7 @@ class: frontpage
 <div>
   <h2>Front-End Web Development</h2>
   <hr/>
-  <h1>08 Responsive <wbr/>lab 🧪</h1>
+  <h1>08 Responsive <wbr/>lab &#x1F9EA;</h1>
 </div>
 
 ---
@@ -15,7 +15,7 @@ class: frontpage
 
 ---
 
-## Responsive Lab 🧪
+## Responsive Lab &#x1F9EA;
 
 It's time to review what we've learned so far and combine all of our new skills by designing a responsive, interactive site called Rover.
 

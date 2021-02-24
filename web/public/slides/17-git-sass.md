@@ -514,7 +514,7 @@ Modifiers can be used to change the appearance of an element or group of element
 
 ---
 
-## Lab
+## Lab &#x1F9EA;
 
 Let's refactor Startup Matchmaker using Sass to make our CSS cleaner and more maintainable.
 

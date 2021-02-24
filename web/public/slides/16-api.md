@@ -242,7 +242,7 @@ console.log(carData.details.color);
 
 ---
 
-## Solo lab
+## Lab &#x1F9EA;
 
 Giphy bank
 
