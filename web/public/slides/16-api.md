@@ -19,55 +19,39 @@ class: frontpage
 
 ## The Request Response Cycle
 
-<div class="row">
-  <div>
-    <picture>
-      <img
-        src="https://mdn.mozillademos.org/files/13839/Web%20Application%20with%20HTML%20and%20Steps.png"
-        alt="Request and response cycle"
-      />
-    </picture>
-  </div>
-  <div>
-    <ol>
-      <li>Browser send a HTTP request to the server</li>
-      <li>
-        Requests for dynamic resources are forwarded to server-side code
-        (application)
-      </li>
-      <li>
-        Application interprets the request, reads required information from the
-        database
-      </li>
-      <li>Combines the retrieved data with HTML templates</li>
-      <li>Sends back a response containing the generated HTML</li>
-      <li>Browser read response and re render</li>
-    </ol>
-  </div>
-</div>
+.row[
+.column[
+![Request and response cycle](https://mdn.mozillademos.org/files/13839/Web%20Application%20with%20HTML%20and%20Steps.png)
+]
+.column[
+
+1. Browser send a HTTP request to the server
+2. Requests for dynamic resources are forwarded to server-side code
+   (application)
+3. Application interprets the request, reads required information from the
+   database
+4. Combines the retrieved data with HTML templates
+5. Sends back a response containing the generated HTML
+6. Browser read response and re render
+   ]
+   ]
 
 ---
 
 ## The Request Response Cycle
 
-<div class="row">
-  <div>
-    <picture>
-      <img
-        src="https://mdn.mozillademos.org/files/13839/Web%20Application%20with%20HTML%20and%20Steps.png"
-        alt="Request and response cycle"
-      />
-    </picture>
-  </div>
-  <div>
-    <p>
+.row[
+.column[
+![Request and response cycle](https://mdn.mozillademos.org/files/13839/Web%20Application%20with%20HTML%20and%20Steps.png)
+]
+.column[
+
 When we click a link or type in a URL to visit any page of any website, the browser is communicating with a web server. The browser sends a REQUEST and the server issues a RESPONSE.
-    </p>
-    <p>
-    APIs, or application programming interfaces, provide a way for different applications to talk to each other and exchange data. Simply put, an API is a computer that receives requests for information and returns response data.
-    </p>
-  </div>
-</div>
+
+APIs, or application programming interfaces, provide a way for different applications to talk to each other and exchange data. Simply put, an API is a computer that receives requests for information and returns response data.
+
+]
+]
 
 ---
 
@@ -87,15 +71,13 @@ So, what kind of data do APIs serve up?
 
 ## JSON
 
-.row[
-.column[
-
 - Most APIs respond with data in a format called **JSON** - JavaScript Object Notation.
 - It's pronounced “jasOn”.
 - It's native to JS and is data structured in the form of objects, arrays and string properties.
 
-  ]
-  .column[
+---
+
+## JSON
 
 ```json
 {
@@ -125,9 +107,6 @@ So, what kind of data do APIs serve up?
   }
 }
 ```
-
-]
-]
 
 ---
 
@@ -159,6 +138,10 @@ Once you have an address, you can send a request using JavaScript's built-in fet
 const response = await fetch(url);
 ```
 
+---
+
+## Fetching Data
+
 ### Asynchronous Code With `async` / `await`
 
 API calls are **asynchronous**. Meaning the request happens in the background while the user is interacting with your app.
@@ -176,7 +159,7 @@ async function askForData() {
 
 ---
 
-## Lab
+## Lab &#x1F9EA;
 
 Weather API
 
