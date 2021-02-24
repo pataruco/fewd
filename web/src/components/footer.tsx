@@ -97,7 +97,10 @@ const Footer: React.FC = () => (
       <span role="img" aria-labelledby="heart">
         ❤️
       </span>{' '}
-      by <a href="https://github.com/pataruco">@pataruco</a>{' '}
+      by{' '}
+      <a href="https://github.com/pataruco" target="_blank" rel="noreferrer">
+        @pataruco
+      </a>{' '}
       {new Date().getFullYear()}
     </p>
     <TimeStamp />
