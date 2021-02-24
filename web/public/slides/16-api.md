@@ -163,6 +163,8 @@ async function askForData() {
 
 Weather API
 
+[Starter code](https://github.com/pataruco/fewd/raw/master/labs/weather-api/weather-api-starter-code.zip)
+
 ---
 
 ## API
