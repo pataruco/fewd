@@ -24,6 +24,23 @@ const StyledFooter = styled.footer`
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    & {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    p {
+      text-align: start;
+      &:first-of-type {
+        margin-top: 0;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
 `;
 
 const createTimeStamp = () => {
