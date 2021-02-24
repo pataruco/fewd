@@ -231,6 +231,8 @@ console.log(carData.details.color);
 
 Giphy bank
 
+[Starter code](https://github.com/pataruco/fewd/raw/master/labs/giphy-search-api/giphy-search-api-starter-code.zip)
+
 ---
 
 class: frontpage
