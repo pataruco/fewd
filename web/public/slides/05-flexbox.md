@@ -367,7 +367,7 @@ Specifies the order used to lay out a flex or grid item in its flex container. I
 
 ---
 
-## Lab 🧪
+## Lab &#x1F9EA;
 
 Do [Flex Froggy](https://flexboxfroggy.com/)
 

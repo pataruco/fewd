@@ -237,7 +237,7 @@ We can change button color and size very easily. Follow that link to see how.
 
 ---
 
-## Group Lab 🧪
+## Group Lab &#x1F9EA;
 
 Identify a site using Bootstrap and attempt to recreate it. There are many resources that list sites that use Bootstrap, or you can check your favorite sites for Bootstrap-style layouts and components.
 

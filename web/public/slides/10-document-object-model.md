@@ -306,7 +306,7 @@ There are many events that occur in the browser as the user interacts with the p
 
 ---
 
-## Pair Lab 🧪
+## Pair Lab &#x1F9EA;
 
 ### Color switcher
 
@@ -314,7 +314,7 @@ There are many events that occur in the browser as the user interacts with the p
 
 ---
 
-## Solo Lab 🧪
+## Solo Lab &#x1F9EA;
 
 ### Traffic lights
 
@@ -322,7 +322,7 @@ There are many events that occur in the browser as the user interacts with the p
 
 ---
 
-## Bonus Lab 🧪
+## Bonus Lab &#x1F9EA;
 
 ### Score keeper
 

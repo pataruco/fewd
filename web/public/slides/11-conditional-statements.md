@@ -229,7 +229,7 @@ Conditionals make programs harder to debug because more operations can take plac
 
 ---
 
-## Lab 🧪
+## Lab &#x1F9EA;
 
 ## Drum kit
 

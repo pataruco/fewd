@@ -305,7 +305,7 @@ Here are some tools to help:
 
 ---
 
-## Lab 🧪
+## Lab &#x1F9EA;
 
 We’re giving you a REAL piece of Uber.com to style.
 

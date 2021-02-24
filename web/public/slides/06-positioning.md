@@ -240,7 +240,7 @@ Viewport-percentage lengths define the **length** value relative to the size of 
 
 ---
 
-## Lab 🧪
+## Lab &#x1F9EA;
 
 [Pig Exercise](https://codepen.io/pataruco/pen/rZLvPZ)
 

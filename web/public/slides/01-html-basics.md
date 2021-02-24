@@ -124,7 +124,7 @@ In this lesson, you will:
     <li>Flexbox</li>
     <li>Positioning</li>
     <li>Responsive Web development</li>
-    <li>Responsive Web development lab 🧪</li>
+    <li>Responsive Web development lab &#x1F9EA;</li>
     <li>Intro to JavaScript</li>
     <li>Document Object Model</li>
   </div>
@@ -137,7 +137,7 @@ In this lesson, you will:
     <li>API Requests and Responses</li>
     <li>Git and Sass</li>
     <li>Accessibility and SVG</li>
-    <li>UI Frameworks / Final Project Lab</li>
+    <li>UI Frameworks / Final Project Lab &#x1F9EA;</li>
     <li>Final Project Presentation</li>
   </div>
 </ol>

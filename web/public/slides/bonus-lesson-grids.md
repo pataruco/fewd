@@ -251,7 +251,7 @@ _"Use the remainder of the space left over after the fixed-width units."_
 
 ## Grids
 
-### Lab 🧪
+### Lab &#x1F9EA;
 
 - [Starter code](https://github.com/pataruco/fewd/raw/master/labs/grid/grid-starter-code.zip)
 

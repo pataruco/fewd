@@ -384,7 +384,7 @@ We'll see this in action in a future lesson…!
 
 ---
 
-## Lab 🧪
+## Lab &#x1F9EA;
 
 ## Arrays and loops
 

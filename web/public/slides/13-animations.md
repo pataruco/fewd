@@ -388,9 +388,9 @@ Building actual components means taking everything you know and putting it toget
 
 ---
 
-# Lab 🧪
+# Lab &#x1F9EA;
 
-## Hamburguer menu 🍔
+## Hamburguer menu
 
 [Starter code](https://github.com/pataruco/fewd/raw/master/labs/hamburguer-menu/hamburguer-menu-starter-code.zip)
 
@@ -400,13 +400,13 @@ Solution code https://github.com/pataruco/fewd/raw/master/labs/hamburguer-menu/h
 
 ---
 
-# Lab 🧪
+# Lab &#x1F9EA;
 
 [CodePen](https://codepen.io/pataruco/pen/wYEMmb)
 
 ---
 
-# Bonus 🧪
+# Bonus &#x1F9EA;
 
 [CodePen](https://codepen.io/pataruco/pen/eYOeGrj)
 
