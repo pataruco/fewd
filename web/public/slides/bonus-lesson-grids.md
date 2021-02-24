@@ -253,7 +253,59 @@ _"Use the remainder of the space left over after the fixed-width units."_
 
 ### Lab 🧪
 
-## TODO
+- [Starter code](https://github.com/pataruco/fewd/raw/master/labs/grid/grid-starter-code.zip)
+
+???
+
+- Solution code https://github.com/pataruco/fewd/raw/master/labs/grid/grid-solution-code.zip
+
+---
+
+## Grids
+
+### Line-based placement
+
+We now move on from creating a grid, to placing things on the grid. Our grid always has lines, which lines start at 1 and relate to the Writing Mode of the document. Therefore in English, column line 1 is on the left hand side of the grid and row line 1 at the top. In Arabic column line 1 would be on the right hand side, as Arabic is written right to left.
+
+We can place things according to these lines by specifying the start and end line. We do this using the following properties:
+
+- `grid-column-start`
+- `grid-column-end`
+- `grid-row-start`
+- `grid-row-end`
+
+These properties can all have a line number as the value. You can also use the shorthand properties:
+
+- `grid-column`
+- `grid-row`
+
+---
+
+## Grids
+
+### Line-based placement
+
+```css
+header {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+article {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+aside {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+footer {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+```
 
 ---
 
