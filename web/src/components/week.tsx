@@ -110,9 +110,9 @@ const Week: React.FC<WeekProps> = ({
       ) : null}
 
       {homeworkPath ? (
-        <h2>
+        <p className="homework">
           <Link to={homeworkPath}>Homework</Link>
-        </h2>
+        </p>
       ) : null}
     </WeekPage>
   );
