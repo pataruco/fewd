@@ -41,6 +41,12 @@ const StyledMain = styled.main`
       box-shadow: inset 0 -1px 0 #d1d5da;
     }
   }
+
+  .homework {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1.06rem;
+  }
 `;
 
 const WeekPage: React.FC = ({ children }) => (
