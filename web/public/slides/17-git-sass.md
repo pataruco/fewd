@@ -516,9 +516,9 @@ Modifiers can be used to change the appearance of an element or group of element
 
 ## Lab &#x1F9EA;
 
-Let's refactor Startup Matchmaker using Sass to make our CSS cleaner and more maintainable.
+Let's refactor Relaxr using Sass to make our CSS cleaner and more maintainable.
 
-- [stater code](https://github.com/pataruco/ga-fewd-assets/raw/master/startup-matchmaker/solution.zip)
+- [starter code](https://github.com/pataruco/fewd/raw/master/homeworks/relaxr-1/relaxr-1-solution-code.zip)
 
 ---
 
