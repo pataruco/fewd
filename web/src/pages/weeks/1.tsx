@@ -53,10 +53,6 @@ const bonuses = [
     'Read through Getting to know CSS',
     'https://learn.shayhowe.com/html-css/getting-to-know-css/',
   ],
-  [
-    'Watch Intro to GitHub video',
-    'https://www.youtube.com/watch?v=vDv5K5PbvO8',
-  ],
 ];
 
 const weekConfig = {
