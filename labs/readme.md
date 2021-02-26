@@ -26,18 +26,10 @@ The idea behind it, is to have in the same repo a reference for the lab with a l
 
 ## Development
 
-Once you finished creating/amending a lab
-
-- Delete the zip file for the solution/starter code
+Once you finished creating/amending a lab, run the following to delete the zip file for the solution/starter code and compress and create a new ones
 
 ```sh
-rm name-of-lab-solution-code.zip
-```
-
-- Compress and create a new one
-
-```sh
-zip -r name-of-lab-solution-code.zip <folder-name>
+yarn workspace labs build
 ```
 
 ## Index
@@ -47,6 +39,9 @@ zip -r name-of-lab-solution-code.zip <folder-name>
 - [Color switcher](./color-switcher)
 - [Cookie recipe](./cookie-recipe)
 - [Drum kit](./drum-kit)
+- [Forms](./forms)
+- [Giphy searh API](./giphy-search-api)
+- [Grids](./grid)
 - [Hamburguer menu](./hamburguer-menu)
 - [Magic scroll](./magic-scroll)
 - [Mobile menu](./mobile-menu)
@@ -56,5 +51,7 @@ zip -r name-of-lab-solution-code.zip <folder-name>
 - [Responsive Uber](./responsive-uber)
 - [Score keeper](./score-keeper)
 - [Slider](./slider)
+- [Startup matchmaker](./startup-matchmaker)
 - [Tag boxes](./tag-boxes)
 - [Traffic lights](./traffic-lights)
+- [Weather api](./weather-api)
