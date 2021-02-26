@@ -37,3 +37,4 @@ yarn workspace homeworks build
 ## Index
 
 - [Relaxr 1](./relaxr-1)
+- [Relaxr 2](./relaxr-2)
