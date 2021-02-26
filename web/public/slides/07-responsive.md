@@ -313,7 +313,7 @@ You might want to look through the solution in your browser to get a sense of ho
 
 Explore how to make it responsive.
 
-[Starter code](https://github.com/pataruco/fewd/raw/master/labs/responsive-uber/starter-code.zip)
+[Starter code](https://github.com/pataruco/fewd/raw/master/labs/responsive-uber/responsive-uber-starter-code.zip)
 
 ---
 
