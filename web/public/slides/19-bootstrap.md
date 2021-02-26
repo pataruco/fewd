@@ -253,5 +253,3 @@ class: frontpage
   <hr/>
   <h1>Boostrap</h1>
 </div>
-
----
