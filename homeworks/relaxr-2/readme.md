@@ -2,4 +2,4 @@
 
 This is the third homework where we evaluate
 
-- CSS layout
+- CSS layouts

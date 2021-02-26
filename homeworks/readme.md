@@ -26,20 +26,15 @@ The idea behind it, is to have in the same repo a reference for the homework wit
 
 ## Development
 
-Once you finished creating/amending a homework
+Once you finished creating/amending a homework run the following to delete the zip file for the solution/starter code, compress and create a new ones
 
 - Delete the zip file for the solution/starter code
 
 ```sh
-rm name-of-homework-solution-code.zip
-```
-
-- Compress and create a new one 🗜
-
-```sh
-zip -r name-of-homework-solution-code.zip <folder-name>
+yarn workspace homeworks build
 ```
 
 ## Index
 
 - [Relaxr 1](./relaxr-1)
+- [Relaxr 2](./relaxr-2)
