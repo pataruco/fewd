@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
   font-family: Helvetica, Arial, sans-serif;
   font-size: 100%;
   min-height: 100vh;
-  position: relative;
+  position: fixed;
 
   picture {
     display: block;
