@@ -13,6 +13,9 @@ class: frontpage
 
 Agenda:
 
+- Everything about tables
+- Lab
+
 ---
 
 ## Tables
@@ -204,7 +207,7 @@ The <code>&lt;tfoot&gt;</code> tag is used finally to present any extra data.
 
 ---
 
-## Table
+## Tables
 
 ### Elements
 
@@ -220,7 +223,7 @@ The <code>&lt;tfoot&gt;</code> tag is used finally to present any extra data.
 
 ---
 
-## Table
+## Tables
 
 ### Lab &#x1F9EA;
 
