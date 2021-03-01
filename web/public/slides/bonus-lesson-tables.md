@@ -11,7 +11,10 @@ class: frontpage
 
 ## Tables
 
-Agenda:
+### Agenda:
+
+- Everything about tables
+- Lab
 
 - Everything about tables
 - Lab
