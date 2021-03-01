@@ -8,7 +8,28 @@ import { Link } from 'react-router-dom';
 
 const StyledMain = styled.main`
   padding: 1.25rem;
+
+  li {
+    margin-bottom: 0.75rem;
+  }
 `;
+
+const bonusLessons = [
+  {
+    name: 'CSS Grids',
+    path: 'grids',
+  },
+  {
+    name: 'HML Tables',
+    path: 'tables',
+  },
+];
+
+const Lessons = bonusLessons.map(({ name, path }, key) => (
+  <li key={key}>
+    <Link to={`/bonus-lessons/${path}`}>{name}</Link>
+  </li>
+));
 
 const About: React.FC = () => (
   <Page>
@@ -16,11 +37,7 @@ const About: React.FC = () => (
     <Header />
     <StyledMain>
       <h1>Bonus Lessons</h1>
-      <ul>
-        <li>
-          <Link to="/bonus-lessons/grids">Grids</Link>
-        </li>
-      </ul>
+      <ul>{Lessons}</ul>
     </StyledMain>
     <Footer />
   </Page>

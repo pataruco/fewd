@@ -57,7 +57,8 @@ const StyledHeader = styled.header`
 
   nav > ul > li {
     margin-left: 1.25rem;
-    &:first-of-type > ul > li {
+    &:first-of-type > ul > li,
+    &:nth-of-type(2) > ul > li {
       background-color: var(--black);
       padding: 0.75rem 0.5rem;
     }
@@ -99,7 +100,7 @@ const StyledHeader = styled.header`
   }
 `;
 
-export const weeksIterator = new Array(10).fill('week');
+export const weeksIterator = new Array(10).fill('Week');
 
 const Weeks: React.FC = () => {
   const { weekIsOpen } = useSelector(selectNavigationMenu);
@@ -128,7 +129,10 @@ const Weeks: React.FC = () => {
 
 const gridsPath = bonusLessonRoutes[0].path;
 
-export const bonusLessons = [['Grids', gridsPath]];
+export const bonusLessons = [
+  ['CSS grids', gridsPath],
+  ['HTML tables', '/bonus-lessons/tables'],
+];
 
 const BonusLessons: React.FC = () => {
   const { bonusLessonsIsOpen } = useSelector(selectNavigationMenu);
