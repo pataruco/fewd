@@ -53,6 +53,9 @@ const StyledNav = styled.nav`
 
   li {
     margin-bottom: 0.5rem;
+    &:first-of-type {
+      margin-top: 0.5rem;
+    }
   }
 
   a {

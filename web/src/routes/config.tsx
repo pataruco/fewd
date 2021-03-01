@@ -346,6 +346,15 @@ export const bonusLessonRoutes = [
       </>
     ),
   },
+  {
+    path: '/bonus-lessons/tables',
+    component: () => (
+      <>
+        <Title title="Bonus Lesson | Tables" />
+        <SlidesDeck slidesDeckName="bonus-lesson-tables" />
+      </>
+    ),
+  },
 ];
 
 // Final project
