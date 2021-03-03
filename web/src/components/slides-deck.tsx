@@ -23,18 +23,26 @@ interface Slide {
 
 const slideNavigationClass = 'slide-navigation';
 
+const getAnchorProps = (pathname: string) => {
+  const pageToNavigate = pathname.split('/')[1];
+  const [firstWord, secondWord] = pageToNavigate.split('-');
+  return {
+    pageToNavigate,
+    text: `${firstWord} ${secondWord}`,
+  };
+};
+
 const createAnchor = (history: History['state']) => {
   const {
     location: { pathname },
   } = history;
 
-  const pageToNavigate = `/${pathname.split('/')[1]}`;
-  const navigationText = pageToNavigate.split('-').pop();
+  const { pageToNavigate, text } = getAnchorProps(pathname);
 
   const anchor = document.createElement('a');
   anchor.classList.add(slideNavigationClass);
-  anchor.setAttribute('href', pageToNavigate);
-  anchor.innerText = `back to week ${navigationText}`;
+  anchor.setAttribute('href', `/${pageToNavigate}`);
+  anchor.innerText = `back to ${text}`;
 
   return anchor;
 };
@@ -81,7 +89,9 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
       slideNumberFormat: '',
     });
 
+    // listening on slide show
     slides.on('showSlide', (slide: Slide) =>
+      // Injecting navigation to menu
       createSlideNavigation({ slide, history }),
     );
   }, [slidesDeckName, history]);

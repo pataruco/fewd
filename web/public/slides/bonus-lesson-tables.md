@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/bonus-lessons">back to bonus lessons</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -237,7 +236,6 @@ Try building out your own table of the best NBA superteams of all time.
 ---
 
 class: frontpage
-<a href="/bonus-lessons">back to bonus lessons</a>
 
 <div>
   <h2>Front-End Web Development</h2>
