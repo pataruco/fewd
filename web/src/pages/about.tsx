@@ -4,9 +4,30 @@ import Title from '../components/title';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Page from '../components/page';
+import GitHub from '../components/icons/github';
+import LinkedIn from '../components/icons/linkedin';
+import Twitter from '../components/icons/twitter';
 
 const StyledMain = styled.main`
   padding: 1.25rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    li {
+      max-width: 20px;
+      &:nth-of-type(2) {
+        margin: 0 0.625rem;
+      }
+    }
+  }
+
+  small span {
+    font-weight: 800;
+  }
 `;
 
 const About: React.FC = () => (
@@ -30,6 +51,7 @@ const About: React.FC = () => (
           href="https://generalassemb.ly/instructors/guy-routledge/1917"
           target="_blank"
           rel="noreferrer"
+          className="external-link"
         >
           Guy
         </a>
@@ -38,6 +60,7 @@ const About: React.FC = () => (
           href="https://generalassemb.ly/instructors/matt-studdert/4526"
           target="_blank"
           rel="noopener noreferrer"
+          className="external-link"
         >
           Matt
         </a>{' '}
@@ -46,6 +69,7 @@ const About: React.FC = () => (
           href="https://generalassemb.ly/instructors/james-sherry/7533"
           target="_blank"
           rel="noopener noreferrer"
+          className="external-link"
         >
           James
         </a>
@@ -65,12 +89,67 @@ const About: React.FC = () => (
           href="https://github.com/pataruco/fewd"
           target="_blank"
           rel="noreferrer"
+          className="external-link"
         >
           GitHub.
         </a>
       </p>
 
       <p>Pedro.</p>
+
+      <p>
+        <small>
+          <span>P.S.</span>: If you want to contact me, these are my
+          coordinates:{' '}
+        </small>
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://github.com/pataruco"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <picture>
+              <GitHub />
+            </picture>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/pataruco/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <picture>
+              <LinkedIn />
+            </picture>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/pataruco"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <picture>
+              <Twitter />
+            </picture>
+          </a>
+        </li>
+      </ul>
+      <p>
+        <small>
+          and{' '}
+          <a
+            href="mailto:pedro.martin@ga.co?subject=Hello Pedro &#128075;"
+            rel="noreferrer"
+          >
+            pedro.martin@ga.co
+          </a>
+        </small>
+      </p>
     </StyledMain>
     <Footer />
   </Page>

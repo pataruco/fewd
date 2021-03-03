@@ -116,7 +116,7 @@ const Weeks: React.FC = () => {
     <ul className={weekIsOpen ? 'menu-open' : ''} onMouseLeave={close}>
       {weeksIterator.map((week, i) => (
         <li key={i}>
-          <Link to={`${week}-${i + 1}`}>
+          <Link to={`${week.toLowerCase()}-${i + 1}`}>
             <span onClick={close}>
               {week} {i + 1}
             </span>

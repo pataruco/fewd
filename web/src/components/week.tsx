@@ -21,7 +21,12 @@ const ListOfDetails: React.FC<ListOfDetailsProps> = ({ details }) => (
       const [title, url] = resource;
       return (
         <li key={i}>
-          <a href={url} target="_blank" rel="noreferrer">
+          <a
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+            className="external-link"
+          >
             {title}
           </a>
         </li>
