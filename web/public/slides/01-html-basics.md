@@ -22,20 +22,20 @@ In this lesson, you will:
 
 ## Meet the Team - Abigail Coe
 
-- [Software Engineer at Red Badger](https://red-badger.com/people/abigail-coe/)
+- <a href="https://red-badger.com/people/abigail-coe/" class='external-link' target="_blank" rel="noreferrer">Software Engineer at Red Badger</a>
 - Former Antiques Conservator
 - General Assembly 2016
 - World’s second best crochet artist
 - Humble
 - English Lit graduate
-- [Oolong](https://en.wikipedia.org/wiki/Oolong) nerd
+- <a class='external-link' target="_blank" rel="noreferrer" href="https://en.wikipedia.org/wiki/Oolong">Oolong</a> nerd
 - Not as much of a dork as that all sounds
 
 ---
 
 ## Meet the Team - Alex Wheldon
 
-- Automation Engineer at [Splash](https://www.splashworldwide.com/) Worldwide
+- Automation Engineer at <a href="https://www.splashworldwide.com/" class='external-link' target="_blank" rel="noreferrer">Splash</a>
 - Used to work in account management at advertising production agencies
 - GA Alumni 2020
 - Unashamedly love Lego
@@ -45,7 +45,7 @@ In this lesson, you will:
 
 ## Meet the Team - Declan Slevin
 
-- [Test Lead at Red Badger](https://red-badger.com/people/declan-slevin/)
+- <a href="https://red-badger.com/people/declan-slevin/" class='external-link' target="_blank" rel="noreferrer">Test Lead at Red Badger</a>
 - Currently transitioning to become a Junior Software Engineer
 - Fun fact: Pedro and I joined Red Badger a week apart and worked together on the RB internal site as our first project
 - Completed the FEWD course at General Assembly in 2019
