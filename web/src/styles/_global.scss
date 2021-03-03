@@ -19,8 +19,10 @@ svg {
 
 a {
   color: var(--black);
-  text-decoration: underline 2px var(--ga-red);
+  text-decoration-line: underline;
+  text-decoration-color: var(--ga-red);
   text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
 
   &:hover {
     color: var(--ga-red);
@@ -29,7 +31,7 @@ a {
   &:focus,
   &:active {
     color: var(--black);
-    text-decoration: underline 2px var(--black);
+    text-decoration-color: var(--black);
   }
 }
 
