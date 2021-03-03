@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/bonus-lessons">back to bonus lessons</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -320,7 +319,6 @@ footer {
 ---
 
 class: frontpage
-<a href="/bonus-lessons">back to bonus lessons</a>
 
 <div>
   <h2>Front-End Web Development</h2>

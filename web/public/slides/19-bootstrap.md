@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-10">back to week 10</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -246,7 +245,6 @@ https://expo.getbootstrap.com/
 ---
 
 class: frontpage
-<a href="/week-10">back to week 10</a>
 
 <div>
   <h2>Front-End Web Development</h2>

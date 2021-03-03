@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-2">back to week 2</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -375,8 +374,6 @@ Back in the day `floats` were the only way to introduce columns, but because a c
 ---
 
 class: frontpage
-
-<a href="/week-2">back to week 2</a>
 
 <div>
   <h2>Front-End Web Development</h2>

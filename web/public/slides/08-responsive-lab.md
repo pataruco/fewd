@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-4">back to week 4</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -32,7 +31,6 @@ The instructional team will be here to help you out if you need it.
 ---
 
 class: frontpage
-<a href="/week-4">back to week 4</a>
 
 <div>
   <h2>Front-End Web Development</h2>

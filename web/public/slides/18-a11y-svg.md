@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-9">back to week 9</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -575,7 +574,6 @@ There are three possible values for `stroke-linecap`:
 ---
 
 class: frontpage
-<a href="/week-9">back to week 9</a>
 
 <div>
   <h2>Front-End Web Development</h2>

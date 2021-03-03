@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-3">back to week 3</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -374,8 +373,6 @@ Do [Flex Froggy](https://flexboxfroggy.com/)
 ---
 
 class: frontpage
-
-<a href="/week-3">back to week 3</a>
 
 <div>
   <h2>Front-End Web Development</h2>

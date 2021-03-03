@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-10">back to week 10</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -110,7 +109,6 @@ I create this [randomniser](http://pataruco.github.io/random-picker/) to be sort
 ---
 
 class: frontpage
-<a href="/week-10">back to week 10</a>
 
 <div>
   <h2>Front-End Web Development</h2>

@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-3">back to week 3</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -291,8 +290,6 @@ Download the [starter code](https://github.com/pataruco/fewd/raw/master/homework
 ---
 
 class: frontpage
-
-<a href="/week-3">back to week 3</a>
 
 <div>
   <h2>Front-End Web Development</h2>

@@ -134,19 +134,15 @@
     position: relative;
     height: 100%;
 
-    p {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      a {
-        color: var(--white);
-        text-decoration: 2px underline white;
+    .slide-navigation {
+      color: var(--white);
+      text-decoration-color: var(--white);
 
-        &:focus,
-        &:active {
-          color: black;
-          text-decoration: 2px underline black;
-        }
+      &:focus,
+      &:hover,
+      &:active {
+        color: var(--black);
+        text-decoration-color: var(--black);
       }
     }
 

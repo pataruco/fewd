@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-5">back to week 5</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -341,7 +340,6 @@ function square(number) {
 ---
 
 class: frontpage
-<a href="/week-5">back to week 5</a>
 
 <div>
   <h2>Front-End Web Development</h2>

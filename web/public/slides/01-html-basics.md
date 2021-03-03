@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-1">back to week 1</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -456,7 +455,6 @@ Are self closing elements
 ---
 
 class: frontpage
-<a href="/week-1">back to week 1</a>
 
 <div>
   <h2>Front-End Web Development</h2>

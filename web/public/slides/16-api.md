@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-8">back to week 8</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -236,7 +235,6 @@ Giphy bank
 ---
 
 class: frontpage
-<a href="/week-8">back to week 8</a>
 
 <div>
   <h2>Front-End Web Development</h2>

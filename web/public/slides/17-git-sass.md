@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-9">back to week 9</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -523,7 +522,6 @@ Let's refactor Relaxr using Sass to make our CSS cleaner and more maintainable.
 ---
 
 class: frontpage
-<a href="/week-9">back to week 9</a>
 
 <div>
   <h2>Front-End Web Development</h2>
