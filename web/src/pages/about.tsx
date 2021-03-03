@@ -51,6 +51,7 @@ const About: React.FC = () => (
           href="https://generalassemb.ly/instructors/guy-routledge/1917"
           target="_blank"
           rel="noreferrer"
+          className="external-link"
         >
           Guy
         </a>
@@ -59,6 +60,7 @@ const About: React.FC = () => (
           href="https://generalassemb.ly/instructors/matt-studdert/4526"
           target="_blank"
           rel="noopener noreferrer"
+          className="external-link"
         >
           Matt
         </a>{' '}
@@ -67,6 +69,7 @@ const About: React.FC = () => (
           href="https://generalassemb.ly/instructors/james-sherry/7533"
           target="_blank"
           rel="noopener noreferrer"
+          className="external-link"
         >
           James
         </a>
@@ -86,6 +89,7 @@ const About: React.FC = () => (
           href="https://github.com/pataruco/fewd"
           target="_blank"
           rel="noreferrer"
+          className="external-link"
         >
           GitHub.
         </a>
