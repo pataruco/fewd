@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-6">back to week 6</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -422,8 +421,6 @@ Animations in CSS and JS
 ---
 
 class: frontpage
-
-<a href="/week-6">back to week 6</a>
 
 <div>
   <h2>Front-End Web Development</h2>

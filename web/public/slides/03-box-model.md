@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-2">back to week 2</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -196,7 +195,6 @@ body {
 ---
 
 class: frontpage
-<a href="/week-2">back to week 2</a>
 
 <div>
   <h2>Front-End Web Development</h2>

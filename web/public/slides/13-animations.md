@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-7">back to week 7</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -413,7 +412,6 @@ Solution code https://github.com/pataruco/fewd/raw/master/labs/hamburguer-menu/h
 ---
 
 class: frontpage
-<a href="/week-7">back to week 7</a>
 
 <div>
   <h2>Front-End Web Development</h2>

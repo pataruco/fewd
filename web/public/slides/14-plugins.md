@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-7">back to week 7</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -128,7 +127,6 @@ Try to follow the documentation to add the plugin to your project.
 ---
 
 class: frontpage
-<a href="/week-7">back to week 7</a>
 
 <div>
   <h2>Front-End Web Development</h2>

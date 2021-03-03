@@ -39,6 +39,27 @@ const createAnchor = (history: History['state']) => {
   return anchor;
 };
 
+const deleteSlideNavigation = () =>
+  document
+    .querySelectorAll(`.${slideNavigationClass}`)
+    .forEach((anchor) => anchor.remove());
+
+interface CreateSlideNavigation {
+  slide: Slide;
+  history: History['state'];
+}
+
+const createSlideNavigation = ({ slide, history }: CreateSlideNavigation) => {
+  const slideIndex = slide.getSlideIndex();
+
+  const slideElements = document.querySelectorAll('.remark-slide-content');
+  deleteSlideNavigation();
+  if (slideElements) {
+    const anchor = createAnchor(history);
+    slideElements[slideIndex].appendChild(anchor);
+  }
+};
+
 const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
   const history = useHistory();
 
@@ -60,20 +81,9 @@ const SlidesDeck: React.FC<SlidesDeckProps> = ({ slidesDeckName }) => {
       slideNumberFormat: '',
     });
 
-    slides.on('showSlide', (slide: Slide) => {
-      const slideIndex = slide.getSlideIndex();
-
-      const slideElements = document.querySelectorAll('.remark-slide-content');
-      const anchors = document.querySelectorAll(`.${slideNavigationClass}`);
-      anchors.forEach((anchor) => anchor.remove());
-
-      console.log({ anchors });
-
-      if (slideElements) {
-        const anchor = createAnchor(history);
-        slideElements[slideIndex].appendChild(anchor);
-      }
-    });
+    slides.on('showSlide', (slide: Slide) =>
+      createSlideNavigation({ slide, history }),
+    );
   }, [slidesDeckName, history]);
 
   return null;

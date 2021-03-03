@@ -1,5 +1,4 @@
 class: frontpage
-<a href="/week-6">back to week 6</a>
 
 <div>
   <h2>Front-End Web Development</h2>
@@ -269,7 +268,6 @@ JavaScript Loops and Arrays
 ---
 
 class: frontpage
-<a href="/week-6">back to week 6</a>
 
 <div>
   <h2>Front-End Web Development</h2>
