@@ -23,7 +23,7 @@
   --lighter-text: #66727c;
   --blue-for-links: #06748a;
   --blue-for-hovered-links: #033641;
-  --max-width: 1170px;
+  --content-wrapper-width: 1170px;
 }
 
 body {
@@ -39,4 +39,8 @@ img {
 
 picture {
   display: block;
+}
+
+a {
+  color: var(--blue-for-links);
 }

@@ -94,7 +94,7 @@ const Weeks: React.FC = () => (
   <ul>
     {weeksIterator.map((week, i) => (
       <li key={i}>
-        <CloseLink to={`${week}-${i + 1}`}>
+        <CloseLink to={`${week.toLowerCase()}-${i + 1}`} key={i}>
           <span>
             {week} {i + 1}
           </span>
@@ -110,7 +110,9 @@ const BonusLessons: React.FC = () => (
       const [name, path] = lesson;
       return (
         <li key={i}>
-          <CloseLink to={path}>{name}</CloseLink>
+          <CloseLink to={path} key={i}>
+            {name}
+          </CloseLink>
         </li>
       );
     })}

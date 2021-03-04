@@ -12,8 +12,8 @@ Remember: Use your resources, ask questions, try things one step at a time, and 
 
 ### Mobile
 
-![mobile design](./rover-mobile-screenshot.jpg)
+![mobile design](./rover-mobile-screenshot.png)
 
 ### Desktop
 
-![desktop design](./rover-desktop-screenshot.jpg)
+![desktop design](./rover-desktop-screenshot.png)
