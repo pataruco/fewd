@@ -279,3 +279,50 @@ header a {
 }
 
 /* steps */
+.steps {
+  padding: 90px 1.25rem;
+  text-align: center;
+}
+
+.steps h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.625rem;
+  margin-bottom: 90px;
+}
+
+.steps ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.steps ul li {
+  padding: 0 1.25rem;
+}
+
+.steps header {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.steps header.search {
+  background-image: url(../img/watchglass.png);
+}
+
+.steps header.phone {
+  background-image: url(../img/phone.png);
+}
+
+.steps header.shield {
+  background-image: url(../img/shield.png);
+}
+
+.steps p {
+  color: var(--lighter-text);
+}
