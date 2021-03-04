@@ -134,3 +134,56 @@ header a {
   width: 50%;
   max-width: 325px;
 }
+
+/* services */
+
+.services {
+  padding-top: 90px;
+}
+
+.services h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.625rem;
+}
+
+.services .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .row > * {
+  width: 50%;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services ul li {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.services ul li picture {
+  width: 42px;
+  margin-right: 18px;
+}
+
+.services ul li h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.services ul li p {
+  margin: 0.75rem 0;
+  color: var(--lighter-text);
+}
+
+.services .row > div {
+  border-radius: 4px;
+  border: 1px solid var(--lighter-text);
+  padding: 14px 25px;
+}
