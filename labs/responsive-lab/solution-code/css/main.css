@@ -112,6 +112,7 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 14px;
 }
 
 .hero .content-wrapper div {
@@ -142,11 +143,14 @@ header a {
   max-width: 325px;
 }
 
+.hamburguer {
+  display: none;
+}
+
 /* services */
 
 .services {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding: 90px 14px;
 }
 
 .services h2 {
@@ -219,10 +223,6 @@ header a {
   padding: 14px 25px;
 }
 
-.booking ul {
-  /* padding: 25px; */
-}
-
 .booking li:before {
   content: '\2714';
   display: inline-block;
@@ -240,6 +240,9 @@ header a {
 }
 
 /* quote */
+.quote {
+  padding: 0 14px;
+}
 
 .quote .content-wrapper {
   min-height: 500px;
@@ -247,6 +250,7 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-position: top;
 }
 
 .quote blockquote {
@@ -325,4 +329,118 @@ header a {
 
 .steps p {
   color: var(--lighter-text);
+}
+
+@media screen and (max-width: 600px) {
+  /* header */
+  header nav {
+    display: none;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  header .hamburguer {
+    display: block;
+    fill: var(--green);
+    appearance: none;
+    border: 1px solid var(--border-gray);
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+
+  /* hero */
+  .hero {
+    padding-top: 45px;
+    background-image: unset;
+    display: block;
+    min-height: unset;
+  }
+
+  .hero h2 {
+    display: none;
+  }
+
+  .hero .content-wrapper div {
+    max-width: unset;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .hero .button {
+    width: unset;
+    max-width: unset;
+    padding: 1rem;
+  }
+
+  /* services */
+  .services {
+    padding-top: 90px;
+  }
+
+  .services h2 {
+    font-size: 1.375rem;
+  }
+
+  .services .row {
+    flex-direction: column;
+  }
+
+  .services .row > * {
+    width: 100%;
+  }
+
+  .booking__settings div:first-of-type {
+    justify-content: center;
+  }
+
+  /* quote */
+
+  .quote {
+    padding: 0;
+  }
+  .quote blockquote {
+    top: 0;
+    margin: 0;
+    max-width: unset;
+  }
+
+  /* steps */
+
+  .steps h2 {
+    font-size: 1.375rem;
+  }
+
+  .steps ul {
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+  }
+
+  .steps ul li {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  .steps header {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    margin-right: 1rem;
+  }
+
+  .steps h3 {
+    margin-bottom: 0;
+  }
+
+  .steps p {
+    margin-top: 0.5rem;
+  }
 }
