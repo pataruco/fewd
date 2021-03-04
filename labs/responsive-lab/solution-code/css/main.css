@@ -104,6 +104,10 @@ header a {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  color: var(--dark-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero .content-wrapper div {
@@ -112,4 +116,21 @@ header a {
 
 .hero h2 {
   font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.hero p {
+  font-size: 2rem;
+}
+
+.hero a {
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--green);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 4px;
+  width: 50%;
+  max-width: 325px;
 }
