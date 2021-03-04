@@ -197,13 +197,13 @@ header a {
 
 .booking__settings {
   border-radius: 4px;
-  border: 1px solid var(--lighter-text);
+  border: 1px solid var(--border-gray);
   /* padding: 14px 25px; */
 }
 
 .booking__settings div:first-of-type {
   background-color: var(--light-gray);
-  border-bottom: 1px solid var(--lighter-text);
+  border-bottom: 1px solid var(--border-gray);
   display: flex;
   padding: 14px 25px;
   /* justify-content: center; */
@@ -237,4 +237,43 @@ header a {
 
 .booking > p {
   text-align: center;
+}
+
+/* quote */
+
+.quote .content-wrapper {
+  min-height: 500px;
+  background-image: url(../img/hero-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.quote blockquote {
+  background-color: var(--white);
+  border: 1px solid var(--border-gray);
+  padding: 1.25rem;
+  max-width: 360px;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.4;
+  border-radius: 4px;
+  position: absolute;
+  top: -55px;
+}
+
+.quote blockquote::before {
+  content: '';
+  width: 40px;
+  display: block;
+  border: 1px solid var(--green);
+}
+
+.quote cite {
+  color: var(--lighter-text);
+}
+
+.quote footer {
+  font-size: 1rem;
+  font-weight: normal;
 }
