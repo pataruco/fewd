@@ -42,7 +42,11 @@ picture {
 }
 
 a {
-  color: black;
+  color: var(--blue-for-links);
+}
+
+a:hover {
+  color: var(--blue-for-hovered-links);
 }
 
 .content-wrapper {
@@ -123,7 +127,7 @@ header a {
   font-size: 2rem;
 }
 
-.hero a {
+.button {
   display: block;
   text-decoration: none;
   color: var(--white);
@@ -131,6 +135,9 @@ header a {
   padding: 1.5rem;
   text-align: center;
   border-radius: 4px;
+}
+
+.hero .button {
   width: 50%;
   max-width: 325px;
 }
@@ -139,12 +146,14 @@ header a {
 
 .services {
   padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .services h2 {
   text-align: center;
   margin-top: 0;
   font-size: 1.625rem;
+  margin-bottom: 90px;
 }
 
 .services .row {
@@ -153,7 +162,7 @@ header a {
 }
 
 .services .row > * {
-  width: 50%;
+  width: 40%;
 }
 
 .services ul {
@@ -168,7 +177,7 @@ header a {
 }
 
 .services ul li picture {
-  width: 42px;
+  width: 45px;
   margin-right: 18px;
 }
 
@@ -178,12 +187,54 @@ header a {
 }
 
 .services ul li p {
-  margin: 0.75rem 0;
+  margin: 0.5rem 0;
   color: var(--lighter-text);
 }
 
-.services .row > div {
+.booking {
+  color: var(--lighter-text);
+}
+
+.booking__settings {
   border-radius: 4px;
   border: 1px solid var(--lighter-text);
+  /* padding: 14px 25px; */
+}
+
+.booking__settings div:first-of-type {
+  background-color: var(--light-gray);
+  border-bottom: 1px solid var(--lighter-text);
+  display: flex;
   padding: 14px 25px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.booking picture {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.booking__settings div:last-of-type {
+  padding: 14px 25px;
+}
+
+.booking ul {
+  /* padding: 25px; */
+}
+
+.booking li:before {
+  content: '\2714';
+  display: inline-block;
+  margin-right: 0.5rem;
+  width: 1rem;
+  color: var(--green);
+}
+
+.booking__settings .button {
+  padding: 1em;
+}
+
+.booking > p {
+  text-align: center;
 }
