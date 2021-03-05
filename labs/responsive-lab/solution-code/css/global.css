@@ -1,5 +1,5 @@
 /*
- * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
+ * Lay this page out - make it responsive, flex, position and media queries where needed.
  *
  * Colors-
  * Green: #14a96d
@@ -24,6 +24,8 @@
   --blue-for-links: #06748a;
   --blue-for-hovered-links: #033641;
   --content-wrapper-width: 1170px;
+  --radius: 4px;
+  --border-line: 1px solid var(--border-gray);
 }
 
 body {
@@ -43,4 +45,8 @@ picture {
 
 a {
   color: var(--blue-for-links);
+}
+
+a:hover {
+  color: var(--blue-for-hovered-links);
 }
