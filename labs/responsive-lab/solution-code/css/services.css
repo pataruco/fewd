@@ -82,3 +82,17 @@
   color: var(--lighter-text);
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  .services .row {
+    flex-direction: column;
+  }
+
+  .services .row > * {
+    max-width: unset;
+  }
+
+  .service--setings-card .button {
+    padding: 1.25rem 0;
+  }
+}

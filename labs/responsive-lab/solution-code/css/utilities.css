@@ -24,7 +24,7 @@
 }
 
 .section {
-  padding-top: 90px;
+  padding: 90px 1.25rem 0;
 }
 
 .section .content-wrapper > h2 {

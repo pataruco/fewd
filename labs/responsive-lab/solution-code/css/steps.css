@@ -25,3 +25,33 @@
   max-height: 100px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 600px) {
+  .steps .row {
+    flex-direction: column;
+  }
+
+  .steps ul li {
+    display: flex;
+    max-width: unset;
+    text-align: start;
+    align-items: center;
+  }
+
+  .steps ul h3 {
+    margin-bottom: 0;
+  }
+  .steps ul p {
+    margin-top: 0.75rem;
+  }
+
+  .steps ul picture {
+    max-width: 35px;
+    margin-right: 1.25rem;
+  }
+
+  .steps ul img {
+    max-height: unset;
+    margin: unset;
+  }
+}

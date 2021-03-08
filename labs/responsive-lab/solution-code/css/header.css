@@ -41,3 +41,29 @@ header a {
 header a:hover {
   color: var(--blue-for-hovered-links);
 }
+
+header .hamburguer {
+  display: none;
+  appearance: none;
+  border-radius: var(--radius);
+  background-color: transparent;
+  border: var(--border-line);
+}
+
+header .hamburguer svg {
+  fill: var(--green);
+}
+
+@media screen and (max-width: 600px) {
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .hamburguer {
+    display: block;
+  }
+}
