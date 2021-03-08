@@ -31,8 +31,14 @@
   max-width: 340px;
 }
 
+/* This declaration is applied via JavaScript */
+.hero.cat {
+  background-image: url('https://www.rover.com/blog/wp-content/uploads/2019/07/pretty-bombay-cat.jpg');
+}
+
 @media screen and (max-width: 600px) {
-  .hero {
+  .hero,
+  .hero.cat {
     background-image: unset;
     min-height: unset;
   }

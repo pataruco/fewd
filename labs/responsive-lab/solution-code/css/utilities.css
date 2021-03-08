@@ -23,6 +23,11 @@
   text-align: center;
 }
 
+/* This declaration is applied via JavaScript */
+.button.button--red {
+  background-color: red;
+}
+
 .section {
   padding: 90px 1.25rem 0;
 }

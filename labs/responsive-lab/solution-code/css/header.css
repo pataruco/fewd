@@ -66,4 +66,22 @@ header .hamburguer svg {
   header .hamburguer {
     display: block;
   }
+
+  /* mobile menu triggered via JavaScript*/
+  body.menu-open header .content-wrapper {
+    flex-wrap: wrap;
+  }
+
+  body.menu-open header nav {
+    display: block;
+    min-width: 100%;
+  }
+
+  body.menu-open header nav ul {
+    flex-direction: column;
+  }
+
+  body.menu-open header nav ul div {
+    flex-direction: column;
+  }
 }

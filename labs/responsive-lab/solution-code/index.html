@@ -17,21 +17,7 @@
     <header>
       <div class="content-wrapper">
         <picture><img src="./img/logo.png" alt="Rover logo" /></picture>
-        <nav>
-          <ul>
-            <div>
-              <li><a href="">Search Sitters</a></li>
-              <li><a href="">Become a Sitter</a></li>
-              <li><a href="">Our Services</a></li>
-            </div>
-            <div>
-              <li><a href="">Sign Up</a></li>
-              <li><a href="">Sign in</a></li>
-              <li><a href="">Help</a></li>
-            </div>
-          </ul>
-        </nav>
-        <button class="hamburguer">
+        <button class="hamburguer" id="js-hamburguer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -47,6 +33,20 @@
             ></path>
           </svg>
         </button>
+        <nav>
+          <ul>
+            <div>
+              <li><a href="">Search Sitters</a></li>
+              <li><a href="">Become a Sitter</a></li>
+              <li><a href="">Our Services</a></li>
+            </div>
+            <div>
+              <li><a href="">Sign Up</a></li>
+              <li><a href="">Sign in</a></li>
+              <li><a href="">Help</a></li>
+            </div>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -127,7 +127,9 @@
                     All sitters are approved by our team of sitter specialist
                   </li>
                 </ul>
-                <a href="" class="button">Book your next Rover sitter</a>
+                <a href="" class="button" id="js-book-button"
+                  >Book your next Rover sitter</a
+                >
               </div>
               <p>
                 <small>
@@ -193,6 +195,6 @@
         </div>
       </section>
     </main>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
