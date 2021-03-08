@@ -6,12 +6,10 @@
  * 2) Change the title of the page to "We're the CAT People"
  * 3) Change the main image to be something cat related.
  *
- *
  * Harder
  * 1) Replace the call to action button background color with "red"
  * 2) Find another image and replace the header (try unsplash.com, get familiar with searching for images)
- * 3) When someone clicks the "Book your next Rover sitter" button, change the text of the button to say "Thanks"
- *
+ * 3) the "Book your next Rover sitter" button, change the text of the button to say "Thanks"
  *
  * Hardest (only if you get the others first)
  * 1) Make the responsive menu work!

@@ -1,5 +1,5 @@
 /*
- * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
+ * Lay this page out - make it responsive, flex, position and media queries where needed.
  *
  * Colors-
  * Green: #14a96d
@@ -31,7 +31,8 @@ body {
   font-size: 100%;
 }
 
-img {
+img,
+svg {
   display: block;
   height: auto;
   max-width: 100%;
