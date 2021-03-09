@@ -107,10 +107,9 @@ Has a DOM tree that looks like this:
 
 A Webpage Is Just a Bunch of Objects
 
-<img
-  src="https://pataruco.s3.amazonaws.com/ga/fewd/dom-optimised.svg"
-  width="400"
-/>
+.image-third[
+![The DOM](https://pataruco.s3.amazonaws.com/ga/fewd/dom-optimised.svg)
+]
 
 Everything you see in the browser is represented as an object in JS
 
@@ -118,17 +117,27 @@ Everything you see in the browser is represented as an object in JS
 
 ## DOM Three Big Objects
 
+.row[
+.column[
+
 ### Window
 
 The whole web browser; mostly used for browser-level settings like the current url. All global variables are stored here too.
+]
+.column[
 
 ### Document
 
 The current webpage. This object has the functionality we want to use when accessing elements (other objects) on the page.
+]
+.column[
 
 ### Console
 
 A scratch pad for development-related messages; highly useful in debugging.
+
+]
+]
 
 ---
 
@@ -191,7 +200,9 @@ const gaData = document.getElementById('ga');
 
 Once you get something from the DOM, you can use a variable to store it in memory for future manipulation.
 
-<CodePane language="javascript">{`const gaData = document.getElementById('ga');`}</CodePane>
+```javascript
+const gaData = document.getElementById('ga');
+```
 
 Now that we have our element, gaData, we can access its properties:
 
