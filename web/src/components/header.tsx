@@ -11,7 +11,6 @@ import {
   openMobileMenu,
 } from '../redux/navigation-menu';
 import GALogoTextWhite from './icons/ga-text-white';
-import { bonusLessonRoutes } from '../routes/config';
 
 const StyledHeader = styled.header`
   padding: 1.25rem;
@@ -127,11 +126,10 @@ const Weeks: React.FC = () => {
   );
 };
 
-const gridsPath = bonusLessonRoutes[0].path;
-
 export const bonusLessons = [
-  ['CSS grids', gridsPath],
+  ['CSS grids', '/bonus-lessons/grids'],
   ['HTML tables', '/bonus-lessons/tables'],
+  ['JavaScript history', '/bonus-lessons/javascript-history'],
 ];
 
 const BonusLessons: React.FC = () => {

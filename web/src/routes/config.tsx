@@ -355,6 +355,15 @@ export const bonusLessonRoutes = [
       </>
     ),
   },
+  {
+    path: '/bonus-lessons/javascript-history',
+    component: () => (
+      <>
+        <Title title="Bonus Lesson | JavaScript history" />
+        <SlidesDeck slidesDeckName="bonus-lesson-js-history" />
+      </>
+    ),
+  },
 ];
 
 // Final project
