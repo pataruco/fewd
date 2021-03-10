@@ -8,230 +8,143 @@ class: frontpage
 
 ---
 
-## Tables
+## Mosaic: the first browser
 
-### Agenda:
-
-- Everything about tables
-- Lab
-
-- Everything about tables
-- Lab
+.image-half[
+![Mosaic web browser](https://upload.wikimedia.org/wikipedia/commons/e/ea/NCSA_Mosaic_Browser_Screenshot.png)
+]
 
 ---
 
-## Tables
+## Web = Open Platform
 
-### Historical layouts
-
-In the days before smartphones and tablets, websites were typically
-built using tables. This allowed for structured fixed layouts.
-
-But it is hard to re-format a table's layout, so developers moved
-away from this technique once accessing web pages from different
-sized devices became the norm.
+From the beginning, the web (which isn’t the same thing as the internet) was conceived as an open medium of exchange. Its architecture assumes good faith on the part of its users, for better or worse.
 
 ---
 
-## Tables
+## The Birth of JavaScript
 
-### Modern day usage
-
-The move away from tables for layout purposes has meant that tables
-can be used for what they were originally intended to be used for...
-
-...presenting tabular data!
-
----
-
-## Tables
-
-### Basics
-
-Tables are structured using columns and rows in order to present data
-to the user.
-
-The core HTML elements for a table are <code>&lt;table&gt;</code>,
-<code>&lt;tr&gt;</code> (table row) and <code>&lt;td&gt;</code> (table data).
-
-Table rows contain the table data elements, which make up the columns.
+.row[
+.column[
+<a href="https://en.wikipedia.org/wiki/Brendan_Eich" class="external-link" target="_blank" rel="noreferrer">Bredan Eich</a> developed a programming language for Netscape’s browser in 10 days, which became what is now JavaScript.
+]
+.column[
+.image-half[
+![Brendan Eich](https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg)
+]
+]
+]
 
 ---
 
-## Tables
+## The Roaring ’90s
 
-### Basics
+Developers wanted to make this a standard and turned it over to <a href="https://en.wikipedia.org/wiki/Ecma_International" class="external-link" target="_blank" rel="noreferrer">ECMA</a>, an European standards organisation.
 
-The first element in any HTML table is the <code>&lt;table&gt;</code> element.
-This wraps all other table-related HTML elements.
-
-<code>&lt;tr&gt;</code> tags then define each table row.
-
-Within the <code>&lt;tr&gt;</code> tags sit the <code>&lt;td&gt;</code> tags, which each define a new column.
-
-Corresponding <code>&lt;td&gt;</code> tags within a row sit in the same column.
-
-```html
-<table>
-  <tr>
-    <td>Column 1</td>
-    <td>Column 2</td>
-  </tr>
-  <tr>
-    <td>Column 1</td>
-    <td>Column 2</td>
-  </tr>
-</table>
-```
+ECMA came up with ECMAScript 1, 2, and finally version 3 in 1999 — all based off of Netscape's work. Netscape effectively open-sourced JavaScript to the world.
 
 ---
 
-## Tables
+## EcmaScript vs. JavaScript
 
-### Headings
+You'll see EcmaScript and JavaScript used interchangeably a lot online. ECMA is the standards body that controls the baseline actual baseline of JavaScript.
 
-If needed, headings can be added to provide context to the data.
-
-The <code>&lt;th&gt;</code> tag is used for this and they sit within a row.
-
-```html
-<table>
-  <tr>
-    <th scope="col">Name</th>
-    <th scope="col">Age</th>
-    <th scope="col">Gender</th>
-  </tr>
-  <tr>
-    <td>Pedro</td>
-    <td>43</td>
-    <td>Male</td>
-  </tr>
-</table>
-```
+Other languages can be derived from ECMA standards, but JavaScript is far and away the most popular, hence the confusion.
 
 ---
 
-## Tables
+## JScript and Internet Explorer
 
-### Captions
+Microsoft, which had developed Windows into a monopoly desktop operating system, saw the popularity of Netscape and tried to reverse engineer how JavaScript worked without given it backward compatibility to Netscape's real version of JavaScript.
 
-To add a caption or title to a table, the <code>&lt;caption&gt;</code> element can be placed just inside the opening <code>&lt;table&gt;</code> tag.
-
-```html
-<table>
-  <caption>
-    FEWD instructors
-  </caption>
-  <!-- Table code here -->
-</table>
-```
+This led to <a href="https://en.wikipedia.org/wiki/JScript" class="external-link" target="_blank" rel="noreferrer">JScript</a>, a non-compatible JavaScript-like scripting language for Internet Explorer. &#x1F926;
 
 ---
 
-## Tables
+## Browser wars
 
-### Structure
-
-More structure can be added inside the <code>&lt;table&gt;</code>, with the addition of <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> and <code>&lt;tfoot&gt;</code> tags.
+![browser wars](https://upload.wikimedia.org/wikipedia/commons/5/55/Layout_engine_usage_share-2009-01-07.svg)
 
 ---
 
-## Tables
+## Browser wars
 
-### Head
-
-The <code>&lt;thead&gt;</code> tag can be added to separate the head row of the table.
-
-```html
-<table>
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Age</th>
-      <th scope="col">Gender</th>
-    </tr>
-  </thead>
-</table>
-```
+.image-half[
+![browser wars](https://upload.wikimedia.org/wikipedia/commons/2/24/Browser_Wars_%28en%29.svg)
+]
 
 ---
 
-## Tables
+## Internet Explorer Takeover
 
-### Head
+With its monopoly power, Microsoft pushed a free version of IE without JavaScript onto every computer. This significantly set the internet back.
 
-The <code>&lt;tbody&gt;</code> tag is used to wrap the body of the data.
-
-```html
-<table>
-  <thead>
-    <tr>
-      <th scope="col">Item</th>
-      <th scope="col">Quantity</th>
-      <th scope="col">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Banana</td>
-      <td>4</td>
-      <td>£0.25</td>
-    </tr>
-  </tbody>
-</table>
-```
+A broad-scale tech industry war broke out as Microsoft destroyed Netscape and assumed the position as the only browser vendor in the early 2000s. Microsoft faced anti-monopoly legislation for doing this but the court case took a **LONG** time.
 
 ---
 
-## Tables
+## The Dark Ages
 
-### Foot
+### Early–mid-2000s
 
-The <code>&lt;tfoot&gt;</code> tag is used finally to present any extra data.
+This was a dark period for the internet. There wasn't a scripting language standard, and major work around JavaScript stopped at ECMA because of disagreements between major vendors.
 
-```html
-<table>
-  <thead>
-    <!-- thead code -->
-  </thead>
-  <tbody>
-    <!-- tbody code -->
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Total:</td>
-      <td></td>
-      <td>£1.00</td>
-    </tr>
-  </tfoot>
-</table>
-```
+The end result was that programs couldn't really be programs on the internet because they were missing functional pieces browsers didn't have (Microsoft actively wanted the web to stay small so it wouldn't impact its desktop monopoly).
 
 ---
 
-## Tables
+## Open Source Rises
 
-### Elements
+The open-source community began to try to overcome the Internet Explorer monopoly.
 
-| Element | Description                                       |
-| ------- | ------------------------------------------------- |
-| `table` | Contains all child elements.                      |
-| `thead` | Contains the headings for the table columns.      |
-| `th`    | An individual column heading inside the thead.    |
-| `tbody` | The body of the table containing all of the rows. |
-| `tr`    | A row inside of the table body.                   |
-| `td`    | An individual cell of table data inside of a row. |
-| `tfoot` | set of rows summarizing the columns of the table  |
+Netscape's core code was open-sourced under the original codename _"Mozilla"_ and then eventually Mozilla Firefox in 2005.
 
 ---
 
-## Tables
+## jQuery to the Rescue!
 
-### Lab &#x1F9EA;
+The real tipping point was the most ingenious solution to the Internet Explorer issues: <a href="https://en.wikipedia.org/wiki/John_Resig" class="external-link" target="_blank" rel="noreferrer">John Resig</a> reverse-engineered how JavaScript operated and then made a new JS-like, open-source language that worked on every browser, including Internet Explorer.
 
-Try building out your own table of the best NBA superteams of all time.
+It was called <a href="https://en.wikipedia.org/wiki/JQuery" class="external-link" target="_blank" rel="noreferrer">jQuery</a> and took off around 2006–2007.
 
-[starter code](https://github.com/pataruco/fewd/raw/master/labs/table/table-starter-code.zip)
+---
+
+## JavaScript Standardises
+
+2008 saw Google Chrome released, which followed in the footsteps of Firefox — both championing a singular version of JavaScript.
+
+2009 saw the reemergence of ECMA group, rebranding ECMAScript to Version 5.
+
+This is when the internet exploded with possibilities (we're living in the result).
+
+---
+
+## Finally, Real JS
+
+Now, Mozilla and Chrome pushed a singular version of JavaScript for the first time. It would take Microsoft many years to admit defeat and join the standard, but by around 2013–2014, a common-form of JavaScript would work in every browser (ES5) with the release of the last version of IE (Version 11).
+
+---
+
+## ES6+ (_EcmaScript version 6_)
+
+2015 saw the release of ES6, which was a dramatic expansion of the baseline JavaScript toolkit, and it was taken up rapidly by all browser vendors.
+
+There is now a yearly release of JavaScript that adds new features (called ESYYYY — so, like ES2021).
+
+---
+
+## Browser share
+
+![Browser share](https://upload.wikimedia.org/wikipedia/commons/7/71/StatCounter-browser-ww-yearly-2009-2020_%28updated_until_November%29.png)
+
+---
+
+## What makes JavaScript special?
+
+- It has overcome a ridiculous history.
+- Almost all programming languages require code to be compiled before viewing.
+- JavaScript is unique because its compiler is your browser, so you can see your work immediately.
+- JavaScript runtime machine has been abstracted and now can be used on the server side (back-end).
 
 ---
 
@@ -240,5 +153,5 @@ class: frontpage
 <div>
   <h2>Front-End Web Development</h2>
   <hr/>
-  <h1>HTML tables</h1>
+  <h1>End of the presentation</h1>
 </div>
