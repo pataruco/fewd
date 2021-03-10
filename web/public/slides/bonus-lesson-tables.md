@@ -15,9 +15,6 @@ class: frontpage
 - Everything about tables
 - Lab
 
-- Everything about tables
-- Lab
-
 ---
 
 ## Tables
@@ -158,7 +155,7 @@ The <code>&lt;thead&gt;</code> tag can be added to separate the head row of the 
 
 ## Tables
 
-### Head
+### Body
 
 The <code>&lt;tbody&gt;</code> tag is used to wrap the body of the data.
 
