@@ -5,6 +5,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import Page from '../components/page';
 import { Link } from 'react-router-dom';
+import { bonusLessons } from '../components/header';
 
 const StyledMain = styled.main`
   padding: 1.25rem;
@@ -14,20 +15,9 @@ const StyledMain = styled.main`
   }
 `;
 
-const bonusLessons = [
-  {
-    name: 'CSS Grids',
-    path: 'grids',
-  },
-  {
-    name: 'HML Tables',
-    path: 'tables',
-  },
-];
-
-const Lessons = bonusLessons.map(({ name, path }, key) => (
+const Lessons = bonusLessons.map(([name, path], key) => (
   <li key={key}>
-    <Link to={`/bonus-lessons/${path}`}>{name}</Link>
+    <Link to={path}>{name}</Link>
   </li>
 ));
 
