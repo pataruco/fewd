@@ -89,12 +89,8 @@ window.addEventListener('keydown', playSoundRefactored);
 function playSoundRefactored(event) {
   const keyCode = event.keyCode;
 
-  const key = document.querySelector(`div [data-key="${keyCode}"]`);
-  const sounds = Array.from(document.querySelectorAll('audio'));
-
-  const [sound] = sounds.filter((element) =>
-    element.matches(`[data-key="${keyCode}"]`),
-  );
+  const key = document.querySelector(`div[data-key="${keyCode}"]`);
+  const sound = document.querySelector(`audio[data-key="${keyCode}"]`);
 
   if (key && sound) {
     sound.currentTime = 0;
