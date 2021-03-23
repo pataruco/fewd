@@ -293,9 +293,14 @@ Complex animations require multiple steps. For these, you'll need to use CSS ani
 
 Here's what it takes:
 
+.row[
+.column[
+
 - Outline animation steps and timing.
 - Set each movement instruction of a `@keyframes` step (usually a transform).
 - Use CSS animation properties and apply everything to the component's initial state.
+  ]
+  .column[
 
 ```css
 .bouncing-ball {
@@ -314,6 +319,9 @@ Here's what it takes:
   }
 }
 ```
+
+]
+]
 
 ---
 
@@ -401,11 +409,19 @@ Solution code https://github.com/pataruco/fewd/raw/master/labs/hamburguer-menu/h
 
 # Lab &#x1F9EA;
 
-[CodePen](https://codepen.io/pataruco/pen/wYEMmb)
+## Bouncing ball
+
+[Starter Code](https://codepen.io/pataruco/pen/xxgxNyV)
+
+???
+
+Solution CodePen https://codepen.io/pataruco/pen/wYEMmb
 
 ---
 
 # Bonus &#x1F9EA;
+
+## Racing track
 
 [CodePen](https://codepen.io/pataruco/pen/eYOeGrj)
 
