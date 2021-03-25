@@ -28,7 +28,8 @@ They are just JavaScript code that you could write yourself, but instead of "rei
 
 Using plugins has the following benefits:
 
-- You don't have to be a JavaScript expert to have a visually rich project Huge time savings
+- You don't have to be a JavaScript expert to have a visually rich project
+- Huge time savings
 - Most are very customisable
 - Most are open source (free)
 - Most have been well tested and improved over time Most have been well documented
