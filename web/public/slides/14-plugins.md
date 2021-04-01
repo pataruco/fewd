@@ -32,7 +32,8 @@ Using plugins has the following benefits:
 - Huge time savings
 - Most are very customisable
 - Most are open source (free)
-- Most have been well tested and improved over time Most have been well documented
+- Most have been well tested and improved over time
+- Most have been well documented
 - Most have working examples for you to copy+paste
 
 ---
