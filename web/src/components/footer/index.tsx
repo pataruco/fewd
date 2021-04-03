@@ -75,7 +75,7 @@ const createTimeStamp = () => {
   };
 };
 
-const TimeStamp: React.FC = () => {
+export const TimeStamp: React.FC = () => {
   const timestamps = createTimeStamp();
   if (timestamps) {
     const { printTimestamp, dateTimestamp } = timestamps;
