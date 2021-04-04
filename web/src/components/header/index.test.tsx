@@ -1,5 +1,5 @@
-import { createMemoryHistory } from 'history';
 import '@testing-library/jest-dom';
+import { createMemoryHistory } from 'history';
 import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
 import { Router } from 'react-router-dom';
@@ -27,15 +27,17 @@ describe('Header', () => {
   });
 
   describe('Weeks', () => {
-    it('should render', () => {
-      const { findAllByText } = render(
+    it('should render', async () => {
+      render(
         <ProviderWrapper>
           <Router history={history}>
             <Weeks />
           </Router>
         </ProviderWrapper>,
       );
-      expect(findAllByText(/Week/i)).toBeInTheDocument();
+
+      const list = await screen.findAllByText(/Week/i);
+      expect(list.length).toBe(10);
     });
   });
 });
