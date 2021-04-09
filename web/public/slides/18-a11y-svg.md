@@ -362,7 +362,7 @@ SVG files on the web can be displayed directly in the browser or embedded in HTM
 
 ## The grid
 
-.img-center[![](https://mdn.mozillademos.org/files/224/Canvas_default_grid.png)]
+.image-one-fourth[![](https://mdn.mozillademos.org/files/224/Canvas_default_grid.png)]
 
 SVG uses a coordinate system or grid.
 
@@ -405,10 +405,6 @@ This effectively zooms in on the 100x100 unit area and enlarges the image to dou
 ---
 
 ## Basic shapes
-
-[https://codepen.io/pataruco/pen/jxygOe](https://codepen.io/pataruco/pen/jxygOe)
-
----
 
 ## Rectangles
 
@@ -537,7 +533,7 @@ Basic coloring can be done by setting two attributes on the node: `fill` and `st
 
 ## Stroke
 
-![](https://mdn.mozillademos.org/files/730/SVG_Stroke_Linecap_Example.png)
+.image-one-fourth--align-left[![](https://mdn.mozillademos.org/files/730/SVG_Stroke_Linecap_Example.png)]
 
 There are three possible values for `stroke-linecap`:
 
@@ -553,7 +549,7 @@ There are three possible values for `stroke-linecap`:
 
 ## Stroke-linejoin
 
-![](https://mdn.mozillademos.org/files/731/SVG_Stroke_Linejoin_Example.png)
+.image-one-fourth--align-left[![](https://mdn.mozillademos.org/files/731/SVG_Stroke_Linejoin_Example.png)]
 
 [https://codepen.io/pataruco/pen/bMgXKz](https://codepen.io/pataruco/pen/bMgXKz)
 
@@ -561,7 +557,7 @@ There are three possible values for `stroke-linecap`:
 
 ## Stroke-dasharray
 
-![](https://mdn.mozillademos.org/files/729/SVG_Stroke_Dasharray_Example.png)
+.image-one-fourth--align-left[![](https://mdn.mozillademos.org/files/729/SVG_Stroke_Dasharray_Example.png)]
 
 ---
 
