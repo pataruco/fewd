@@ -37,7 +37,7 @@
     "@types/react-helmet": "^6.1.0",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.7",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "react-snap": "^1.23.0"
   },
   "eslintConfig": {
